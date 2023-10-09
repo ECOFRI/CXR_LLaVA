@@ -11,6 +11,8 @@ We developed multimodal large language model based on Meta's LLAMA2 model that e
 
 
 # Examples
+<img src="/IMG/consolidation.jpg" width="450px" ></img><br/>
+
 **Question**
 
     Carefully read the provided chest x-ray and write a detailed radiological report.
