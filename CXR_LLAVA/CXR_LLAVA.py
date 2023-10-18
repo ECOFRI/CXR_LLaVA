@@ -18,7 +18,7 @@ DEFAULT_IMAGE_TOKEN = "<image>"
 USE_MODIFIED_INPUT_LABELS = True
 USE_BFLOAT16_IMAGE_ENCODER = True
 
-class CXR_LLAMA_Loader():
+class CXR_LLAVA_Loader():
     def __init__(self, model_path, temperature =0, top_p=1):
         if not torch.cuda.is_available():
             raise Exception("You must run model on GPU.")
@@ -28,8 +28,8 @@ class CXR_LLAMA_Loader():
         with open(os.path.join(model_path, "config.json"), 'r', encoding="utf-8") as f:
             json_object = json.load(f)
             json_object['llama_model_path'] = model_path
-        config = CXR_LLAMA_Config(**json_object)
-        self.model = CXR_LLAMA_Model.from_pretrained(model_path, config=config)
+        config = CXR_LLAVA_Config(**json_object)
+        self.model = CXR_LLAVA_Model.from_pretrained(model_path, config=config)
         self.model.to(self.device)
         self.model.eval()
         self.temperature = temperature
@@ -114,8 +114,8 @@ class CXR_LLAMA_Loader():
             raise ValueError(f'Unsupported tensor type: {return_tensors}')
         return input_ids
 
-class CXR_LLAMA_Config(PretrainedConfig):
-    model_type = "CXR_LLAMA"
+class CXR_LLAVA_Config(PretrainedConfig):
+    model_type = "CXR_LLAVA"
 
     def __init__(
             self,
@@ -181,8 +181,8 @@ class CXR_LLAMA_Config(PretrainedConfig):
 
 
 
-class CXR_LLAMA_Model(PreTrainedModel):
-    config_class = CXR_LLAMA_Config
+class CXR_LLAVA_Model(PreTrainedModel):
+    config_class = CXR_LLAVA_Config
 
     def __init__(self, config):
         super().__init__(config)

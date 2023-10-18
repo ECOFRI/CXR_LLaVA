@@ -1,11 +1,11 @@
 import os
-from CXR_LLAMA.CXR_LLAMA import CXR_LLAMA_Loader
+from CXR_LLAVA.CXR_LLAVA import CXR_LLAVA_Loader
 from PIL import Image
 if __name__ == '__main__':
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    model_path = "INPUT_MODEL_WEIGHT_PATH"
+    model_path = r"G:\Temp\finetune_result\LLAMA2-13B-CHAT_PREVIOUSRN50_FINETUNE_DIST"
     img = Image.open(os.path.join(os.path.dirname(__file__), "IMG", "img.jpg"))
-    loader = CXR_LLAMA_Loader(model_path=model_path, temperature=0.4, top_p=0.8)
+    loader = CXR_LLAVA_Loader(model_path=model_path, temperature=0.4, top_p=0.8)
 
     chat = [
         {"role": "system", "content": "You are a helpful radiologist. Try to interpret chest x ray image and answer to the question that user provides."},
