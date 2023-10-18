@@ -1,4 +1,4 @@
-# CXR_LLAMA
+# CXR_LLaVA
 A multimodal LLM interpreting chest radiograph trained by Radiologists.
 
 We developed multimodal large language model based on Meta's LLAMA2 model that enable an enhanced approach to medical diagnostics by interpreting chest X-rays and generating detailed reports while also providing interactive querying capabilities, thereby assisting healthcare professionals in diagnosing and managing various pulmonary conditions with a synthesized understanding of both visual and textual data.
@@ -7,7 +7,6 @@ We developed multimodal large language model based on Meta's LLAMA2 model that e
 * **Base LLM** : LLAMA2-13B
 * **Image Encoder** : Resnet50
 * **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication [pending]
-
 
 
 # Examples
