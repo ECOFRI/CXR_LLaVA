@@ -2,10 +2,13 @@ import torch, transformers
 import json, os
 from transformers import PretrainedConfig
 from transformers import PreTrainedModel
+from transformers import TextIteratorStreamer
 from open_clip.model import _build_vision_tower
 from typing import List, Optional, Tuple, Union
 from torch.nn import CrossEntropyLoss
 from transformers.modeling_outputs import CausalLMOutputWithPast
+from threading import Thread
+from transformers import StoppingCriteria
 
 # Model Constants
 IGNORE_INDEX = -100
@@ -28,6 +31,7 @@ class CXR_LLAMA_Loader():
         config = CXR_LLAMA_Config(**json_object)
         self.model = CXR_LLAMA_Model.from_pretrained(model_path, config=config)
         self.model.to(self.device)
+        self.model.eval()
         self.temperature = temperature
         self.top_p = top_p
     def apply_chat_template(self, chat):
@@ -56,30 +60,38 @@ class CXR_LLAMA_Loader():
     def generate(self, chat, pil_image):
         if self.model is None:
             raise Exception("CXR_LLAMA Model is not loaded")
+        with torch.no_grad():
+            streamer = TextIteratorStreamer(self.model.tokenizer, skip_prompt=True, skip_special_tokens=True, timeout=15)
 
-        prompt = self.apply_chat_template(chat)
-        images = self.model.vision_tower.image_processor(pil_image, return_tensors='pt')['pixel_values']
-        input_ids = self.tokenizer_image_token(prompt, self.model.tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
-        image_args = {"images": images}
-        do_sample = True if self.temperature > 0.001 else False
-        num_image_tokens = 1
-        max_context_length = 4096
-        max_new_tokens = min(4096, max_context_length - input_ids.shape[-1] - num_image_tokens)
+            prompt = self.apply_chat_template(chat)
+            images = self.model.vision_tower.image_processor(pil_image, return_tensors='pt')['pixel_values']
+            input_ids = self.tokenizer_image_token(prompt, self.model.tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
+            stopping_criteria = KeywordsStoppingCriteria(["</s>"], self.model.tokenizer, input_ids)
 
-        result = self.model.generate(inputs=input_ids,
-                            do_sample=do_sample,
-                            temperature=self.temperature,
-                            top_p=self.top_p,
-                            max_new_tokens=max_new_tokens,
-                            use_cache=True,
-                            **image_args)
+            image_args = {"images": images}
+            do_sample = True if self.temperature > 0.001 else False
+            num_image_tokens = 1
+            max_context_length = getattr(self.model.config, 'max_position_embeddings', 2048)
 
-        with open(r'D:\ResearchFire\CXR-LLAMA\result.pickle', 'wb') as f:
-            import pickle
-            pickle.dump(result, f, pickle.HIGHEST_PROTOCOL)
+            max_new_tokens = min(512, max_context_length - input_ids.shape[-1] - num_image_tokens)
 
-        result_string = self.model.tokenizer.decode(result[0])
-        return result_string
+            thread = Thread(target=self.model.generate, kwargs=dict(
+                inputs=input_ids,
+                do_sample=do_sample,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                max_new_tokens=max_new_tokens,
+                streamer=streamer,
+                stopping_criteria=[stopping_criteria],
+                use_cache=True,
+                **image_args
+            ))
+            thread.start()
+            generated_text = ""
+            for new_text in streamer:
+                generated_text += new_text
+
+        return generated_text
 
     def tokenizer_image_token(self, prompt, tokenizer, image_token_index=IMAGE_TOKEN_INDEX, return_tensors=None):
         prompt_chunks = [tokenizer(chunk).input_ids for chunk in prompt.split('<image>')]
@@ -500,3 +512,28 @@ class CXR_LLAMA_Model(PreTrainedModel):
             }
         )
         return model_inputs
+
+class KeywordsStoppingCriteria(StoppingCriteria):
+    def __init__(self, keywords, tokenizer, input_ids):
+        self.keywords = keywords
+        self.keyword_ids = []
+        for keyword in keywords:
+            cur_keyword_ids = tokenizer(keyword).input_ids
+            if len(cur_keyword_ids) > 1 and cur_keyword_ids[0] == tokenizer.bos_token_id:
+                cur_keyword_ids = cur_keyword_ids[1:]
+            self.keyword_ids.append(torch.tensor(cur_keyword_ids))
+        self.tokenizer = tokenizer
+        self.start_len = input_ids.shape[1]
+
+    def __call__(self, output_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
+        assert output_ids.shape[0] == 1, "Only support batch size 1 (yet)"  # TODO
+        offset = min(output_ids.shape[1] - self.start_len, 3)
+        self.keyword_ids = [keyword_id.to(output_ids.device) for keyword_id in self.keyword_ids]
+        for keyword_id in self.keyword_ids:
+            if output_ids[0, -keyword_id.shape[0]:] == keyword_id:
+                return True
+        outputs = self.tokenizer.batch_decode(output_ids[:, -offset:], skip_special_tokens=True)[0]
+        for keyword in self.keywords:
+            if keyword in outputs:
+                return True
+        return False
