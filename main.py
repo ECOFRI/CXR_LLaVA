@@ -2,8 +2,7 @@ import os
 from CXR_LLAVA.CXR_LLAVA import CXR_LLAVA_Loader
 from PIL import Image
 if __name__ == '__main__':
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    model_path = r"G:\Temp\finetune_result\LLAMA2-13B-CHAT_PREVIOUSRN50_FINETUNE_DIST"
+    model_path = "MODEL FOLDER PATH"
     img = Image.open(os.path.join(os.path.dirname(__file__), "IMG", "img.jpg"))
     loader = CXR_LLAVA_Loader(model_path=model_path, temperature=0.4, top_p=0.8)
 
