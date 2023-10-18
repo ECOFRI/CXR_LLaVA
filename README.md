@@ -50,11 +50,11 @@ Refer to requirements.txt
 
 ## Code
 ```python
-loader = CXR_LLAMA_Loader(model_path=model_path, temperature=0, top_p=0.7)
-img = Image.open(os.path.join(os.path.dirname(__file__),"IMG","pneumonia.jpg"))
+loader = CXR_LLAVA_Loader(model_path=model_path, temperature=0.4, top_p=0.8)
+
 chat = [
     {"role": "system", "content": "You are a helpful radiologist. Try to interpret chest x ray image and answer to the question that user provides."},
-    {"role": "user", "content": "<image> Carefully read the provided chest x-ray and write a detailed radiological report."}
+    {"role": "user", "content": "<image>\nWrite a radiologic report on the given chest radiograph, including information about atelectasis, cardiomegaly, consolidation, pulmonary edema, pleural effusion, and pneumothorax.\n"}
 ]
 
 response = loader.generate(chat,pil_image=img)
