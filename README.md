@@ -41,11 +41,13 @@ Original article is under review.
 
 # Requirement
 ## Hardware
-You need a NVIDIA GPU with VRAM larger than 26GB. 
+You need a NVIDIA GPU with VRAM larger than 26GB.
+
 Recommended : NVIDIA-A100 40GB
 
 ## Software Dependency
 torch, transformers==4.34.0, open_clip_torch==2.22.0
+
 Refer to requirements.txt
 
 ## Code
