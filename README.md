@@ -8,19 +8,19 @@ Original article is under review.
 # Information
 * **Base LLM** : LLAMA2-13B
 * **Image Encoder** : Resnet50
-* **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication [pending]
-* **Model Weight** : [Now uploading](https://google.com)
+* **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication [under review]
+* **Model Weight** : [uploading](https://google.com)
 
 # Examples
-<img src="/IMG/consolidation.jpg" width="450px" ></img><br/>
+<img src="/IMG/img.jpg" width="450px" ></img><br/>
 
 **Question**
 
-    Carefully read the provided chest x-ray and write a detailed radiological report.
+    Write a radiologic report on the given chest radiograph, including information about atelectasis, cardiomegaly, consolidation, pulmonary edema, pleural effusion, and pneumothorax.
 
 **LLM output**
 
-    The chest radiograph shows significant opacification in the lower half of the right hemithorax, indicating a substantial pleural effusion. This could potentially obscure underlying lung pathology. There is noticeable displacement of the mediastinum to the left, suggesting possible mass effects. The left lung appears largely clear with no visible signs of pneumothorax.
+    The chest radiograph shows a large, rounded opacity in the right upper lobe. There is also a small right pleural effusion. The left lung is clear and there is no pneumothorax. The cardiomediastinal silhouette is normal. 
 
 **Question**
 
@@ -28,7 +28,7 @@ Original article is under review.
 
 **LLM output**
 
-    The diagnosis could be either pneumonia or atelectasis. 
+    Possible diagnosis includes pneumonia, lung cancer, or tuberculosis. 
 
 **Question**
 
@@ -36,7 +36,7 @@ Original article is under review.
 
 **LLM output**
 
-    Given the presence of opacity and pleural effusion, further radiologic studies may be beneficial to monitor these conditions. A follow-up chest CT could provide more detailed information. 
+    Further radiologic studies are recommended to confirm the diagnosis. A CT scan of the chest may provide more detailed information about the nature and extent of the opacity. 
 
 
 # Requirement
@@ -45,7 +45,7 @@ You need a NVIDIA GPU with VRAM larger than 26GB.
 Recommended : NVIDIA-A100 40GB
 
 ## Software Dependency
-torch, transformers, open_clip_torch
+torch, transformers==4.34.0, open_clip_torch==2.22.0
 Refer to requirements.txt
 
 ## Code
