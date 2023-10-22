@@ -80,6 +80,10 @@ print("QUESTION : %s"%chat[-1]['content'])
 print("RESPONSE : %s"%response)
 ```
 
+## License
+Creative Commons NonCommercial License
 
+Before using this model, you must acquire the LLAMA-2 license.
+https://ai.meta.com/resources/models-and-libraries/llama-downloads/
 
 
