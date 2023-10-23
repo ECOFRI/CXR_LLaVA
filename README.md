@@ -9,7 +9,7 @@ Original article is under review.
 * **Base LLM** : LLAMA2-13B
 * **Image Encoder** : Resnet50
 * **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication [under review]
-* **Model Weight** : [uploading](https://google.com)
+* **Model Weight** : [Version 1](https://drive.google.com/drive/folders/1_jY97ESOlc2qBDakXwHRuifubRIYCUK0?usp=share_link)
 
 # Examples
 <img src="/IMG/img.jpg" width="450px" ></img><br/>
