@@ -12,31 +12,8 @@ This study aimed to develop open-source multimodal large language model for ches
 * **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication.
 
 # Examples
-<img src="/IMG/img.jpg" width="450px" ></img><br/>
+<img src="/IMG/demo.png"  ></img><br/>
 
-**Question**
-
-    Write a radiologic report on the given chest radiograph, including information about atelectasis, cardiomegaly, consolidation, pulmonary edema, pleural effusion, and pneumothorax.
-
-**LLM output**
-
-    The chest radiograph shows a large, rounded opacity in the right upper lobe. There is also a small right pleural effusion. The left lung is clear and there is no pneumothorax. The cardiomediastinal silhouette is normal. 
-
-**Question**
-
-    What is possible diagnosis?
-
-**LLM output**
-
-    Possible diagnosis includes pneumonia, lung cancer, or tuberculosis. 
-
-**Question**
-
-    Should additional radiologic study needed?
-
-**LLM output**
-
-    Further radiologic studies are recommended to confirm the diagnosis. A CT scan of the chest may provide more detailed information about the nature and extent of the opacity. 
 
 
 # Requirement
@@ -79,6 +56,13 @@ response = loader.generate(chat,pil_image=img)
 print("QUESTION : %s"%chat[-1]['content'])
 print("RESPONSE : %s"%response)
 ```
+### Output
+    QUESTION : Write a radiologic report on the given chest radiograph, including information about atelectasis, cardiomegaly, consolidation, pulmonary edema, pleural effusion, and pneumothorax.
+    RESPONSE : The chest radiograph shows a large, rounded opacity in the right upper lobe. There is also a small right pleural effusion. The left lung is clear and there is no pneumothorax. The cardiomediastinal silhouette is normal. 
+    QUESTION : What is possible diagnosis?
+    RESPONSE : Possible diagnosis includes pneumonia, lung cancer, or tuberculosis. 
+    QUESTION : Should additional radiologic study needed?
+    RESPONSE : Further radiologic studies are recommended to confirm the diagnosis. A CT scan of the chest may provide more detailed information about the nature and extent of the opacity. 
 
 ## License
 Creative Commons NonCommercial License
