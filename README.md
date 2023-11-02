@@ -9,7 +9,7 @@ This study aimed to develop open-source multimodal large language model for ches
 # Information
 * **Base LLM** : LLAMA2-13B
 * **Image Encoder** : Resnet50
-* **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication [under review]
+* **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication.
 
 # Examples
 <img src="/IMG/img.jpg" width="450px" ></img><br/>
