@@ -1,15 +1,15 @@
 # CXR LLaVA
 ### Multimodal Large Language Model Fine-Tuned for Chest X-ray Images
-
 This study aimed to develop open-source multimodal large language model for chest X-ray images, potentially assisting the image interpretation of human radiologists. 
 
-Original article is under review.
+* **Arxiv Preprint Paper** : https://arxiv.org/abs/2310.18341
+* **Demo Website** : [Online Demo 1](https://radiologist.app/cxr-llava)
+* **Model Weight** : [Version 1](https://drive.google.com/drive/folders/1_jY97ESOlc2qBDakXwHRuifubRIYCUK0?usp=share_link)
 
 # Information
 * **Base LLM** : LLAMA2-13B
 * **Image Encoder** : Resnet50
 * **Dataset** : Ensemble of multiple datasets including MIMIC. For more information, check our publication [under review]
-* **Model Weight** : [Version 1](https://drive.google.com/drive/folders/1_jY97ESOlc2qBDakXwHRuifubRIYCUK0?usp=share_link)
 
 # Examples
 <img src="/IMG/img.jpg" width="450px" ></img><br/>
