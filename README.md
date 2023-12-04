@@ -3,8 +3,8 @@
 This study aimed to develop open-source multimodal large language model for chest X-ray images, potentially assisting the image interpretation of human radiologists. 
 
 * **Arxiv Preprint Paper** : https://arxiv.org/abs/2310.18341
-* **Demo Website** : [Online Demo 1](https://radiologist.app/cxr-llava)
-* **Model Weight** : [Version 1](https://drive.google.com/drive/folders/1_jY97ESOlc2qBDakXwHRuifubRIYCUK0?usp=share_link)
+* **Demo Website** : currently not available
+* **Model Weight** : currently not available
 
 # Information
 * **Base LLM** : LLAMA2-13B
