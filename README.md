@@ -14,7 +14,7 @@ CXR LLaVA is an innovative open-source, multimodal large language model specific
 
 You can interpret CXR with just 6 lines of code. 
 
-(NVIDIA GPU VRAM>=14GB needed)
+(NVIDIA GPU VRAM>14GB needed)
 ```python
 from transformers import AutoModel
 from PIL import Image
@@ -66,7 +66,7 @@ response = model.write_radiologic_report(cxr_image)
 For differential diagnosis:
 
 ```python
-model.write_differential_diagnosis(cxr_image)
+response = model.write_differential_diagnosis(cxr_image)
 ```
 > Possible differential diagnoses for this patient include pneumonia,tuberculosis, lung abscess, or a neoplastic process such as lung cancer.
 
