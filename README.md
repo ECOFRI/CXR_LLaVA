@@ -10,7 +10,7 @@ CXR LLaVA is an innovative open-source, multimodal large language model specific
 |Version| Input CXR resolution | Channels | Vision Encoder | Base LLM | Weight 
 |--|--|--|--|--|--|
 | v1.0 | 512x512 | RGB|RN50|LLAMA2-13B-CHAT|Deprecated
-|v2.0 (Latest)|512x512|Grayscale|ViT-L/16|LLAMA2-7B-CHAT|[Link](https://huggingface.co/ECOFRI/CXR-LLAVA-v2)
+|v2.0 (Latest)|512x512|Grayscale|ViT-L/16|LLAMA2-7B-CHAT| <a href="https://huggingface.co/ECOFRI/CXR-LLAVA-v2" target="_blank">Link</a>
 
 
 ## Usage Guide
