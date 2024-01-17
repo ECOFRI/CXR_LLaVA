@@ -46,7 +46,7 @@ Ensure you have an CXR image file ready, such as 'img.jpg'.
 
 Use the following code to load the image
 ```python
-cxr_image = Image.open(os.path.join(os.path.dirname(__file__), "IMG", "img.jpg"))
+cxr_image = Image.open("img.jpg")
 ```
 ### Load model
 Loading the CXR-LLAVA model is straightforward and can be done in one line of code.
