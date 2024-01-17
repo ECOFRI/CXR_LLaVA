@@ -20,7 +20,7 @@ from transformers import AutoModel
 from PIL import Image
 model = AutoModel.from_pretrained("ECOFRI/CXR-LLAVA-v2", trust_remote_code=True)
 model = model.to("cuda")
-cxr_image = Image.open(os.path.join(os.path.dirname(__file__), "IMG", "img.jpg"))
+cxr_image = Image.open("img.jpg")
 response = model.write_radiologic_report(cxr_image)
 ```
  > The radiologic report reveals a large consolidation in the right upper lobe of the lungs. There is no evidence of pleural effusion or pneumothorax. The cardiac and mediastinal contours are normal. 
@@ -87,7 +87,7 @@ response = model.ask_question(question=question, image=cxr_image)
 ### Custom Prompt
 For custom interactions:
 ```python
-img = Image.open(os.path.join(os.path.dirname(__file__), "IMG", "img.jpg"))
+img = Image.open("img.jpg")
 chat = [
     {"role": "system",
      "content": "You are a helpful radiologist. Try to interpret chest x ray image and answer to the question that user provides."},
