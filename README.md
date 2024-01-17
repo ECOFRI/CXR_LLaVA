@@ -10,7 +10,7 @@ CXR LLaVA is an innovative open-source, multimodal large language model specific
 |Version| Input CXR resolution | Channels | Vision Encoder | Base LLM | Weight 
 |--|--|--|--|--|--|
 | v1.0 | 512x512 | RGB|RN50|LLAMA2-13B-CHAT|Deprecated
-|v2.0 (Latest)|512x512|Grayscale|ViT-L/16|LLAMA2-7B-CHAT| <a href="https://huggingface.co/ECOFRI/CXR-LLAVA-v2" target="_blank">Link</a>
+|v2.0.1 (Latest)|512x512|Grayscale|ViT-L/16|LLAMA2-7B-CHAT| <a href="https://huggingface.co/ECOFRI/CXR-LLAVA-v2" target="_blank">Link</a>
 
 You can interpret CXR with just 6 lines of code. 
 
@@ -27,6 +27,12 @@ response = model.write_radiologic_report(cxr_image)
 
 
 ## Usage Guide
+### Install Dependencies
+Before you begin, make sure you have PyTorch installed. After confirming that PyTorch is installed, you can install the additional required dependencies. Run the following command in your terminal or command prompt:
+```python
+pip install transformers sentencepiece protobuf pillow
+```
+
 ### Importing Packages
 ```python
 from transformers import AutoModel
@@ -90,6 +96,7 @@ chat = [
 ]
 response = model.generate_cxr_repsonse(chat=chat,pil_image=img, temperature=0, top_p=1)
 ```
+
 
 ## License Information
 
