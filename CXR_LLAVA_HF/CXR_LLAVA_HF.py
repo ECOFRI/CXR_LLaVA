@@ -8,7 +8,8 @@ from transformers import TextIteratorStreamer
 from transformers import StoppingCriteria, GenerationConfig
 from threading import Thread
 from dataclasses import dataclass
-
+import numpy as np
+from PIL import Image
 # Model Constants
 IGNORE_INDEX = -100
 IMAGE_TOKEN_INDEX = -200
@@ -596,8 +597,16 @@ class CXRLLAVAModel(PreTrainedModel):
     def generate_cxr_repsonse(self, chat, image, temperature=0.2, top_p=0.8):
         with torch.no_grad():
             streamer = TextIteratorStreamer(self.tokenizer, skip_prompt=True, skip_special_tokens=True, timeout=15)
-            import numpy as np
-            image = np.expand_dims(image,axis=-1)
+
+            if np.array(image).max()>255:
+                raise Exception("WARNING. 16-bit image is not supported.")
+
+            image = image.convert('L') # convert to grayscale
+            image = np.array(image)
+
+            if len(image.shape) == 2:
+                image = np.expand_dims(image,axis=-1) # (width, height) --> (width, height, 1)
+
             prompt = self.apply_chat_template(chat)
             images = self.vision_tower.image_processor(image, return_tensors='pt')['pixel_values']
             images = images.to(self.device)
@@ -610,7 +619,6 @@ class CXRLLAVAModel(PreTrainedModel):
             max_context_length = getattr(self.config, 'max_position_embeddings', 2048)
 
             max_new_tokens = min(512, max_context_length - input_ids.shape[-1] - num_image_tokens)
-
             thread = Thread(target=self.generate, kwargs=dict(
                 inputs=input_ids,
                 do_sample=do_sample,
