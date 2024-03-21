@@ -4,7 +4,7 @@
 CXR LLaVA is an innovative open-source, multimodal large language model specifically designed for generating radiologic reports from chest X-ray images.
 
 -   **Arxiv Preprint Paper**: Explore the detailed scientific background of CXR LLaVA on [Arxiv](https://arxiv.org/abs/2310.18341).
--   **Demo Website**: Experience the model in action at [Radiologist App](https://radiologist.app/cxr-llava).
+-   **Demo Website**: Experience the model in action at [Radiologist App](https://radiologist.app/cxr-llava/viewer.php).
 
 
 |Version| Input CXR resolution | Channels | Vision Encoder | Base LLM | Weight 
