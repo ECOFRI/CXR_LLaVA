@@ -251,7 +251,11 @@ Tên file/interface trên là thiết kế; chưa giả định các artifact đ
 - [ ] Báo cáo theo template có nguồn evidence và hạn chế đầy đủ.
 - [ ] Nếu tuyên bố exact reproduction: phải có thêm xác minh official split, checkpoint, decoding và average-F1/CI method gốc.
 
-MIMIC/official CheXpert test chưa có local, và NIH/PadChest không thay thế chúng. Reproduce training hay radiologist evaluation không thuộc scope plan này.
+MIMIC hiện chưa có ảnh/report local; CheXpert test đã có sau khi plan Indiana được lập nhưng là experiment riêng. NIH/PadChest không thay thế chúng. Reproduce training hay radiologist evaluation không thuộc scope plan này.
+
+### Follow-on Table 3 evaluation (separate experiment, 2026-10-05)
+
+CheXlocalize test images are now available under `../datasets/CheXpert_test_labels/CheXpert/`: 668 images, of which 518 are frontal and 150 lateral. The 518 frontal image labels agree with the 500-study public `groundtruth.csv` and match the paper's supplementary positive/negative support. This is a distinct CheXpert experiment run by `scripts/chexpert_table3_k80.py` and `scripts/run_chexpert_table3_k80.sh`; it does not change Indiana's frozen cohort. The paper's exact direct-label prompt/decoding code remains unavailable, so local yes/no questions are documented as a protocol adaptation.
 
 ## 16. Tài liệu tham chiếu
 

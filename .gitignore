@@ -7,6 +7,8 @@
 # Generated review image bundles; keep the written reports in reports/.
 /reports/exp02_example_images_*/
 /reports/exp02_example_images_*.zip
+/reports/chexpert_table3_example_images_*/
+/reports/chexpert_table3_example_images_*.zip
 
 # Python and notebook caches, local secrets, and logs.
 __pycache__/
