@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "images": 24,
+  "rows": 120,
+  "wall_sec": 28.54119857121259,
+  "checkpoint_sha256": "da1617a7d47970667a7a158eabfa4c4f3798d5d03b7f98caec150d8ee6ab6a03",
+  "cohort_sha256": "74f913413fbedca41c8c6592d79105946e2f72221d88be046fcfd9e5602fdce7",
+  "protocol_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+  "scores_sha256": "3c2110d5798ce243bcac740d650dfe21b794599027a94c486e8811a6d5e0f7f1",
+  "torch": "2.3.1+cpu",
+  "cuda_initialized": false,
+  "python": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/envs/cxr-clear-cpu/bin/python",
+  "gpu_hours": 0
+}

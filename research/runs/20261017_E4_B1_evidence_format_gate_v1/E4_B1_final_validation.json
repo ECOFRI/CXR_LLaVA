@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": {
+    "protocol_hash": true,
+    "cohort_hash": true,
+    "clear_scores_hash": true,
+    "checkpoint_integrity": true,
+    "clear_checkpoint_hash": true,
+    "development_cohort_24_and_disjoint": true,
+    "clear_grid_120": true,
+    "full_24_by_11_unique": true,
+    "all_reports_success": true,
+    "prompts_match_runtime": true,
+    "labels_align": true,
+    "smoke_determinism": true,
+    "gpu_windows_closed_under_cap": true,
+    "background_completed": true,
+    "synthetic_dry_run": true,
+    "six_unit_tests": true
+  },
+  "images": 24,
+  "reports": 264,
+  "clear_score_rows": 120,
+  "gpu_wall_sec": 6563.21363140922,
+  "protocol_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+  "reports_sha256": "e01cc43d3ec77f88b24689981d40e48203525e98b3540e1346c338c488776974",
+  "labels_sha256": "e231155a65e5c25ebce8caa1b114dab9188a1e4ec67f6bf0cd3841cda3f07697"
+}

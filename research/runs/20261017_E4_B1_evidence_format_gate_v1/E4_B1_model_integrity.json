@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "files": {
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/cxr-llava-v2-original/model-00001-of-00003.safetensors": {
+      "sha256": "2a30a3337ea0e778627c417863e19621d3df385d2b843ac98c97fd23737f5053",
+      "bytes": 4917365472,
+      "matches_R4": true
+    },
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/cxr-llava-v2-original/model-00002-of-00003.safetensors": {
+      "sha256": "6f34846c3dcbf1115a4ed3992fbd3325729a3991bae7ff6418fd6161c561a604",
+      "bytes": 4947390880,
+      "matches_R4": true
+    },
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/cxr-llava-v2-original/model-00003-of-00003.safetensors": {
+      "sha256": "42a5c74885378cc22d42cd4d2159e648fd5a13821c22a7c7daef33cdf31c53e7",
+      "bytes": 4228057888,
+      "matches_R4": true
+    },
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/cxr-llava-v2-original/config.json": {
+      "sha256": "668a80b843e39628b120323b3e6114ea2482c76b220b9e8aa13805ecc72db679",
+      "bytes": 3444,
+      "matches_R4": true
+    },
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/cxr-llava-v2-original/tokenizer.model": {
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+      "bytes": 499723,
+      "matches_R4": true
+    },
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/cxr-llava-v2-original/generation_config.json": {
+      "sha256": "d8b3d56ccdc67e074c7923b07d778721d2d6212bacb344e97f9464fde1b7f29d",
+      "bytes": 69,
+      "matches_R4": true
+    }
+  }
+}

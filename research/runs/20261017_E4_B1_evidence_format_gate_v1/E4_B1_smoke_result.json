@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "images": [
+    "CXR1050_IM-0038-4004",
+    "CXR1226_IM-0150-1001"
+  ],
+  "greedy_C0_byte_identical": true,
+  "reports": 26,
+  "mean_report_wall_sec": 24.776104524767455,
+  "peak_allocated_bytes": [
+    9883785728,
+    7577511936,
+    7577511936,
+    7577528320
+  ],
+  "stop_reasons": [
+    "STOP_KEYWORD"
+  ]
+}

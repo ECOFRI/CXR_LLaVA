@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "n_images": 24,
+  "n_arms": 11,
+  "prompts": 264,
+  "eligible_direction_differences": 19,
+  "token_ranges": {
+    "C0": [
+      98,
+      98
+    ],
+    "N1": [
+      219,
+      219
+    ],
+    "F1-M": [
+      483,
+      498
+    ],
+    "F1-S": [
+      483,
+      498
+    ],
+    "F1-O": [
+      191,
+      191
+    ],
+    "F2-M": [
+      210,
+      220
+    ],
+    "F2-S": [
+      210,
+      220
+    ],
+    "F2-O": [
+      195,
+      199
+    ],
+    "F3-M": [
+      259,
+      269
+    ],
+    "F3-S": [
+      259,
+      269
+    ],
+    "F3-O": [
+      244,
+      248
+    ]
+  },
+  "protocol_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+  "scores_sha256": "3c2110d5798ce243bcac740d650dfe21b794599027a94c486e8811a6d5e0f7f1",
+  "blocks_sha256": "1f3b1038949402b269f379b9720c8937271d007c251d54fdab202b894a0f2e1d",
+  "prompts_sha256": "86cf4d97482c2a63fe790c9ab24a6db2806b667de68e93973e2bbebdbaa115ae",
+  "derangement_sha256": "56acc47cc28f0da65ebc056bed4eaf3e8fe57ace6f0b172265da645c279ea74e"
+}

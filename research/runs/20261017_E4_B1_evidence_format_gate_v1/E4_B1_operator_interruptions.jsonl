@@ -1,0 +1,1 @@
+{"at_utc": "2026-10-17T13:36:11.339628+00:00", "reason": "User requested detached server run instead of an agent-attached process", "signal": "SIGINT", "interrupted_pid": 383786, "completed_reports_kept": 30, "gpu_window_closed": true, "resume_policy": "same frozen prompt hashes and 4-hour cumulative cap"}

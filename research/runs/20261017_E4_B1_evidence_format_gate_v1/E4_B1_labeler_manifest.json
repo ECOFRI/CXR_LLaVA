@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "reports": 264,
+  "input_sha256": "c1201f6df12291a243581c8870f4960729855f2c6c3c30e5960723b8987969b5",
+  "output_sha256": "e231155a65e5c25ebce8caa1b114dab9188a1e4ec67f6bf0cd3841cda3f07697",
+  "labeler_revision": "44ddeb363149aa657296237f18b5472a73c1756f",
+  "negbio_revision": "073199e2792824740e89844a59c13d3d40ce4d23",
+  "cpu_only": true
+}
