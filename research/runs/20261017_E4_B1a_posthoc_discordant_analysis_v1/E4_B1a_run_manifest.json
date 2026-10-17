@@ -1,0 +1,86 @@
+{
+  "status": "COMPLETE_POST_HOC_SECONDARY_ANALYSIS",
+  "classification": "AUTOMATED PROXY, POST-HOC",
+  "E4_B1_decision_unchanged": "E4_B1_PROMPT_ROUTE_REJECTED",
+  "cpu_only": true,
+  "cuda_visible_devices": "",
+  "source_manifest_sha256": "58ee7092e69be0d79f7ca110245cc29d514fb464bae05725d9f352fe127bd5ae",
+  "verified_inputs": {
+    "E4_B1_protocol.md": {
+      "expected_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+      "actual_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_cohort.csv": {
+      "expected_sha256": "74f913413fbedca41c8c6592d79105946e2f72221d88be046fcfd9e5602fdce7",
+      "actual_sha256": "74f913413fbedca41c8c6592d79105946e2f72221d88be046fcfd9e5602fdce7",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_clear_scores.csv": {
+      "expected_sha256": "3c2110d5798ce243bcac740d650dfe21b794599027a94c486e8811a6d5e0f7f1",
+      "actual_sha256": "3c2110d5798ce243bcac740d650dfe21b794599027a94c486e8811a6d5e0f7f1",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_frozen_prompts.jsonl": {
+      "expected_sha256": "86cf4d97482c2a63fe790c9ab24a6db2806b667de68e93973e2bbebdbaa115ae",
+      "actual_sha256": "86cf4d97482c2a63fe790c9ab24a6db2806b667de68e93973e2bbebdbaa115ae",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_derangement.csv": {
+      "expected_sha256": "56acc47cc28f0da65ebc056bed4eaf3e8fe57ace6f0b172265da645c279ea74e",
+      "actual_sha256": "56acc47cc28f0da65ebc056bed4eaf3e8fe57ace6f0b172265da645c279ea74e",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_reports.jsonl": {
+      "expected_sha256": "e01cc43d3ec77f88b24689981d40e48203525e98b3540e1346c338c488776974",
+      "actual_sha256": "e01cc43d3ec77f88b24689981d40e48203525e98b3540e1346c338c488776974",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_labeler_output.csv": {
+      "expected_sha256": "e231155a65e5c25ebce8caa1b114dab9188a1e4ec67f6bf0cd3841cda3f07697",
+      "actual_sha256": "e231155a65e5c25ebce8caa1b114dab9188a1e4ec67f6bf0cd3841cda3f07697",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_smoke_result.json": {
+      "expected_sha256": "36df8f9a66cc6522f7b35d52c6f717f04f04d87a4d184a4f1d8ae8466735e922",
+      "actual_sha256": "36df8f9a66cc6522f7b35d52c6f717f04f04d87a4d184a4f1d8ae8466735e922",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_model_integrity.json": {
+      "expected_sha256": "11e4f882cfae2e169ad7b146585edcc38aff33b9eee8e1673e5090db688e5188",
+      "actual_sha256": "11e4f882cfae2e169ad7b146585edcc38aff33b9eee8e1673e5090db688e5188",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_final_validation.json": {
+      "expected_sha256": "efeb314cfadde86384db5ac04451dac458cfe641a2981a7df520bd8337d9f1fd",
+      "actual_sha256": "efeb314cfadde86384db5ac04451dac458cfe641a2981a7df520bd8337d9f1fd",
+      "source": "E4_B1_run_manifest.json"
+    },
+    "E4_B1_evidence_blocks.jsonl": {
+      "expected_sha256": "1f3b1038949402b269f379b9720c8937271d007c251d54fdab202b894a0f2e1d",
+      "actual_sha256": "1f3b1038949402b269f379b9720c8937271d007c251d54fdab202b894a0f2e1d",
+      "source": "E4_B1_artifact_index.md"
+    }
+  },
+  "source_code_sha256": "39fbd70aa276b128ad7024e47dea1ab2416bb6f53128f443d6e55dc56d61f903",
+  "source_commit_at_analysis": "9f7b0544f6932116ee6a9194a6c84ff8fa9e25ce",
+  "cohort_images": 24,
+  "formats": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "oracle_definite_six_cells": 69,
+  "clear_scored_definite_cells": 52,
+  "oracle_positive_six_cells": 27,
+  "direction_eligible_images": 19,
+  "output_sha256": {
+    "E4_B1a_arm_summary.csv": "32121ae4511e08e7b6d0f0d8f37b0e62ad2174466b4eac7f57e5759b0e84bbd4",
+    "E4_B1a_clear_reference_proxy.csv": "0a9f851fd324bc4d7f9cad6268ef8ea35ac8e7cf3a7c8ee6de78b39057f87f84",
+    "E4_B1a_direction_of_change.csv": "9b7d31c536bc26ee8bc17e7c4329b1845e4d2c0dbe50b9d78165ed48fcd69a61",
+    "E4_B1a_discordant_cells.csv": "a29efb8558023ec1503180ee19a947f10ed78923e0518cb3ba4a8a31a22eb719",
+    "E4_B1a_findings.md": "cd23df8021afc626e34467e080132ef2acfa50f76e86eaabaffc086cd68c0abd",
+    "E4_B1a_oracle_block_inventory.csv": "9ed09b4c71294b9623315b47d8ec803c7c0cdbc03a623c96b2a2adb7b5ba7599",
+    "E4_B1a_positive_cells.csv": "22f0779ad2a502919dcb7cd351db2b2915aa13e768f97fccf425c3656e9a0351"
+  }
+}

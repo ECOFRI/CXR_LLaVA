@@ -1,0 +1,53 @@
+image_id,finding,oracle_state,matched_direction,shuffled_direction,matched_agrees_reference,shuffled_agrees_reference
+CXR1050_IM-0038-4004,Consolidation,Negative,Positive,Positive,0,0
+CXR1226_IM-0150-1001,Cardiomegaly,Negative,Negative,Positive,1,0
+CXR1226_IM-0150-1001,Consolidation,Positive,Negative,Positive,0,1
+CXR1226_IM-0150-1001,Pleural Effusion,Negative,Negative,Positive,1,0
+CXR1285_IM-0188-0001,Consolidation,Negative,Positive,Positive,0,0
+CXR1285_IM-0188-0001,Pleural Effusion,Negative,Positive,Positive,0,0
+CXR1445_IM-0287-4004,Atelectasis,Positive,Positive,Negative,1,0
+CXR1445_IM-0287-4004,Consolidation,Positive,Positive,Negative,1,0
+CXR1445_IM-0287-4004,Pleural Effusion,Positive,Positive,Negative,1,0
+CXR1669_IM-0441-1001,Pleural Effusion,Negative,Negative,Negative,1,1
+CXR1769_IM-0503-1001,Atelectasis,Positive,Positive,Negative,1,0
+CXR1769_IM-0503-1001,Consolidation,Positive,Positive,Negative,1,0
+CXR1769_IM-0503-1001,Pleural Effusion,Positive,Positive,Negative,1,0
+CXR1792_IM-0515-1001,Atelectasis,Positive,Negative,Negative,0,0
+CXR1792_IM-0515-1001,Cardiomegaly,Positive,Negative,Negative,0,0
+CXR1792_IM-0515-1001,Pleural Effusion,Positive,Negative,Negative,0,0
+CXR1892_IM-0580-1001,Consolidation,Negative,Negative,Positive,1,0
+CXR1892_IM-0580-1001,Pleural Effusion,Negative,Negative,Negative,1,1
+CXR202_IM-0667-4004,Cardiomegaly,Positive,Positive,Negative,1,0
+CXR202_IM-0667-4004,Edema,Positive,Positive,Negative,1,0
+CXR202_IM-0667-4004,Pleural Effusion,Positive,Positive,Negative,1,0
+CXR2245_IM-0842-1001,Consolidation,Negative,Negative,Positive,1,0
+CXR2245_IM-0842-1001,Pleural Effusion,Negative,Negative,Positive,1,0
+CXR2532_IM-1046-1001,Cardiomegaly,Positive,Positive,Positive,1,1
+CXR2532_IM-1046-1001,Edema,Positive,Positive,Positive,1,1
+CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Positive,Negative,1,0
+CXR2752_IM-1202-0001-0001,Edema,Positive,Positive,Negative,1,0
+CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Positive,Negative,1,0
+CXR3104_IM-1455-1001,Cardiomegaly,Negative,Negative,Positive,1,0
+CXR3104_IM-1455-1001,Pleural Effusion,Negative,Negative,Positive,1,0
+CXR3319_IM-1588-1001,Cardiomegaly,Negative,Negative,Negative,1,1
+CXR3319_IM-1588-1001,Consolidation,Negative,Negative,Positive,1,0
+CXR3319_IM-1588-1001,Pleural Effusion,Negative,Negative,Negative,1,1
+CXR3479_IM-1690-1001,Cardiomegaly,Positive,Positive,Negative,1,0
+CXR3479_IM-1690-1001,Consolidation,Positive,Positive,Negative,1,0
+CXR3479_IM-1690-1001,Edema,Positive,Positive,Negative,1,0
+CXR3479_IM-1690-1001,Pleural Effusion,Positive,Positive,Negative,1,0
+CXR3636_IM-1803-1001,Consolidation,Negative,Negative,Negative,1,1
+CXR3636_IM-1803-1001,Pleural Effusion,Negative,Positive,Positive,0,0
+CXR3694_IM-1845-1001,Consolidation,Negative,Negative,Positive,1,0
+CXR3694_IM-1845-1001,Pleural Effusion,Negative,Negative,Positive,1,0
+CXR3945_IM-2014-1001,Atelectasis,Positive,Negative,Negative,0,0
+CXR492_IM-2112-2002,Cardiomegaly,Negative,Negative,Negative,1,1
+CXR492_IM-2112-2002,Consolidation,Negative,Negative,Negative,1,1
+CXR492_IM-2112-2002,Pleural Effusion,Negative,Negative,Negative,1,1
+CXR521_IM-2132-4004,Cardiomegaly,Negative,Negative,Negative,1,1
+CXR521_IM-2132-4004,Consolidation,Negative,Positive,Negative,0,1
+CXR521_IM-2132-4004,Pleural Effusion,Negative,Negative,Negative,1,1
+CXR570_IM-2170-1001,Cardiomegaly,Negative,Negative,Negative,1,1
+CXR570_IM-2170-1001,Pleural Effusion,Negative,Negative,Negative,1,1
+CXR643_IM-2222-1001,Cardiomegaly,Negative,Negative,Negative,1,1
+CXR880_IM-2395-1001,Cardiomegaly,Negative,Negative,Negative,1,1
