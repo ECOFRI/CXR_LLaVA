@@ -1,0 +1,10 @@
+{
+  "source_dir": "result/indiana_full_k80_20261004_031940_1252388",
+  "selection_cohort": "result/indiana_full_k80_20261004_inventory02/nlm_review_01/selection/cohort.csv",
+  "gt_labels": "result/indiana_full_k80_20261004_inventory02/nlm_review_01/gt_labeling/raw_labels.csv",
+  "generated_labels": "result/indiana_full_k80_20261004_031940_1252388/metrics/generated_raw_labels.csv",
+  "bootstrap_reps": 1000,
+  "seed": 42,
+  "tokenizer": "lowercase_ascii_alnum_regex_v1",
+  "policies": ["historical", "uncertain_as_positive", "uncertain_as_negative", "blank_as_negative"]
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "approval_status": "APPROVED_P4_20261023",
+  "gpu_execution_authorized_by_this_file": true,
+  "run_id": "P4_projection_pilot_20261023",
+  "planner": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium"
+  },
+  "worker": {
+    "model": "gpt-6-sol",
+    "reasoning_effort": "medium",
+    "max_active_workers": 1,
+    "nested_delegation": false
+  },
+  "model": {
+    "id": "Salesforce/blip2-opt-2.7b",
+    "revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+    "checkpoint_dir": "research/blip2_cxr_v4/.cache/models/blip2-opt-2.7b_59a1ef6",
+    "local_files_only": true,
+    "trainable_parameters": [
+      "language_projection.layer.weight",
+      "language_projection.layer.bias"
+    ],
+    "trainable_parameter_count": 1968640,
+    "projection_input_dim": 768,
+    "projection_output_dim": 2560,
+    "initialization": "original_pretrained_language_projection; fresh optimizer; discard P4.1 adapter for P4.2",
+    "frozen_parameters": "all remaining named parameters, including query_tokens, vision_model, qformer and language_model",
+    "frozen_dtype": "float16",
+    "trainable_dtype": "float32",
+    "frozen_module_mode": "eval",
+    "projection_mode": "train",
+    "retain_autograd_through_frozen_opt": true
+  },
+  "tokenizer": {
+    "class": "GPT2Tokenizer",
+    "use_fast": false,
+    "source": "same local checkpoint",
+    "padding_side": "right",
+    "truncation_side": "right",
+    "bos_token_id": 2,
+    "eos_token_id": 2,
+    "pad_token_id": 1,
+    "text_tokens_exclude_visual_prefix": true
+  },
+  "image_preprocessing": {
+    "source": "checkpoint BlipImageProcessor without augmentation",
+    "convert_rgb": true,
+    "resize_height": 224,
+    "resize_width": 224,
+    "resample": 3,
+    "rescale_factor": 0.00392156862745098,
+    "image_mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+    ],
+    "image_std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+    ]
+  },
+  "training_text": {
+    "prompt": "Question: What abnormalities are visible in this chest x-ray? Answer:",
+    "separator_before_target": " ",
+    "target": "nonempty FINDINGS followed by nonempty IMPRESSION, joined with newline; reuse existing section parser",
+    "tokenization": "one explicit BOS, separately tokenized prompt+separator and target with add_special_tokens=false, one terminal EOS",
+    "loss_mask": "-100 for BOS, prompt, separator and padding; supervise report target and terminal EOS only",
+    "max_target_tokens_including_eos": 128,
+    "max_text_sequence_tokens": 256,
+    "visual_prefix_tokens": 32,
+    "truncation": "right-truncate target to leave room for terminal EOS; never truncate prompt; log affected studies"
+  },
+  "optimization": {
+    "optimizer": "torch.optim.AdamW",
+    "learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "amsgrad": false,
+    "scheduler": "constant_no_scheduler",
+    "warmup_steps": 0,
+    "microbatch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "gradient_clipping": null,
+    "loss_scaling": "none; preserve existing FP16 backbone/FP32 projection path",
+    "seed": 42,
+    "training_shuffle": "single seeded permutation of frozen train manifest; save order and RNG state",
+    "checkpoint_every_optimizer_updates": 50
+  },
+  "cohorts": {
+    "manifest_index": "research/blip2_cxr_v4/runs/P4_projection_pilot_20261023/manifests_proposed/manifest_index.proposed.json",
+    "approval_status": "APPROVED_P4_20261023",
+    "selection": "first eligible unique studies in existing source order, not random sampling",
+    "mimic_view_policy": "first locally available AP/PA image per study in official split file order; do not prefer PA over AP",
+    "mimic_train_studies": 2000,
+    "mimic_validation_studies": 500,
+    "indiana_x00_studies": 500,
+    "indiana_policy": "first eligible unique frontal X00 studies in existing cohort order with matching successful saved prediction and reference",
+    "selection_bias_disclosure": "source-order convenience pilot; no claim of random representativeness",
+    "locked_mimic_test": true
+  },
+  "generation": {
+    "prompt": "Question: What abnormalities are visible in this chest x-ray? Answer:",
+    "max_new_tokens": 128,
+    "batch_size": 1,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_cache": true,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "bos_token_id": 2,
+    "eos_token_id": 2,
+    "pad_token_id": 1,
+    "decode": "continuation only; skip_special_tokens=true; clean_up_tokenization_spaces=false",
+    "historical_protocol_change_requiring_approval": "override checkpoint generation eos_token_id=50118 (newline) with tokenizer EOS=2, identically for M0 and M1",
+    "validity_gate": "10 unique frozen studies: first five MIMIC validation and first five Indiana; both models, 20 generations counted in budget"
+  },
+  "evaluation": {
+    "primary_lexical_metric": "corpus BLEU-4 per dataset, paired M1-minus-M0; no pooling across datasets",
+    "text_tokenizer": "lowercase_ascii_alnum_regex_v1",
+    "bleu_smoothing": "none; reuse existing corpus_scores",
+    "clinical_ontology": [
+      "Cardiomegaly",
+      "Consolidation",
+      "Edema",
+      "Lung Opacity",
+      "Pleural Effusion",
+      "Pneumonia",
+      "Pneumothorax"
+    ],
+    "primary_clinical_policy": "historical: exclude blank and uncertain labels, jointly definite reference/generated pairs",
+    "clinical_sensitivity_policies": [
+      "uncertain_as_positive",
+      "uncertain_as_negative",
+      "blank_as_negative"
+    ],
+    "coverage": "per-model/class paired counts, positive support and undefined classes; report differing label masks",
+    "undefined_f1": "null with reason, never coerced to zero",
+    "chexpert_labeler_revision": "44ddeb363149aa657296237f18b5472a73c1756f",
+    "negbio_revision": "073199e2792824740e89844a59c13d3d40ce4d23",
+    "bootstrap_reps": 1000,
+    "bootstrap_seed": 42,
+    "confidence_interval": "paired percentile 95%",
+    "bootstrap_cluster": {
+      "mimic": "subject_id",
+      "indiana": "study_id; patient ID unavailable in X00"
+    },
+    "multiplicity": "secondary metrics and CXR-LLaVA comparisons exploratory, unadjusted intervals, no confirmatory significance claims"
+  },
+  "budgets": {
+    "physical_gpus": 1,
+    "gpu_type": "Tesla K80",
+    "p4_1_wall_seconds_cumulative": 900,
+    "p4_1_optimizer_updates": 20,
+    "p4_1_peak_gib_limit": 10.0,
+    "p4_2_wall_seconds_cumulative": 14400,
+    "p4_2_epochs": 1,
+    "p4_3_wall_seconds_cumulative": 7200,
+    "p4_3_max_new_generations": 2000,
+    "counts_loading_io_retries_resume": true,
+    "gpu_launched": false
+  },
+  "blocking_decisions": [],
+  "authorization_record": {
+    "source": "user approval in active P4 session, 2026-10-23",
+    "scope": "P4.0 and P4.1; P4.2 conditional on verified P4.1 PASS; P4.3 conditional on verified P4.2 PASS",
+    "external_review_claimed": false
+  }
+}

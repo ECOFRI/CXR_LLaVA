@@ -1,0 +1,128 @@
+{
+  "status": "COMPLETE",
+  "method": "deterministic reservoir sample of unique studies, 5 per subject prefix; exists checks only",
+  "metadata": {
+    "path": "/storage/shared/MIMIC-CXR-JPG/physionet.org/files/mimic-cxr-jpg/2.1.0/mimic-cxr-2.0.0-metadata.csv.gz",
+    "rows": 377110,
+    "columns": [
+      "dicom_id",
+      "subject_id",
+      "study_id",
+      "PerformedProcedureStepDescription",
+      "ViewPosition",
+      "Rows",
+      "Columns",
+      "StudyDate",
+      "StudyTime",
+      "ProcedureCodeSequence_CodeMeaning",
+      "ViewCodeSequence_CodeMeaning",
+      "PatientOrientationCodeSequence_CodeMeaning"
+    ],
+    "unique_subjects": 65379,
+    "unique_studies": 227835
+  },
+  "split": {
+    "path": "/storage/shared/MIMIC-CXR-JPG/physionet.org/files/mimic-cxr-jpg/2.1.0/mimic-cxr-2.0.0-split.csv.gz",
+    "columns": [
+      "dicom_id",
+      "study_id",
+      "subject_id",
+      "split"
+    ],
+    "counts": {
+      "train": 368960,
+      "validate": 2991,
+      "test": 5159
+    }
+  },
+  "labels": {
+    "mimic-cxr-2.0.0-chexpert.csv.gz": {
+      "rows": 227827,
+      "columns": [
+        "subject_id",
+        "study_id",
+        "Atelectasis",
+        "Cardiomegaly",
+        "Consolidation",
+        "Edema",
+        "Enlarged Cardiomediastinum",
+        "Fracture",
+        "Lung Lesion",
+        "Lung Opacity",
+        "No Finding",
+        "Pleural Effusion",
+        "Pleural Other",
+        "Pneumonia",
+        "Pneumothorax",
+        "Support Devices"
+      ]
+    },
+    "mimic-cxr-2.0.0-negbio.csv.gz": {
+      "rows": 227827,
+      "columns": [
+        "subject_id",
+        "study_id",
+        "Atelectasis",
+        "Cardiomegaly",
+        "Consolidation",
+        "Edema",
+        "Enlarged Cardiomediastinum",
+        "Fracture",
+        "Lung Lesion",
+        "Lung Opacity",
+        "No Finding",
+        "Pleural Effusion",
+        "Pleural Other",
+        "Pneumonia",
+        "Pneumothorax",
+        "Support Devices"
+      ]
+    },
+    "mimic-cxr-2.1.0-test-set-labeled.csv": {
+      "rows": 687,
+      "columns": [
+        "study_id",
+        "No Finding",
+        "Enlarged Cardiomediastinum",
+        "Cardiomegaly",
+        "Lung Lesion",
+        "Airspace Opacity",
+        "Edema",
+        "Consolidation",
+        "Pneumonia",
+        "Atelectasis",
+        "Pneumothorax",
+        "Pleural Effusion",
+        "Pleural Other",
+        "Fracture",
+        "Support Devices"
+      ]
+    }
+  },
+  "repo_testset": {
+    "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/MIMIC_CXR_DATASET_TESTSET.csv",
+    "unique_dicom_stems": 3000,
+    "split_overlap": {
+      "train": 2943,
+      "validate": 23,
+      "test": 34
+    },
+    "unmatched": 0
+  },
+  "sample": {
+    "n": 50,
+    "report_found": 50,
+    "jpg_found": 7,
+    "report_coverage_unweighted": 1.0,
+    "report_coverage_prefix_weighted": 1.0,
+    "section_counts": {
+      "findings": 35,
+      "impression": 39,
+      "both": 28,
+      "no_findings": 15,
+      "no_impression": 11
+    }
+  },
+  "report_version": "UNKNOWN; credentialed license file observed",
+  "jpg_version": "README says 2.0.0; directory 2.1.0; metadata filenames 2.0.0"
+}

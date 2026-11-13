@@ -2,7 +2,7 @@
 
 ## Scope and project boundary
 
-This file applies only to `E:/Downloads/USTH_ICTLab/CXR_LLaVA_Improvement`.
+This file applies only to `/storage/student4/hanhpm/CXR_LLaVA_Improvement`.
 
 The separate `E:/Downloads/USTH_ICTLab/patchcore-inspection-experiment` project is out of scope. Do not route CXR-LLaVA tasks through its instructions, experiment plans, roadmaps, runbooks, datasets, or commands.
 
@@ -10,7 +10,7 @@ At the start of work in this repository, read:
 
 1. `CXR_LLaVA_Improvement/AGENTS.md`
 2. `CXR_LLaVA_Improvement/CRITERIA.md`
-3. `CXR_LLaVA_Improvement/README.md` when model behavior or limitations are relevant
+3. `CXR_LLaVA_Improvement/docs/MODEL_CARD.md` when model behavior or limitations are relevant
 
 The repository-local `AGENTS.md` and this file are authoritative for CXR-LLaVA work. Do not infer requirements from the PatchCore project.
 

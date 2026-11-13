@@ -1,0 +1,31 @@
+{
+  "status": "PARTIAL",
+  "checkpoint": "research/blip2_cxr_v4/.cache/models/blip2-opt-2.7b_59a1ef6",
+  "model_id": "Salesforce/blip2-opt-2.7b",
+  "revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+  "sha256_verified": {
+    "model-00001-of-00002.safetensors": "b81228c9ac1b3dee1731ee71d51fe3b2c34f915019c44c25a793b51300ae24fc",
+    "model-00002-of-00002.safetensors": "536bd73b8f1de7d94f503b23fea2eaa4f7f3ea5f74f8f874fcb21d6df1555a19"
+  },
+  "config_processor_only": true,
+  "processor": "Blip2Processor",
+  "tokenizer": "GPT2Tokenizer (use_fast=false)",
+  "fast_tokenizer_status": "FAIL: tokenizer.json incompatible with installed tokenizers parser; slow tokenizer works",
+  "torch": "1.12.1+cu102",
+  "transformers": "4.36.2",
+  "vision_hidden": 1408,
+  "vision_layers": 39,
+  "qformer_hidden": 768,
+  "qformer_layers": 12,
+  "language_hidden": 2560,
+  "language_layers": 32,
+  "num_query_tokens": 32,
+  "config_torch_dtype": "float32",
+  "tensor_count": 1247,
+  "parameter_count_from_safetensors_headers": 3744761856,
+  "stored_parameter_dtype": "F32",
+  "index_total_bytes": 14979047424,
+  "model_instantiated": false,
+  "gpu_used": false,
+  "runtime_fit": "UNKNOWN"
+}

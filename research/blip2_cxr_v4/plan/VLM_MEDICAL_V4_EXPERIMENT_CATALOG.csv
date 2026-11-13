@@ -1,0 +1,13 @@
+experiment_id,paper,architecture,task,training_required,datasets,metrics,execution_tier,default_status,paper_url,code_url
+X00,CXR-LLaVA existing,ViT linear LLaMA2,report generation,no,Indiana,"BLEU1-4;ROUGE-L;METEOR;clinical F1",A,PLANNED,https://github.com/ECOFRI/CXR_LLAVA,https://github.com/ECOFRI/CXR_LLAVA
+X01,CXR-LLaVA,ViT linear LLaMA2,report generation,no,"Indiana;MIMIC","BLEU1-4;clinical F1;latency",B,PLANNED,https://github.com/ECOFRI/CXR_LLAVA,https://github.com/ECOFRI/CXR_LLAVA
+X02,BLIP-2,ViT Q-Former frozen LLM,report generation,no,"Indiana;MIMIC","BLEU1-4;clinical F1",B,PLANNED,https://arxiv.org/abs/2301.12597,https://github.com/salesforce/LAVIS/tree/main/projects/blip2
+X03,ClinicalBLIP,InstructBLIP Q-Former LoRA,report generation,yes,"Indiana;MIMIC","BLEU1-4;clinical F1;ROUGE-L",C,SCRIPT_READY_NOT_RUN,https://doi.org/10.2196/32690,UNVERIFIED
+X04,R2-LLM,MiniGPT4 Q-Former Coarse-to-Fine,report generation,yes,"Indiana;MIMIC","BLEU1-4;clinical F1;ROUGE-L",C,SCRIPT_READY_NOT_RUN,https://ojs.aaai.org/index.php/AAAI/article/view/29826,https://github.com/synlp/R2-LLM
+X05,META-CXR,Multi-Encoder META-Former MHCAC,report generation and classification,yes,"Indiana;MIMIC;VinDr","BLEU1-4;clinical F1;AUROC when continuous scores",C,SCRIPT_READY_NOT_RUN,https://doi.org/10.1109/ACCESS.2025.3606961,https://github.com/DasithEdirisinghe/META-CXR
+X06,RRG-LLM,MiniGPT4 frozen Q-Former projector LoRA,report generation,yes,"Indiana;MIMIC","BLEU1-4;clinical F1;ROUGE-L",C,SCRIPT_READY_NOT_RUN,https://doi.org/10.3233/SHTI250976,UNVERIFIED
+X07,Swin-Qwen3,Swin Q-Former-style Qwen3 LoRA,report generation,yes,Indiana,"BLEU1-4;clinical F1;latency;hallucinations",C,SCRIPT_READY_NOT_RUN,https://doi.org/10.3389/fradi.2026.1875905,UNVERIFIED
+X08,CLEAR Q-Former proposal,Frozen CLEAR QFormer LLM,report generation,yes,"Indiana;MIMIC","BLEU1-4;clinical F1",C,SCRIPT_READY_NOT_RUN,https://doi.org/10.1038/s41551-026-01741-4,https://github.com/peterhan91/CLEAR
+X09,CXR Q-Former proposal,Frozen CXR ViT QFormer LLM,report generation,yes,"Indiana;MIMIC","BLEU1-4;clinical F1",C,SCRIPT_READY_NOT_RUN,https://github.com/ECOFRI/CXR_LLAVA,https://github.com/ECOFRI/CXR_LLAVA
+X10,CLEAR evidence prompts,C0 C1 C2a C3,report generation,no,Indiana,"BLEU1-4;clinical F1;blind review",A,PLANNED,https://doi.org/10.1038/s41551-026-01741-4,https://github.com/peterhan91/CLEAR
+X11,Pathology benchmarking,CLEAR CXR META frozen features,classification,conditional,"VinDr;CheXpert;NIH","AUROC;AUPRC;F1",A_B_C,PLANNED,https://doi.org/10.1038/s41551-026-01741-4,https://github.com/peterhan91/CLEAR

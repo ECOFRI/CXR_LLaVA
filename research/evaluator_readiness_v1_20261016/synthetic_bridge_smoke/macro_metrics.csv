@@ -1,0 +1,5 @@
+arm_id,macro_precision,defined_precision_findings,macro_recall,defined_recall_findings,macro_f1,defined_f1_findings,macro_coverage,defined_coverage_findings,total_image_finding_pairs,joint_definite_pairs,missing_or_uncertain_pairs
+C0,0.0,1,0.0,1,0.0,1,0.96,5,100,96,4
+C1,0.5,1,1.0,1,0.6666666666666666,1,0.97,5,100,97,3
+C2a,1.0,1,1.0,1,1.0,1,0.9800000000000001,5,100,98,2
+C3,0.0,1,0.0,1,0.0,1,0.97,5,100,97,3

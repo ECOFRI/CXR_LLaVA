@@ -1,0 +1,8 @@
+{
+  "jpg_root": "/storage/shared/MIMIC-CXR-JPG/physionet.org/files/mimic-cxr-jpg/2.1.0",
+  "jpg_alt_files": "/storage/shared/MIMIC-CXR-JPG/split-4/files",
+  "report_files": "/storage/shared/MIMIC-CXR-Report/download-mimic-cxr-txt/files",
+  "repo_testset": "MIMIC_CXR_DATASET_TESTSET.csv",
+  "sample_per_prefix": 5,
+  "seed": 42
+}

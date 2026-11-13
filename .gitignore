@@ -17,3 +17,18 @@ __pycache__/
 .env
 .env.*
 *.log
+
+# Local research evidence, images, feature caches and upstream checkouts.
+/research/inventory/
+/research/runs/
+/research/cache/
+/research/figures/
+/research/reviews/
+/research/tables/
+/research/upstream/
+/research/envs/
+/research/conda_pkgs/
+/research/environment_setup/
+
+# Third-party upstream checkouts (nested git repos, checkpoints).
+/research/blip2_cxr_v4/third_party/

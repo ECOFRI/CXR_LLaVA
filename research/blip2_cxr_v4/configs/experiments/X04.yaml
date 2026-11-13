@@ -1,0 +1,8 @@
+{
+  "experiment_id": "X04",
+  "status": "BLOCKED",
+  "classification": "SKELETON_ONLY",
+  "reason": "R2 official weights NOT_PUBLICLY_RELEASED; REIMPLEMENTED X06 arms are distinct",
+  "train_entrypoint": null,
+  "inference_entrypoint": null
+}

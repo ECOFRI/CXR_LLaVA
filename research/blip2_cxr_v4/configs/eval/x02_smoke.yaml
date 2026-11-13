@@ -1,0 +1,10 @@
+{
+  "source_type": "x02_smoke",
+  "experiment_config": "research/blip2_cxr_v4/configs/experiments/X02_smoke.yaml",
+  "gt_labels": "result/indiana_full_k80_20261004_inventory02/nlm_review_01/gt_labeling/raw_labels.csv",
+  "historical_labeler_summary": "result/indiana_full_k80_20261004_031940_1252388/metrics/summary.json",
+  "tokenizer": "lowercase_ascii_alnum_regex_v1",
+  "clinical_policy": "historical",
+  "seed": 42,
+  "bootstrap_reps": 1000
+}

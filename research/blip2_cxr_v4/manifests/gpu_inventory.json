@@ -1,0 +1,66 @@
+[
+  {
+    "index": 0,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 1,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 2,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 3,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 4,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 5,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 6,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  },
+  {
+    "index": 7,
+    "name": "Tesla K80",
+    "memory_total_mib": 11441,
+    "memory_used_mib": 0,
+    "driver": "440.33.01",
+    "compute_capability": "3.7 (K80 architecture; nvidia-smi query unsupported)"
+  }
+]

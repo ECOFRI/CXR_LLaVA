@@ -1,86 +1,47 @@
-# AGENTS.md
+# AGENTS.md — CXR-LLaVA
 
-Behavioral guidelines for Codex when working in the CXR-LLaVA repository.
+Dự án nghiên cứu sinh báo cáo X-quang ngực bằng CXR-LLaVA, khảo sát CLEAR và BLIP-2.
+Repo server: `/storage/student4/hanhpm/CXR_LLaVA_Improvement`.
+Chưa chứng minh lợi ích lâm sàng; không trộn dự án khác.
 
-## Repository scope
+## Thứ tự đọc
+1. File này → [trạng thái hiện tại](docs/STATUS.md).
+2. [Quyết định và bẫy bền vững](docs/memory/DECISIONS.md).
+3. Chỉ mở sâu theo [bản đồ](docs/MAP.md) khi task cần; đọc [CRITERIA.md](CRITERIA.md) trước sửa code, dữ liệu hoặc thí nghiệm.
 
-These instructions apply only to:
+## Quy tắc cứng
+- [CRITERIA.md](CRITERIA.md) là tiêu chí an toàn/khoa học và coding authoritative; không chép lặp tại đây.
+- Chỉ dùng cho nghiên cứu: output model không phải chẩn đoán hay lời khuyên y khoa; smoke test không chứng minh accuracy.
+- Chỉ dùng dữ liệu được phép; không đưa patient IDs, ảnh/report riêng tư, credentials/token vào Git hoặc dịch vụ ngoài khi chưa được phép.
+- Giữ cấu trúc/interface; tái dùng `main.py`, `CXR_LLAVA_HF/`, requirements, ảnh mẫu và metadata; diff nhỏ, không sửa việc ngoài scope.
+- Nêu giả định ảnh hưởng model/data/path/evaluation; việc không nhỏ cần kế hoạch ngắn trước khi sửa.
+- Không chạy training, full inference, tải dữ liệu/weights hay cài env từ việc đọc plan. Cần scope, input/output, cấu hình và ngân sách được giao rõ.
+- Không sửa raw run, checkpoint, protocol/ngưỡng đã khóa để làm đẹp kết quả; không tune trên locked test hay dùng GT làm prompt evidence đánh giá.
+- Báo cáo thí nghiệm dùng [template](experiment_analysis_template.md), tạo file mới trong `reports/`, giữ raw output/env/giới hạn và phân loại smoke / metric-complete / exploratory; không tự ghi đè.
+- Giữ thay đổi chưa commit của người dùng; không tự commit/push.
 
-`E:/Downloads/USTH_ICTLab/CXR_LLaVA_Improvement`
+## Môi trường thực thi
+- Server dùng K80/CUDA cũ; CXR-LLaVA FP32 trong env `cxr-llava-k80`, CLEAR CPU trong env riêng. BLIP-2 có dtype riêng đã khóa, không áp FP32 toàn model.
+- Xem phiên bản/env và evidence trong [MAP](docs/MAP.md) và [DECISIONS](docs/memory/DECISIONS.md); không tự nâng package hay dùng stack Colab mới cho K80.
+- `/storage` đang báo 100%; chỉ tạo văn bản nhỏ trong task tài liệu, kiểm dung lượng/quota trước output lớn. Cache/output nghiên cứu ở `/storage`, tránh `/home` từng đầy.
+- Nếu task Colab: tuân thủ mục Colab của CRITERIA, cấu hình clone ở một cell, `/content` configurable, ảnh mẫu trước batch opt-in.
 
-At the start of each new session in this repository, read this file and `CRITERIA.md` in the same directory. Read `README.md` when model usage, limitations, or intended use is relevant.
+## Cập nhật memory sau task
+- Có kết quả: thêm mục 1–3 dòng vào đầu [LOG](docs/memory/LOG.md), giữ nguyên mục cũ (append-only về nội dung, mới nhất ở trên).
+- Có sự thật/bẫy bền vững: thêm hoặc sửa [DECISIONS](docs/memory/DECISIONS.md), kèm ngày và đường dẫn bằng chứng; sửa mục cũ thay vì thêm trùng, xóa mục đã sai.
+- Trạng thái dự án đổi: thay thế nội dung liên quan trong [STATUS](docs/STATUS.md), không append các snapshot cũ.
 
-Do not apply these instructions to `E:/Downloads/USTH_ICTLab/patchcore-inspection-experiment`, and do not import PatchCore experiment plans, roadmaps, runbooks, dataset assumptions, or commands into this project. The PatchCore repository has its own instructions.
+## Tiết kiệm token
+- Không đọc toàn bộ file >20 KB; dùng `rg`, `head`, `sed -n` (nhất là execution log và CSV).
+- Không liệt kê đệ quy `research/runs`, `result/`, `model_cache/`, `data/`, `research/cache`, `research/envs`, `research/upstream`, `third_party/`, `conda_pkgs/` ở bất kỳ cấp nào.
+- Dùng `python3 -m research.project status` thay mở từng manifest; đây là catalog, không thay thế quyết định khoa học và có thể không bao phủ V4.
 
-## Project context
-
-CXR-LLaVA is a research-only multimodal model for chest X-ray image interpretation. Prioritize reproducible inference, Google Colab/T4 testing, reuse of the existing repository code, and clearly labeled smoke-test results. Never present generated reports as verified clinical findings or medical advice.
-
-The project-local `CRITERIA.md` is authoritative for model assumptions, Colab requirements, data safety, validation, coding rules, and command rules.
-
-## Think before coding
-
-- State assumptions when they affect model behavior, data, paths, or evaluation.
-- For non-trivial changes, provide a short plan before implementation.
-- Prefer the smallest change that satisfies the request.
-- Ask only when the requirement or data assumptions are genuinely unclear.
-
-## Repository discipline
-
-- Preserve the existing structure and public interfaces unless the task requires a change.
-- Reuse `main.py`, `CXR_LLAVA_HF/`, `requirements.txt`, sample images, and existing metadata before duplicating logic.
-- Keep personal Git URLs in a clearly marked configuration value; never commit tokens or credentials.
-- Do not commit private patient data or identifying information.
-- Do not add PatchCore-specific files, paths, metrics, or experiment artifacts.
-- Keep diffs small and do not modify unrelated files.
-
-## Colab and T4 work
-
-- Put repository clone configuration in one explicit notebook cell.
-- Make paths configurable for `/content/` and avoid machine-specific absolute paths.
-- Detect the active device and use CUDA when available; use CPU only for lightweight smoke tests.
-- Run a small sample-image check before optional batch processing.
-- Do not launch full-dataset inference or other long jobs without an explicit scope and output location.
-- Reuse repository modules instead of copying model implementation into notebooks.
-
-## Validation and reporting
-
-### Experiment report workflow
-
-When the user requests an experiment report for this CXR-LLaVA project, use
-`experiment_analysis_template.md` as the required structure and use the
-executed notebook/script outputs as evidence. Create the report under the
-project-local `reports/` directory before writing it:
-
-```python
-from pathlib import Path
-
-output_path = Path("reports") / "<descriptive-report-name>.md"
-output_path.parent.mkdir(parents=True, exist_ok=True)
+## Kiểm tra nhẹ từ root
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m research.project status
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_project.py -v
+git status --short
 ```
-
-The same workflow applies to any future CXR-LLaVA report request in this
-repository: keep reports in `reports/`, set `output_path` inside that folder,
-and preserve raw output, environment details, limitations, and the report's
-classification as smoke test, metric-complete evaluation, or benchmark claim.
-Do not overwrite an existing report unless explicitly requested; choose a new
-descriptive filename when needed.
-
-Before claiming completion:
-
-1. Check the relevant files and expected behavior.
-2. Validate syntax/imports when practical without starting an expensive model run.
-3. Run the smallest relevant smoke test when requested.
-4. State which checks were run and whether the result is a smoke test, metric-complete evaluation, or benchmark claim.
-
-When debugging, inspect dataset handling, model loading, image preprocessing, prompt construction, device placement, output decoding, and error messages in that order.
-
-## Coding style
-
-- Keep imports at the top of Python files unless a narrow technical reason requires otherwise.
-- Avoid broad `try/except` blocks and unused code.
-- Keep comments short and useful.
-- Do not add unnecessary dependencies, output, or abstractions.
-- Preserve existing comments unless removal is required.
+Chọn thêm syntax/import/tests theo thay đổi, không load model đắt tiền; báo đúng kiểm tra đã chạy và phân loại kết quả.
 
 Always begin assistant responses with `okw`.

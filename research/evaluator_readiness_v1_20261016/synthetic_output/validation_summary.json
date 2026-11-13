@@ -1,0 +1,25 @@
+{
+  "mode": "synthetic",
+  "status": "PASS_SYNTHETIC_GRID",
+  "images": 20,
+  "arms": [
+    "C0",
+    "C1",
+    "C2a",
+    "C3"
+  ],
+  "findings": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05"
+  ],
+  "reports": 80,
+  "reference_labels": 100,
+  "prediction_labels": 400,
+  "joint_definite_policy": "score only pairs where reference and prediction are definite",
+  "missing_policy": "blank and uncertain remain non-definite, never coerced to negative",
+  "unsupported_finding_policy": "FP indicates disagreement with report-derived reference, not clinical hallucination",
+  "validation_note": "Not a clinical validation or original labeler runtime validation"
+}

@@ -1,0 +1,8 @@
+{
+  "experiment_id": "X03",
+  "status": "BLOCKED",
+  "classification": "SKELETON_ONLY",
+  "reason": "ClinicalBLIP official code and weights unverified",
+  "train_entrypoint": null,
+  "inference_entrypoint": null
+}

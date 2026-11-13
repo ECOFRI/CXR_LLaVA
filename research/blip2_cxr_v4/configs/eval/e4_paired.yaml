@@ -1,0 +1,11 @@
+{
+  "reports": "research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_reports.jsonl",
+  "cohort": "research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_cohort.csv",
+  "labels": "research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_labels.csv",
+  "reference_source": "data/indiana_all_candidates_seed42.csv",
+  "baseline_arm": "C0",
+  "tokenizer": "lowercase_ascii_alnum_regex_v1",
+  "seed": 42,
+  "bootstrap_reps": 1000,
+  "policies": ["historical", "uncertain_as_positive", "uncertain_as_negative", "blank_as_negative"]
+}

@@ -35,7 +35,7 @@ Audit nhẹ chỉ bổ sung `python -m pip install rouge-score==0.1.2`. Không c
 - Notebook 02: resume tính completed IDs sau dedup; label input lấy canonical success không rỗng; evaluator dùng module chung, lưu run v2 mới, không cần model hoặc rerun labeler. Cleanup không ghi đè raw nữa.
 - `scripts/exp02_provenance.py`: pin model/code/tokenizer/generation-config; capture chat thực từ `write_radiologic_report` trước generation, lưu rendered prompt/token IDs/source hashes. Capture luôn khôi phục method gốc bằng context manager.
 - Notebook 03: bỏ loader trùng, dùng lại compatibility patch `LlamaTokenizer` của 00/01 thay patch `AutoTokenizer`; provenance flag mặc định False, legacy fallback 00/01; chặn gate inference đến khi cohort đã qua quota và GT/view review. Không đánh inference-only thành gate đầy đủ.
-- Thêm `exp02_stratify.py`, `exp02_cnn_control.py`, tests và [protocol cohort/đối chứng](../plan/CXR_LLaVA_Stratified_Control_Protocol.md). Generator notebook cũ từ chối ghi đè notebook đã sửa tay.
+- Thêm `exp02_stratify.py`, `exp02_cnn_control.py`, tests và protocol cohort/đối chứng lịch sử (file plan đã xóa ngày 18/10/2026). Generator notebook cũ từ chối ghi đè notebook đã sửa tay.
 
 ## 7. Experiment Configuration
 
@@ -56,10 +56,10 @@ Thay `NEW_UNIQUE_RUN_ID` bằng UTC+UUID chưa tồn tại; script từ chối g
 
 | Mốc có bằng chứng | Nội dung | Trạng thái hiện tại |
 |---|---|---|
-| [16/09 — baseline đa dataset](2026-09-16_baseline_multidataset_report.md) | padChest 24 reports; CSV ROUGE-L 0,0156677119; CXR8/Brixia là task khác | Giữ kết quả CSV; không gộp thành metric Indiana |
-| [17/09 — EXP-02](2026-09-17_exp02_indiana_external_eval.md) | Ghi tiến độ 10-image/labeler và các gate còn mở | **SUPERSEDED** về trạng thái; bảo toàn nội dung lịch sử |
+| 16/09 — baseline đa dataset (báo cáo nháp đã xóa) | padChest 24 reports; CSV ROUGE-L 0,0156677119; CXR8/Brixia là task khác | Giữ kết quả CSV; không gộp thành metric Indiana |
+| 17/09 — EXP-02 (báo cáo tiến độ đã xóa) | Ghi tiến độ 10-image/labeler và các gate còn mở | **SUPERSEDED** về trạng thái; bảo toàn nội dung lịch sử |
 | 18/09 10:31:02 UTC | Environment log chung của artifacts Indiana | Chỉ chứng minh timestamp log; không dựng thêm thời gian inference |
-| [21/09 — phân tích 10/50/100](2026-09-21_exp02_indiana_10_50_100_output_analysis.md) | 10/10, 50/50, 98/100; lỗi dedup/F1/bootstrap; review còn trống | Giữ làm phân tích trước sửa evaluator |
+| 21/09 — phân tích 10/50/100 (báo cáo trung gian đã xóa) | 10/10, 50/50, 98/100; lỗi dedup/F1/bootstrap; review còn trống | Giữ làm phân tích trước sửa evaluator |
 | 21/09 — v2 `20260921T031045Z_a2ca54af` đã có khi bắt đầu | Evaluator và review queue sơ bộ | Không coi queue là review hoàn tất |
 | 21/09 — audit hiện tại `20260921T081624Z_560fa793` | Tái tính offline, truy ROUGE, render prompt static, review 45 ảnh, kiểm tra quota | Nguồn trạng thái mới; các phần chưa chạy được nêu riêng |
 
@@ -141,7 +141,7 @@ CSV ROUGE-L0,0156677 đã được tái lập; 0,020943 thuộc saved notebook s
 
 ## 16. Next Experiment
 
-Theo [protocol mới](../plan/CXR_LLaVA_Stratified_Control_Protocol.md): actual prompt audit trên Colab, label/review candidate GT và view, freeze cohort target25 dương/25 âm mỗi bệnh, gate10, rồi CXR-LLaVA và CNN cùng cohort/hash. So sánh trên common mask và báo abstention riêng; không âm thầm map blank thành negative.
+Theo protocol đề xuất tại thời điểm báo cáo (file plan đã xóa ngày 18/10/2026): actual prompt audit trên Colab, label/review candidate GT và view, freeze cohort target25 dương/25 âm mỗi bệnh, gate10, rồi CXR-LLaVA và CNN cùng cohort/hash. So sánh trên common mask và báo abstention riêng; không âm thầm map blank thành negative.
 
 Notebook03: chạy config/path/preflight; bật `RUN_MODEL_PROVENANCE` để load đúng một lần và lưu actual report prompt. Giữ retry/gate flags False đến khi điều kiện tương ứng thỏa. Không chạy lại cell cài dependency ở mỗi vòng sau restart; bỏ qua khi stack đã được kiểm tra.
 

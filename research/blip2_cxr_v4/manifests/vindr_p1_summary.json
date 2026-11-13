@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "local_version": "UNKNOWN",
+  "license": "PhysioNet Credentialed Health Data License 1.5.0",
+  "train_reader_rows": 45000,
+  "train_images": 15000,
+  "train_readers_observed": 17,
+  "train_reader_rows_per_image": {
+    "3": 15000
+  },
+  "test_images": 3000,
+  "test_rows": 3000,
+  "train_test_image_overlap": 0,
+  "image_label_classes": 28,
+  "train_annotations": 69052,
+  "test_annotations": 4748,
+  "annotation_columns": [
+    "image_id",
+    "rad_id",
+    "class_name",
+    "x_min",
+    "y_min",
+    "x_max",
+    "y_max"
+  ],
+  "report_available": "NOT_FOUND in targeted shallow audit",
+  "bleu": "N/A",
+  "score_availability": "NOT_FOUND",
+  "threshold_availability": "NOT_FOUND"
+}

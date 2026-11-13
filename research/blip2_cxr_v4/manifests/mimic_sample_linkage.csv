@@ -1,0 +1,11 @@
+prefix,population_studies,sample_studies,report_found,jpg_found,jpg_found_primary,jpg_found_alt,report_relative_template,jpg_relative_template
+p10,22197,5,5,5,5,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p11,23358,5,5,5,2,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p12,22428,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p13,22945,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p14,22589,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p15,23713,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p16,22151,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p17,22695,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p18,22929,5,5,3,0,3,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg
+p19,22830,5,5,5,0,5,pXX/p{subject_id}/s{study_id}.txt,files/pXX/p{subject_id}/s{study_id}/{dicom_id}.jpg

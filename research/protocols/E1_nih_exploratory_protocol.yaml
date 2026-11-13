@@ -1,0 +1,30 @@
+protocol: E1_NIH_EXPLORATORY_FULL_4999_v1
+frozen_before_feature_extraction_and_test_metrics: true
+limitation: NIH exploratory; potential CXR encoder pretraining overlap; not independent external test
+cohort: research/inventory/e1_nih/cohort_full.csv
+splits: {train: 3783, val: 344, test: 872}
+patient_counts: {train: 1222, val: 57, test: 56}
+representations: [native_cls, native_patch_mean]
+preprocessing: separate encoder-native preprocessing
+precision: FP32
+batch_size: 1
+cache: CLS and patchmean only; no patch sequence/projector
+resource: {cxr_gpu_hours_estimate: 0.85, cxr_job_gpu_hours_max: 2, clear_cpu_forward_minutes_estimate: 85, process_peak_RSS_GiB_max: 8, simultaneous_heavy_jobs: 1}
+primary_ontology: original NIH14 pathologies only; Effusion stays NIH Effusion, not clinically coerced CheXpert Pleural Effusion
+class_support_rule: original NIH14 AND train positive/negative >=20 AND val/test positive/negative >=5 AND val/test positive patients >=3
+excluded_by_rule: [Hernia]
+excluded_outside_primary_ontology: [Pneumoperitoneum, Pneumomediastinum, Subcutaneous Emphysema, Tortuous Aorta, Calcification of the Aorta, No Finding]
+probe: sklearn StandardScaler fit train only; logistic regression L2 liblinear; class_weight null; max_iter1000; random_state42
+C_grid: [0.001, 0.01, 0.1, 1.0]
+C_selection: highest validation average_precision; ties select smallest C
+threshold_grid: 0.01 to0.99 inclusive step0.01
+threshold_selection: highest validation F1; ties choose threshold closest0.5, then largest threshold
+objective: same independently binary matched probes; no encoder gradients
+primary_metric: per-class AUPRC (average precision)
+secondary_metrics: AUROC F1 precision recall at validation-chosen threshold
+test: once only after all model/threshold choices fixed; no model refit with val
+bootstrap: 1000 shared patient-cluster bootstrap resamples; seed20261013; percentile95CI; degenerate one-class resamples skipped for AUROC/AUPRC
+paired_differences: CLEAR minusCXR at identical patient bootstrap indices for each representation
+interpretation: no clinical validity; limited56testpatients and rarepositiveclusters; no significanceclaim from exploratory ranking
+metric_undefined_policy: precision NaN if TP+FP=0; recall NaN if TP+FN=0; F1 NaN only if2TP+FP+FN=0; valid zero preserved; CI skips NaNs and empty valid array yields NaN/count0
+convergence: capture all candidate fit warnings and iteration counts; no test-driven model changes
