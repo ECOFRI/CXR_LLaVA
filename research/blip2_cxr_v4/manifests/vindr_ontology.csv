@@ -1,0 +1,29 @@
+class,train_column,test_column,test_positive_images
+Aortic enlargement,Aortic enlargement,Aortic enlargement,220
+Atelectasis,Atelectasis,Atelectasis,86
+Calcification,Calcification,Calcification,194
+Cardiomegaly,Cardiomegaly,Cardiomegaly,309
+Clavicle fracture,Clavicle fracture,Clavicle fracture,2
+Consolidation,Consolidation,Consolidation,96
+Edema,Edema,Edema,0
+Emphysema,Emphysema,Emphysema,3
+Enlarged PA,Enlarged PA,Enlarged PA,8
+ILD,ILD,ILD,221
+Infiltration,Infiltration,Infiltration,58
+Lung Opacity,Lung Opacity,Lung Opacity,84
+Lung cavity,Lung cavity,Lung cavity,9
+Lung cyst,Lung cyst,Lung cyst,2
+Mediastinal shift,Mediastinal shift,Mediastinal shift,20
+Nodule/Mass,Nodule/Mass,Nodule/Mass,176
+Pleural effusion,Pleural effusion,Pleural effusion,111
+Pleural thickening,Pleural thickening,Pleural thickening,169
+Pneumothorax,Pneumothorax,Pneumothorax,18
+Pulmonary fibrosis,Pulmonary fibrosis,Pulmonary fibrosis,217
+Rib fracture,Rib fracture,Rib fracture,11
+Other lesion,Other lesion,Other lesion,94
+COPD,COPD,COPD,2
+Lung tumor,Lung tumor,Lung tumor,80
+Pneumonia,Pneumonia,Pneumonia,246
+Tuberculosis,Tuberculosis,Tuberculosis,164
+Other disease,Other diseases,Other disease,657
+No finding,No finding,No finding,2051

@@ -1,0 +1,591 @@
+{
+  "updated_at": "2026-10-15T01:40:22.377302+07:00",
+  "project_root": "/storage/student4/hanhpm/CXR_LLaVA_Improvement",
+  "master_plan": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/plan/CODEX_CXR_CLEAR_MASTER_PLAN_2026-10-13.md",
+  "inventory_complete": true,
+  "inventory_path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/inventory",
+  "repeat_full_inventory": false,
+  "milestones": {
+    "P0": "COMPLETE",
+    "E_AUDIT": "COMPLETE",
+    "E0A_CXR": "PASS_1_10_50",
+    "E0A_CLEAR": "CPU_PASS_10_50_PAIRED",
+    "E0A_overall": "TECHNICAL_PASS_50_CPU_CLEAR_K80_CXR",
+    "DATA_GATE": "E1_NIH_EXPLORATORY_GO",
+    "E0B": "PASS_1_10_TEXT_DIRECT",
+    "E1": "COMPLETE_EXPLORATORY_NATIVE_CLS_PATCHMEAN_MATCHED_PROBES",
+    "E2": "DIRECT_CONTRASTIVE_COMPLETE_518",
+    "NATIVE_PREPROCESSING": "COMPLETE_50_MANIFEST_12_CASES",
+    "SPATIAL_ALIGNMENT": "NOT_YET_VALIDATED",
+    "E2_FULL_CONCEPTS": "BLOCKED_CONCEPT_ASSETS_OR_RESOURCE",
+    "V3_G0": "INPUTS_PASS_RESOURCE_ESTIMATE_BLOCKED",
+    "E13": "COMPLETE_TRAIN_CKA_PATIENT_GROUPED_RIDGE",
+    "E5": "COMPLETE_HOLD_COMPLEX_FUSION",
+    "E5_RESOURCE_GATE": "E5_RESOURCE_GATE_ELIGIBLE"
+  },
+  "baseline": {
+    "CheXpert": {
+      "status": "VERIFIED_FROM_LOCAL_ARTIFACTS",
+      "summary_path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/chexpert_table3_k80_20261005_full01/inference/summary.json",
+      "summary_sha256": "258001b26ef62c9d8c9857c36b6b01eb98da057a8bd17f2dd0610882df35860c",
+      "metrics": {
+        "status": "VERIFIED_FROM_LOCAL_ARTIFACTS",
+        "n_images": 518,
+        "n_studies": 500,
+        "n_patient_clusters": 500,
+        "parsed": 6950,
+        "unparsed": 302,
+        "parser_disagreements": 0,
+        "gt_disagreements": 0,
+        "macro_f1_five": {
+          "joint_definite_parsed_only": 0.248720368303249,
+          "sensitivity_missing_as_negative": 0.24798730825984414
+        },
+        "statistical_note": "Patient-cluster bootstrap replaces historical independent-image CIs; point estimates remain image-weighted.",
+        "missing_policy_note": "Sensitivity is not the official baseline and not a parser fix.",
+        "taxonomy_note": "FP/FN are label disagreements; cannot uniquely attribute to encoder, generation or clinical recognition."
+      }
+    },
+    "Indiana": {
+      "status": "USER_REPORTED_NOT_RECOMPUTED_THIS_SESSION",
+      "note": "Protocol and missing-label policies differ; not comparable to CheXpert"
+    }
+  },
+  "runs": {
+    "E_AUDIT": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T191910_E_AUDIT",
+    "E0A_CXR": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T192139_E0A_CXR",
+    "E0A_CLEAR_PREFLIGHT": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T192422_E0A_CLEAR_PREFLIGHT",
+    "E0A_CLEAR_CPU": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T201154_E0A_CLEAR_CPU",
+    "E0A_CLEAR_CPU_10_50": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T203617_E0A_CLEAR_CPU_10_50",
+    "E2_direct_contrastive": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T214811_E2_direct_contrastive",
+    "E1_CXR": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261013T220300_E1_CXR",
+    "E1_CLEAR": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261014_E1_CLEAR_CPU",
+    "E1_probes": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261014_E1_NIH_probes",
+    "V3_G0": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T002235_V3_E13_E5/G0",
+    "E13_PREFLIGHT": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/E13_PREFLIGHT",
+    "E13": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/E13",
+    "E5_RESOURCE_PROFILE": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/E5_PROFILE",
+    "E5": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T010818_V3_E5_BASELINE/E5"
+  },
+  "blockers": [
+    "Account storage quota unverified; shared NFS free space is not account allocation",
+    "CLEAR K80 CUDA compatibility remains unverified; CPU gate only",
+    "NIH individual CXR pretraining membership unverified; exploratory only",
+    "Full CLEAR concept assets absent in bounded local paths; direct E2 proceeds"
+  ],
+  "pending_approval": null,
+  "next_actions": [
+    "Review completed E5 negative/uncertain incremental AP result",
+    "STOP; no downstream experiments authorized"
+  ],
+  "hypotheses": {
+    "H1_encoder_quality": "EXPLORATORY_CLEAR_ADVANTAGE_ON_LOCAL_NIH; INDEPENDENT_GENERALIZATION_INCONCLUSIVE",
+    "H2_concept_utility": "INCONCLUSIVE_FULL_CONCEPT_ASSETS_BLOCKED",
+    "visual_complementarity": "NO_RELIABLE_AGGREGATE_AP_GAIN_IN_E5;HOLD_COMPLEX_FUSION"
+  },
+  "scheduler_configured": false,
+  "approval_history": [
+    {
+      "scope": "isolated CPU environment and exactly 1 image",
+      "status": "EXECUTED",
+      "run_id": "20261013T201154_E0A_CLEAR_CPU"
+    },
+    {
+      "scope": "Reuse CPU env; nested paired gates10/50",
+      "status": "EXECUTED",
+      "run_id": "20261013T203617_E0A_CLEAR_CPU_10_50"
+    },
+    {
+      "scope": "V2 E0B/E1/E2 fast-track: existing envs, frozen extraction<=2GPUh/job, CPUbounded, no test tuning/newenv/LLMtraining",
+      "status": "EXECUTED_E1_AND_DIRECT_E2_FULL_CONCEPT_BLOCKED",
+      "started_at": "2026-10-13T21:45:22.502911+07:00",
+      "ended_at": "2026-10-14T02:23:42.338239+07:00"
+    },
+    {
+      "scope": "V3 CPU cached-only E13 <=60min and E5 <=120min; RSS<=8GiB; outputs<=2GiB; no new inference/test scoring/download/scheduling",
+      "status": "BLOCKED_AT_G0",
+      "started_at": "2026-10-15T00:23:23.411393+07:00",
+      "bundle": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T002235_V3_E13_E5",
+      "blocker": "RESOURCE_ESTIMATE_E5_11483.058s_GT7200s"
+    },
+    {
+      "scope": "Independent E13 fresh resource gate/execution; E5 TRAIN-only cost profiling<=600s/8GiB; E5 benchmark remains unauthorized",
+      "status": "EXECUTED_E13_AND_E5_PROFILING_ONLY",
+      "started_at": "2026-10-15T00:56:47.051731+07:00",
+      "bundle": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT",
+      "ended_at": "2026-10-15T01:03:23.472696+07:00"
+    },
+    {
+      "scope": "Execute unchanged E5 baseline only: CPU7200s/RSS8GiB/outputs2GiB; originaltestlocked; no downstream",
+      "status": "EXECUTED_E5_ONLY_COMPLETE",
+      "recorded_at": "2026-10-15T01:12:47.919585+07:00",
+      "bundle": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T010818_V3_E5_BASELINE",
+      "ended_at": "2026-10-15T01:40:22.377302+07:00"
+    }
+  ],
+  "active_plan": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/plan/CODEX_CXR_CLEAR_V3_POST_E1_E2_EXECUTION_PLAN.md",
+  "execution_tasks": {
+    "paper_crosswalk": "COMPLETE",
+    "native_preprocessing": "COMPLETE",
+    "E0B_E2": "COMPLETE_DIRECT_ONLY",
+    "E1": "COMPLETE",
+    "V3_G0": "BLOCKED",
+    "E13": "COMPLETE",
+    "E5": "COMPLETE",
+    "E5_PROFILE": "COMPLETE"
+  },
+  "provenance_crosswalk": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/inventory/paper_dataset_crosswalk_20261013.md",
+  "native_preprocessing": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/figures/2026-10-13/preprocess_comparison/execution_manifest.json",
+  "NIH_label_audit": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/inventory/e1_nih/provenance_gate.md",
+  "E2_summary": {
+    "n_images": 518,
+    "n_studies": 500,
+    "n_patients": 500,
+    "cached_images_reused": 50,
+    "new_forwards": 468,
+    "warmups": 3,
+    "E0B_gates": [
+      {
+        "n": 1,
+        "status": "PASS",
+        "feature_delta": 0.0,
+        "score_delta": 0.0
+      },
+      {
+        "n": 10,
+        "status": "PASS",
+        "feature_delta": 0.0,
+        "score_delta": 0.0
+      }
+    ],
+    "mean_forward_sec": 0.8827166778461323,
+    "p95_forward_sec": 0.9349469376262277,
+    "wall_sec": 549.4581039492041,
+    "load_sec": 3.9836792033165693,
+    "peak_RSS_bytes": 1498669056,
+    "torch": "2.3.1+cpu",
+    "cuda_initialized": false,
+    "text_shape": [
+      10,
+      768
+    ],
+    "global_shape": [
+      518,
+      768
+    ],
+    "concept_status": "BLOCKED_CONCEPT_ASSETS_OR_RESOURCE",
+    "macro_AUROC": 0.8928144562741018,
+    "macro_AUPRC": 0.6203516768692704,
+    "macro_F1": {
+      "CLEAR_fixed0.5_exploratory": 0.5197222127274246,
+      "CLEAR_on_CXR_parsed_subset": 0.5210364335326173,
+      "CXR_joint_definite_parsed_only": 0.248720368303249,
+      "CXR_sensitivity_missing_negative": 0.24798730825984414
+    }
+  },
+  "E2_analysis_report": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/reports/2026-10-13_E0B_E2_direct_contrastive_analysis.md",
+  "E1_CXR_summary": {
+    "checkpoint_integrity": "PASS",
+    "completed": 4999,
+    "wall_sec": 3005.933765855618,
+    "mean_forward_sec": 0.5182007626908142,
+    "p95_forward_sec": 0.5323619186878205,
+    "peak_rss_gib": 3.1966171264648438,
+    "actual_gpu_hours": 0.8350172654063337,
+    "gpu_peak_allocated_gib": 1.293004035949707,
+    "gpu_peak_reserved_gib": 1.376953125
+  },
+  "active_execution": {
+    "status": "COMPLETE_STOPPED",
+    "bundle": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T010818_V3_E5_BASELINE",
+    "downstream_launched": false,
+    "scheduler_configured": false
+  },
+  "E1_CLEAR_summary": {
+    "completed": 4999,
+    "wall_sec": 5336.711331781,
+    "mean_forward_sec": 1.010959563077474,
+    "p95_forward_sec": 1.0350093469955026,
+    "peak_rss_gib": 1.4130325317382812,
+    "actual_gpu_hours": 0,
+    "cpu_user_sec": 20145.299033,
+    "cpu_system_sec": 288.263674,
+    "checkpoint_integrity": "PASS"
+  },
+  "E1_summary": {
+    "cxr_cls": {
+      "AUROC": 0.6302246583238659,
+      "AUPRC": 0.14852758304459376,
+      "F1": 0.18972058359543464
+    },
+    "cxr_patchmean": {
+      "AUROC": 0.6311816268230679,
+      "AUPRC": 0.15490018975034595,
+      "F1": 0.17399121668050455
+    },
+    "clear_cls": {
+      "AUROC": 0.7618000035309168,
+      "AUPRC": 0.2504399775416704,
+      "F1": 0.29031873260410257
+    },
+    "clear_patchmean": {
+      "AUROC": 0.7671166788668091,
+      "AUPRC": 0.2641456334677755,
+      "F1": 0.30509352329706857
+    }
+  },
+  "E1_reports": [
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/reports/2026-10-14_E1_NIH_exploratory.md",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/reports/2026-10-14_E1_NIH_exploratory_analysis.md"
+  ],
+  "final_verification": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261015T010818_V3_E5_BASELINE/final_verification.json",
+  "latest_daily_report": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/reports/daily/2026-10-15.md",
+  "E13_summary": {
+    "similarities": [
+      {
+        "representation": "cls",
+        "sample": "all_train_images",
+        "images": 3783,
+        "patients": 1222,
+        "linear_CKA": 0.4018380321325186,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "cls",
+        "sample": "one_image_per_patient",
+        "images": 1222,
+        "patients": 1222,
+        "linear_CKA": 0.3261743533108427,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "cls",
+        "sample": "outer0",
+        "images": 1261,
+        "patients": 407,
+        "linear_CKA": 0.43532553957492015,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "cls",
+        "sample": "outer1",
+        "images": 1261,
+        "patients": 407,
+        "linear_CKA": 0.4250540109075325,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "cls",
+        "sample": "outer2",
+        "images": 1261,
+        "patients": 408,
+        "linear_CKA": 0.3995664715724343,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "sample": "all_train_images",
+        "images": 3783,
+        "patients": 1222,
+        "linear_CKA": 0.233407218198002,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "sample": "one_image_per_patient",
+        "images": 1222,
+        "patients": 1222,
+        "linear_CKA": 0.18087418651111925,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "sample": "outer0",
+        "images": 1261,
+        "patients": 407,
+        "linear_CKA": 0.24375344987377057,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "sample": "outer1",
+        "images": 1261,
+        "patients": 407,
+        "linear_CKA": 0.26078923538412824,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "sample": "outer2",
+        "images": 1261,
+        "patients": 408,
+        "linear_CKA": 0.24287841973123958,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      }
+    ],
+    "cross_prediction": [
+      {
+        "representation": "cls",
+        "direction": "cxr_to_clear",
+        "partition": "pooled_OOF",
+        "images": 3783,
+        "patients": 1222,
+        "R2_variance_weighted": 0.332631801413623,
+        "CI_low": 0.3149024525525891,
+        "CI_high": 0.34702460531043244,
+        "bootstrap_valid": 500,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "cls",
+        "direction": "clear_to_cxr",
+        "partition": "pooled_OOF",
+        "images": 3783,
+        "patients": 1222,
+        "R2_variance_weighted": 0.47173284803773624,
+        "CI_low": 0.4603355857689221,
+        "CI_high": 0.48220257877629735,
+        "bootstrap_valid": 500,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "direction": "cxr_to_clear",
+        "partition": "pooled_OOF",
+        "images": 3783,
+        "patients": 1222,
+        "R2_variance_weighted": 0.37536227640979586,
+        "CI_low": 0.3587152511371872,
+        "CI_high": 0.39115388543764623,
+        "bootstrap_valid": 500,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "representation": "patchmean",
+        "direction": "clear_to_cxr",
+        "partition": "pooled_OOF",
+        "images": 3783,
+        "patients": 1222,
+        "R2_variance_weighted": 0.5925223461251289,
+        "CI_low": 0.581291939586286,
+        "CI_high": 0.6028009426985652,
+        "bootstrap_valid": 500,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      }
+    ],
+    "observation": "DESCRIPTIVE_GEOMETRY_ONLY",
+    "complementarity": "COMPLEMENTARITY_NOT_YET_PROVEN",
+    "images": 3783,
+    "patients": 1222,
+    "folds": 3
+  },
+  "E5_resource_profile": {
+    "gate": "E5_RESOURCE_GATE_ELIGIBLE",
+    "estimated_E5_wall_sec": 2615.403638432548,
+    "estimated_E5_minutes": 43.59006064054247,
+    "margin_factor": 1.5,
+    "overhead_sec": 300,
+    "profile_fits": 36,
+    "projected_fits": 780,
+    "cost_by_arm_sec_before_global_margin": {
+      "A": 431.26760835564266,
+      "B": 289.2440791155226,
+      "A+B": 823.0907381505335
+    },
+    "E5_executed": false,
+    "E5_modeling_protocol_changed": false,
+    "decision_scope": "resource eligibility only; E5 remains HOLD_FOR_NEW_EXPLICIT_AUTHORIZATION",
+    "limitations": "Timing variability, unprofiled label costs and shared-host load remain uncertain; wall guard120min still required for any authorized benchmark."
+  },
+  "V3_resource_gate_clarification": "Independent gates authorized by user; original G0 history preserved",
+  "E13_analysis_report": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/reports/2026-10-15_E13_similarity_analysis.md",
+  "E5_resource_analysis_report": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/reports/2026-10-15_E5_resource_profile.md",
+  "E5_summary": {
+    "macro_comparison": [
+      {
+        "partition": "train_OOF",
+        "arm": "A",
+        "images": 3783,
+        "patients": 1222,
+        "labels": 13,
+        "AP": 0.07999057949229103,
+        "AUROC": 0.606881291189649,
+        "F1": 0.12504816119206336,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "train_OOF",
+        "arm": "B",
+        "images": 3783,
+        "patients": 1222,
+        "labels": 13,
+        "AP": 0.17878708337362634,
+        "AUROC": 0.7093916504244053,
+        "F1": 0.2518865523770887,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "train_OOF",
+        "arm": "A+B",
+        "images": 3783,
+        "patients": 1222,
+        "labels": 13,
+        "AP": 0.1771855772112028,
+        "AUROC": 0.7289897351787403,
+        "F1": 0.25079590655720463,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "validation_DEV",
+        "arm": "A",
+        "images": 344,
+        "patients": 57,
+        "labels": 13,
+        "AP": 0.14730291160849507,
+        "AUROC": 0.6397780585877927,
+        "F1": 0.12836106492168614,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "validation_DEV",
+        "arm": "B",
+        "images": 344,
+        "patients": 57,
+        "labels": 13,
+        "AP": 0.2565678749687183,
+        "AUROC": 0.7486116419073249,
+        "F1": 0.24313066909348344,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "validation_DEV",
+        "arm": "A+B",
+        "images": 344,
+        "patients": 57,
+        "labels": 13,
+        "AP": 0.25151645107811577,
+        "AUROC": 0.7384609412534566,
+        "F1": 0.2505735900587405,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer0",
+        "arm": "A",
+        "images": 1261,
+        "patients": 407,
+        "labels": 13,
+        "AP": 0.09473855225515805,
+        "AUROC": 0.6263930433188514,
+        "F1": 0.11897827253078273,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer0",
+        "arm": "B",
+        "images": 1261,
+        "patients": 407,
+        "labels": 13,
+        "AP": 0.22213326299713956,
+        "AUROC": 0.7706938265030362,
+        "F1": 0.24680636402229242,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer0",
+        "arm": "A+B",
+        "images": 1261,
+        "patients": 407,
+        "labels": 13,
+        "AP": 0.2197786460289207,
+        "AUROC": 0.7502844623295063,
+        "F1": 0.2539077974002526,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer1",
+        "arm": "A",
+        "images": 1261,
+        "patients": 407,
+        "labels": 13,
+        "AP": 0.10667993990125005,
+        "AUROC": 0.6441362491132554,
+        "F1": 0.12284620205126168,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer1",
+        "arm": "B",
+        "images": 1261,
+        "patients": 407,
+        "labels": 13,
+        "AP": 0.19460456883173938,
+        "AUROC": 0.7662904194007633,
+        "F1": 0.22698950365476156,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer1",
+        "arm": "A+B",
+        "images": 1261,
+        "patients": 407,
+        "labels": 13,
+        "AP": 0.19323813796685438,
+        "AUROC": 0.755302171629726,
+        "F1": 0.22822776199753975,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer2",
+        "arm": "A",
+        "images": 1261,
+        "patients": 408,
+        "labels": 13,
+        "AP": 0.09133787051094695,
+        "AUROC": 0.64408098944989,
+        "F1": 0.09874333346672384,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer2",
+        "arm": "B",
+        "images": 1261,
+        "patients": 408,
+        "labels": 13,
+        "AP": 0.23094746598557483,
+        "AUROC": 0.7881175732755648,
+        "F1": 0.24404054735931174,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      },
+      {
+        "partition": "outer2",
+        "arm": "A+B",
+        "images": 1261,
+        "patients": 408,
+        "labels": 13,
+        "AP": 0.2188060494430224,
+        "AUROC": 0.7830128869276854,
+        "F1": 0.23211115643535377,
+        "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test."
+      }
+    ],
+    "primary_increment": {
+      "partition": "train_OOF",
+      "finding": "MACRO",
+      "best_single": "B",
+      "delta_AP": -0.0016015061624235494,
+      "limitation": "NIH exploratory; potential CXR encoder pretraining overlap; not independent external test.",
+      "CI_low": -0.013699334270057872,
+      "CI_high": 0.009033026038638725,
+      "bootstrap_valid": 500
+    },
+    "fold_AP_deltas": [
+      -0.00235461696821887,
+      -0.0013664308648849988,
+      -0.012141416542552436
+    ],
+    "secondary_DEV_AP_delta": -0.0050514238906025355,
+    "decision": "HOLD_COMPLEX_FUSION",
+    "bootstrap_note": "Conditional on fitted OOF models; no refitting/hyperparameter uncertainty; max comparator recomputed per draw."
+  },
+  "E5_analysis_report": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/reports/2026-10-15_E5_frozen_feature_baseline_analysis.md"
+}

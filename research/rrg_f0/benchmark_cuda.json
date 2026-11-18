@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "device": "cuda",
+  "count": 20,
+  "seconds_per_image_compute_and_preprocess": 0.22151453434489668,
+  "wall_seconds_including_feature_writes": 4.430790351703763,
+  "disk_shape": [
+    256,
+    768
+  ],
+  "disk_dtype": "float16",
+  "input_size": 448,
+  "zero_shot": "lowercase label / no label, normalized paired cosine softmax; no logit scale",
+  "peak_allocated_mib": 627.92626953125,
+  "peak_reserved_mib": 724.0
+}

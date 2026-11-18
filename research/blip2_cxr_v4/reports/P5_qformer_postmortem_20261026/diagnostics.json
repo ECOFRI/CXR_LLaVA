@@ -1,0 +1,276 @@
+{
+  "checkpoint": {
+    "config_sha256": "841753a63743c62fe15be5cc2f9f2308a40d593668a891050da18f8e213475ce",
+    "epoch": 1,
+    "groups": {
+      "projection": {
+        "cosine_similarity": 0.9904053589227337,
+        "delta_rms": 0.004058659691571071,
+        "elements": 1968640,
+        "max_abs_delta": 0.026584673672914505,
+        "nonfinite_elements": 0,
+        "relative_l2_change": 0.13910987966082614,
+        "source_rms": 0.029175926982805123,
+        "tensors": 2,
+        "trained_rms": 0.029361116818881042,
+        "unchanged_tensors": 0
+      },
+      "qformer": {
+        "cosine_similarity": 0.9987903726588846,
+        "delta_rms": 0.003076579488078929,
+        "elements": 105137664,
+        "max_abs_delta": 0.026754379272460938,
+        "nonfinite_elements": 0,
+        "relative_l2_change": 0.04917311674577489,
+        "source_rms": 0.06256629011304798,
+        "tensors": 254,
+        "trained_rms": 0.06251049356301279,
+        "unchanged_tensors": 0
+      },
+      "query_tokens": {
+        "cosine_similarity": 0.9918190250167608,
+        "delta_rms": 0.0037647878131534898,
+        "elements": 24576,
+        "max_abs_delta": 0.015003912150859833,
+        "nonfinite_elements": 0,
+        "relative_l2_change": 0.12848823149879168,
+        "source_rms": 0.029300643095775618,
+        "tensors": 1,
+        "trained_rms": 0.02948978937474685,
+        "unchanged_tensors": 0
+      }
+    },
+    "manifest_sha256": "ec8bc5fd8eb23c98884671cf139e579bad06cd1b6ea66e316b6320d65f39d4e2",
+    "next_position": 2000,
+    "optimizer_state_entries": 257,
+    "optimizer_updates": 2000,
+    "p4_adapter_parameters": 1968640,
+    "p4_checkpoint_sha256": "7f833eea69fb6d2743b19bbc808be949bb1a5e014bf43a81f08090f9a5f0d8af",
+    "p5_checkpoint_sha256": "d207ffb290040b25ed16fd440ccff413fc03334a38d8f0a9d033e03c7517809b",
+    "sampler_cursor": 2000,
+    "stage": "P5.2",
+    "trainable_parameter_count": 107130880
+  },
+  "classification": "CPU-only artifact analysis, no model forward pass or inference",
+  "manifests": {
+    "indiana_x00": {
+      "path": "research/blip2_cxr_v4/runs/P4_projection_pilot_20261023/manifests_proposed/indiana_x00.draft.jsonl",
+      "recorded_sha256": "5878e73e6c20091d1a26bfb474894c30e11894e86f73217342c8ed6bbaf59944",
+      "rows": 500,
+      "sha256": "5878e73e6c20091d1a26bfb474894c30e11894e86f73217342c8ed6bbaf59944",
+      "splits": {
+        "external_x00": 500
+      },
+      "unique_images": 500,
+      "unique_studies": 500
+    },
+    "mimic_train": {
+      "path": "research/blip2_cxr_v4/runs/P4_projection_pilot_20261023/manifests_proposed/mimic_train.draft.jsonl",
+      "recorded_sha256": "ec8bc5fd8eb23c98884671cf139e579bad06cd1b6ea66e316b6320d65f39d4e2",
+      "rows": 2000,
+      "sha256": "ec8bc5fd8eb23c98884671cf139e579bad06cd1b6ea66e316b6320d65f39d4e2",
+      "splits": {
+        "train": 2000
+      },
+      "unique_images": 2000,
+      "unique_studies": 2000
+    },
+    "mimic_validate": {
+      "path": "research/blip2_cxr_v4/runs/P4_projection_pilot_20261023/manifests_proposed/mimic_validate.draft.jsonl",
+      "recorded_sha256": "b0d8f209ae6699bcde215d02652a2da29be59eb7f4936efa34d34ef81b6c21a3",
+      "rows": 500,
+      "sha256": "b0d8f209ae6699bcde215d02652a2da29be59eb7f4936efa34d34ef81b6c21a3",
+      "splits": {
+        "validate": 500
+      },
+      "unique_images": 500,
+      "unique_studies": 500
+    }
+  },
+  "metric_recheck": {
+    "indiana": {
+      "P4_M1": {
+        "bleu1_to_4_and_rouge_l_match": true,
+        "n": 500,
+        "scores": {
+          "bleu1": 0.22880668970519216,
+          "bleu2": 0.12910270541040567,
+          "bleu3": 0.08202608817597339,
+          "bleu4": 0.05151685011825502,
+          "rouge_l": 0.20951749972565423
+        }
+      },
+      "P5_M3": {
+        "bleu1_to_4_and_rouge_l_match": true,
+        "n": 500,
+        "scores": {
+          "bleu1": 0.032813196611680785,
+          "bleu2": 0.014212544542414912,
+          "bleu3": 0.005636701488521142,
+          "bleu4": 0.0,
+          "rouge_l": 0.03012238332103457
+        }
+      }
+    },
+    "mimic": {
+      "P4_M1": {
+        "bleu1_to_4_and_rouge_l_match": true,
+        "n": 500,
+        "scores": {
+          "bleu1": 0.17561209133125516,
+          "bleu2": 0.09345794659288603,
+          "bleu3": 0.0553718751343907,
+          "bleu4": 0.03463774817732544,
+          "rouge_l": 0.16633244540006695
+        }
+      },
+      "P5_M3": {
+        "bleu1_to_4_and_rouge_l_match": true,
+        "n": 500,
+        "scores": {
+          "bleu1": 0.02809864257983689,
+          "bleu2": 0.014512538749748576,
+          "bleu3": 0.0074926343914827435,
+          "bleu4": 0.0019711456344077413,
+          "rouge_l": 0.029418806239026055
+        }
+      }
+    }
+  },
+  "model_metadata": {
+    "num_query_tokens": 32,
+    "opt_hidden_size": 2560,
+    "qformer_hidden_size": 768,
+    "vision_hidden_size": 1408
+  },
+  "outputs": {
+    "indiana": {
+      "empty": 0,
+      "generated_tokens": {
+        "128": 500
+      },
+      "hit_max_length": 500,
+      "n": 500,
+      "pattern_counts": [
+        465,
+        35
+      ],
+      "pattern_prefixes": [
+        "A.\nB.\nC.\nD.\nE.\nF.\nG.\nH.\nI.\nJ.\nK.\nL.\nM.\nN.\nP.\nQ.\nR.\nS.\nT.\nU.\nV.\nW.",
+        "A.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA."
+      ],
+      "repeat_fourgram_mean": 0.40039285714285716,
+      "unique_reports": 2
+    },
+    "mimic": {
+      "empty": 0,
+      "generated_tokens": {
+        "128": 500
+      },
+      "hit_max_length": 500,
+      "n": 500,
+      "pattern_counts": [
+        286,
+        214
+      ],
+      "pattern_prefixes": [
+        "A.\nB.\nC.\nD.\nE.\nF.\nG.\nH.\nI.\nJ.\nK.\nL.\nM.\nN.\nP.\nQ.\nR.\nS.\nT.\nU.\nV.\nW.",
+        "A.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA.\nA."
+      ],
+      "repeat_fourgram_mean": 0.6215857142857143,
+      "unique_reports": 2
+    }
+  },
+  "protocol_equal": {
+    "generation": true,
+    "image_preprocessing": true,
+    "optimization": true,
+    "tokenizer": true,
+    "training_text": true
+  },
+  "query_grad_below_1e_5_after_800": 1198,
+  "source_artifacts": {
+    "manifest_index_sha256": "74965a79b31394a65af10dcb7987db0881e5083a8bb0da888bccbe120bd03175",
+    "p4_config_sha256": "d010d2cf32cb6cc9b96b834e5eb0a5df1d8bd13985ec31cf5faa447260471eb9",
+    "p4_pairs_sha256": "ff57b7e352a45ea32f76f3108530782c35e1d9a79cb00cc72d56fc547c74ee18",
+    "p5_config_sha256": "841753a63743c62fe15be5cc2f9f2308a40d593668a891050da18f8e213475ce",
+    "p5_predictions_sha256": "fa9fc0c04ff250f161728e3682066209bb048dad0494a870cbf02f7ea4bab9d7"
+  },
+  "tokenizer": {
+    "bos": 2,
+    "class": "GPT2Tokenizer",
+    "eos": 2,
+    "pad": 1,
+    "prompt_tokens": 16
+  },
+  "train_validation_subject_overlap": 0,
+  "training_steps": {
+    "first100": {
+      "loss_mean": 2.88099609375,
+      "loss_median": 2.935546875,
+      "n": 100,
+      "projection_grad_median": 2.0875209339683387,
+      "qformer_grad_median": 1.8871176165317554,
+      "query_grad_below_1e_5": 0,
+      "query_grad_median": 0.09638698482981077
+    },
+    "last100": {
+      "loss_mean": 2.423916015625,
+      "loss_median": 2.4794921875,
+      "n": 100,
+      "projection_grad_median": 2.0413992232376392,
+      "qformer_grad_median": 0.6805492656162058,
+      "query_grad_below_1e_5": 100,
+      "query_grad_median": 6.328993021032335e-08
+    },
+    "steps701_800": {
+      "loss_mean": 2.8805078125,
+      "loss_median": 2.9580078125,
+      "n": 100,
+      "projection_grad_median": 2.0709442364202397,
+      "qformer_grad_median": 1.1733705638425358,
+      "query_grad_below_1e_5": 100,
+      "query_grad_median": 2.135781420156479e-07
+    },
+    "steps901_1000": {
+      "loss_mean": 2.65513671875,
+      "loss_median": 2.69921875,
+      "n": 100,
+      "projection_grad_median": 2.3142058950712903,
+      "qformer_grad_median": 1.0644050165513006,
+      "query_grad_below_1e_5": 99,
+      "query_grad_median": 1.7894876414773047e-07
+    }
+  },
+  "training_targets": {
+    "first_three_token_text_top": [
+      [
+        "In comparison with",
+        141
+      ],
+      [
+        "As compared to",
+        137
+      ],
+      [
+        "PA and lateral",
+        131
+      ],
+      [
+        "The lungs are",
+        122
+      ],
+      [
+        "Frontal and",
+        99
+      ]
+    ],
+    "n": 2000,
+    "repeat_fourgram_mean": 0.013914326177585475,
+    "supervised_tokens_max": 128,
+    "supervised_tokens_min": 4,
+    "target_tokens_max": 376,
+    "target_tokens_median": 86.0,
+    "truncated_count": 388
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "gpu_seconds": 0,
+  "models": {
+    "peterhan91/CLEAR": {
+      "revision": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/rrg_f0/huggingface/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/best_model.pt",
+      "sha256": "da1617a7d47970667a7a158eabfa4c4f3798d5d03b7f98caec150d8ee6ab6a03"
+    },
+    "Qwen/Qwen3-1.7B": {
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/model_cache/rrg_f0/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  }
+}

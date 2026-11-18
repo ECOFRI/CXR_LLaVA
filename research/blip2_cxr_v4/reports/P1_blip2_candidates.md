@@ -1,0 +1,21 @@
+# P1 Part E — official checkpoint candidates
+
+Status: PASS for metadata comparison and dry-run tooling; checkpoint download PENDING separate approval. No model weights were fetched, loaded, or run. All sizes below are binary GiB of `*.safetensors` from the Hugging Face model API `?blobs=true` on 2026-10-22; they exclude small tokenizer/config files unless stated. Revisions pin the compared repository states. License entries reflect model-card metadata, not a legal review.
+
+| Candidate and official source | Revision | License | Weights GiB | Estimated FP16 / FP32 weight VRAM | K80 11.4 GB conclusion |
+|---|---|---|---:|---:|---|
+| [BLIP-2 OPT 2.7B](https://huggingface.co/Salesforce/blip2-opt-2.7b) | `59a1ef6c1e5117b3f65523d1c6066825bcf315e3` | MIT | 13.950 | 6.98 / 13.95 GiB | FP32 impossible on one K80; FP16 fit UNKNOWN after activations |
+| [BLIP-2 FLAN-T5-XL](https://huggingface.co/Salesforce/blip2-flan-t5-xl) | `0eb0d3b46c14c1f8c7680bca2693baafdb90bb28` | MIT | 14.687 | 7.34 / 14.69 GiB | FP16 fit UNKNOWN; more headroom needed than OPT |
+| [InstructBLIP FLAN-T5-XL](https://huggingface.co/Salesforce/instructblip-flan-t5-xl) | `bf9bd58cb3bb06e88c03b80f9cc346b90094bc6d` | MIT | 14.987 | 7.49 / 14.99 GiB | FP16 fit UNKNOWN; more headroom needed than OPT |
+| [InstructBLIP Vicuna 7B](https://huggingface.co/Salesforce/instructblip-vicuna-7b) | `19103d0c5b5263c8a7891012e08573439fb6607f` | `other`; verify Vicuna terms | 29.481 | 14.74 / 29.48 GiB | Above 20 GiB download cap; one-K80 fit implausible |
+| [LAVIS BLIP-2 first-stage pretraining](https://github.com/salesforce/LAVIS/blob/main/lavis/configs/models/blip2/blip2_pretrain.yaml) | UNKNOWN | Code: BSD-3-Clause; weight terms UNKNOWN | UNKNOWN | UNKNOWN | Vision encoder + Q-Former first stage, not standalone report generator |
+
+The VRAM figures assume on-disk safetensors are FP32 and are cast to FP16; actual dtype and runtime memory are unverified. Runtime also needs image encoder, activations, KV cache and framework overhead. The K80 P0 inventory reports 11,441 MiB/card, approximately 11.17 GiB usable before other allocations. `free -h` showed 47 GiB host RAM and 42 GiB available at the check; CPU FP32 storage plus loading peaks could approach or exceed this, so load feasibility is UNKNOWN. This is a feasibility estimate, not an inference result.
+
+`/home/student4/anaconda3/envs/cxr-llava-k80/bin/python` import-only probe: torch 1.12.1+cu102, transformers 4.36.2, huggingface-hub 0.36.0, safetensors 0.4.5; BLIP-2 and InstructBLIP classes imported. Class presence does not establish runtime fit or processor compatibility. `timeout 10 curl -I -L --max-time 10 https://huggingface.co` returned HTTP 200. No model loading occurred. Local BLIP-2 weights: UNKNOWN/not established by this Part E check.
+
+Recommendation for Claude review: **Salesforce/blip2-opt-2.7b** as the smallest official, complete image-to-text checkpoint among the verified candidates. The pinned safetensors plus selected configs/tokenizer are 13.9551 GiB, below the 20 GiB cap. K80 execution remains UNKNOWN; later validation would need a separately authorized model-loading job. CXR report accuracy and clinical safety are UNKNOWN; generic BLIP-2 is not clinically validated here.
+
+The downloader is `scripts/download/download_checkpoint.sh`, config `configs/download/blip2_opt_2_7b.yaml`. It defaults to metadata-only dry-run; it pins revision, selects safetensors instead of duplicate `.bin` weights, checks total declared bytes against 20 GiB, records LFS SHA-256 values, and confines output to this V4 root. Actual transfer requires `--execute` plus a matching JSON owner/QA approval file with `authorized: true`, `approved_by`, model ID, revision and budget; none was created. The dry-run manifest is `runs/P1_blip2_candidate_dry_run/download_manifest.json`. Dry-run exact command: `timeout 20 research/blip2_cxr_v4/scripts/download/download_checkpoint.sh --dry-run`. No downloaded files resulted.
+
+Sources: [Salesforce model cards](https://huggingface.co/Salesforce/blip2-opt-2.7b), [LAVIS first-stage implementation](https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip2_models/blip2_qformer.py), [LAVIS license](https://github.com/salesforce/LAVIS/blob/main/LICENSE).

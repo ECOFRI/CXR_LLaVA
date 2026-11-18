@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "train_studies": 30000,
+  "seed": 42,
+  "selection": "first eligible entries of uniformly seeded permutation of unique frontal official-train studies",
+  "candidate_studies": 213365,
+  "visited_candidates": 48555,
+  "skips": {
+    "empty_findings": 16605,
+    "missing_image": 1950
+  },
+  "p4_dev_counts": {
+    "mimic": 500,
+    "indiana": 500
+  },
+  "train_validation_patient_overlap": 0,
+  "manifest_sha256": "caaa88985eb0b9e3f54190dc67c397440997570c231564edc7873da13dc99849",
+  "source_sha256": {
+    "mimic-cxr-2.0.0-split.csv.gz": "515997bd6649045d7443d60c59a4ce9f6cca6c478871b8f2fb13454462bedb2f",
+    "mimic-cxr-2.0.0-metadata.csv.gz": "6a3748ce77724c0dfe7d2def8f47643e989e3bbf0795bc13b89c1578e1649d6b"
+  },
+  "config_sha256": "38a4bd137955f8d9f1571b8c82232b73c0f5887cc21b4774947aec99c4c50a76",
+  "wall_seconds_cumulative": 639.3593930462375,
+  "gpu_seconds": 0
+}

@@ -1,0 +1,12 @@
+# Manual Linux environment; install PyTorch separately using the guide.
+# Keep the original requirements.txt and historical notebook environments intact.
+transformers==4.46.3
+tokenizers==0.20.3
+huggingface-hub==0.36.0
+accelerate==1.2.1
+bitsandbytes==0.45.5
+sentencepiece==0.2.1
+protobuf==5.29.6
+pillow==10.4.0
+numpy==1.26.4
+pandas==2.2.3

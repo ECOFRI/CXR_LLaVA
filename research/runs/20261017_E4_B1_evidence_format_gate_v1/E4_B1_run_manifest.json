@@ -1,0 +1,192 @@
+{
+  "status": "E4_B1_PROMPT_ROUTE_REJECTED",
+  "classification": "development format gate; automated proxy only",
+  "protocol_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+  "input_sha256": {
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_protocol.md": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_cohort.csv": "74f913413fbedca41c8c6592d79105946e2f72221d88be046fcfd9e5602fdce7",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_clear_scores.csv": "3c2110d5798ce243bcac740d650dfe21b794599027a94c486e8811a6d5e0f7f1",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_frozen_prompts.jsonl": "86cf4d97482c2a63fe790c9ab24a6db2806b667de68e93973e2bbebdbaa115ae",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_derangement.csv": "56acc47cc28f0da65ebc056bed4eaf3e8fe57ace6f0b172265da645c279ea74e",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_reports.jsonl": "e01cc43d3ec77f88b24689981d40e48203525e98b3540e1346c338c488776974",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_labeler_output.csv": "e231155a65e5c25ebce8caa1b114dab9188a1e4ec67f6bf0cd3841cda3f07697",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_smoke_result.json": "36df8f9a66cc6522f7b35d52c6f717f04f04d87a4d184a4f1d8ae8466735e922",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_model_integrity.json": "11e4f882cfae2e169ad7b146585edcc38aff33b9eee8e1673e5090db688e5188",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_final_validation.json": "efeb314cfadde86384db5ac04451dac458cfe641a2981a7df520bd8337d9f1fd"
+  },
+  "source_code_sha256": {
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_cohort.py": "7c767e00201a381b095beec391aaa90c1bc73bd8509551770a15acec1dbe45cc",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_clear.py": "a11dbf335dc832ba7dd6a1f51336d7c8ade810df5b08c2900128e50e2f1fd2ce",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_prepare.py": "ac1d77ce361d454266d44541df284cc7c2b51731077df546e3477131f80ff059",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_gpu.py": "250a4b83839853d6217298da7911ee4c55010ef088d227bb9ad9f9f2e7f96091",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_label.py": "c016660a1c6d2dae2aec840e6986d22a2b669170ed639d75d5ec1411c3242389",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_synthetic.py": "04879bc44afd50040d7d51025b72a82c1155a4b1a2f50355977f01d6c8228090",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_validate.py": "bff93be83efb2022818e73da60342a400f755836e5b291ff73edb449f7a0050d",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_background.sh": "a0f03f28a1b9c27a4fbd74c92bb7526465815bd95f67ccd85250616f13d5b483",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/tests/test_e4_b1.py": "772ee74920aef01b294c38457f4c6bece77b17b1e2cabe1db9611349351cd4b1",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/e4_b1_analyze.py": "5e8e2eeb0dfd5eee1d8b3cf5013eea9c2beab425d2f6c2245f3d74e8a7bb3ae8"
+  },
+  "report_sha256": "73643bd3e43456f681fe77e949ca49c5fa11da983266bc38e26bbe8f0fbffbfa",
+  "cache_paths": {
+    "TMPDIR": "/storage/student4/hanhpm/.e4b1_cache/tmp",
+    "HF_HOME": "/storage/student4/hanhpm/.e4b1_cache/hf",
+    "TORCH_HOME": "/storage/student4/hanhpm/.e4b1_cache/torch",
+    "PIP_CACHE_DIR": "/storage/student4/hanhpm/.e4b1_cache/pip",
+    "XDG_CACHE_HOME": "/storage/student4/hanhpm/.e4b1_cache/xdg"
+  },
+  "environments": {
+    "cxr_k80": {
+      "torch": "1.12.1+cu102",
+      "transformers": "4.36.2",
+      "precision": "FP32",
+      "device_map": {
+        "vision_tower": 0,
+        "mm_projector": 0,
+        "lm_head": 0,
+        "llama.embed_tokens": 0,
+        "llama.norm": 3,
+        "llama.layers.0": 0,
+        "llama.layers.1": 0,
+        "llama.layers.2": 0,
+        "llama.layers.3": 0,
+        "llama.layers.4": 0,
+        "llama.layers.5": 0,
+        "llama.layers.6": 0,
+        "llama.layers.7": 0,
+        "llama.layers.8": 1,
+        "llama.layers.9": 1,
+        "llama.layers.10": 1,
+        "llama.layers.11": 1,
+        "llama.layers.12": 1,
+        "llama.layers.13": 1,
+        "llama.layers.14": 1,
+        "llama.layers.15": 1,
+        "llama.layers.16": 2,
+        "llama.layers.17": 2,
+        "llama.layers.18": 2,
+        "llama.layers.19": 2,
+        "llama.layers.20": 2,
+        "llama.layers.21": 2,
+        "llama.layers.22": 2,
+        "llama.layers.23": 2,
+        "llama.layers.24": 3,
+        "llama.layers.25": 3,
+        "llama.layers.26": 3,
+        "llama.layers.27": 3,
+        "llama.layers.28": 3,
+        "llama.layers.29": 3,
+        "llama.layers.30": 3,
+        "llama.layers.31": 3
+      }
+    },
+    "clear_cpu": {
+      "torch": "2.3.1+cpu",
+      "python": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/envs/cxr-clear-cpu/bin/python"
+    },
+    "labeler_cpu": {
+      "python": "/home/student4/anaconda3/envs/chexpert-label/bin/python",
+      "labeler_revision": "44ddeb363149aa657296237f18b5472a73c1756f",
+      "negbio_revision": "073199e2792824740e89844a59c13d3d40ce4d23"
+    }
+  },
+  "gpu_selected_uuids": [
+    "GPU-27c3b5ab-b82d-579b-14da-ceece5dfaa16",
+    "GPU-64ba6275-3071-8d64-069d-3c23552c6764",
+    "GPU-7c841195-e5a5-796c-f50e-06b4028639ed",
+    "GPU-9bdf39c7-917e-ba7f-73e5-ee97a9e87083"
+  ],
+  "cumulative_gpu_wall_sec": 6563.21363140922,
+  "cpu_clear_wall_sec": 28.54119857121259,
+  "gpu_windows": [
+    {
+      "event": "start",
+      "window_id": "smoke-1792242543-382660",
+      "phase": "smoke",
+      "at_utc": "2026-10-17T13:09:03.594324+00:00",
+      "prior_gpu_wall_sec": 0.0,
+      "selected_uuids": [
+        "GPU-27c3b5ab-b82d-579b-14da-ceece5dfaa16",
+        "GPU-64ba6275-3071-8d64-069d-3c23552c6764",
+        "GPU-7c841195-e5a5-796c-f50e-06b4028639ed",
+        "GPU-9bdf39c7-917e-ba7f-73e5-ee97a9e87083"
+      ]
+    },
+    {
+      "event": "end",
+      "window_id": "smoke-1792242543-382660",
+      "phase": "smoke",
+      "at_utc": "2026-10-17T13:20:14.916350+00:00",
+      "wall_sec": 671.3220219649374,
+      "status": "PASS",
+      "cumulative_gpu_wall_sec": 671.3220219649374
+    },
+    {
+      "event": "start",
+      "window_id": "full-1792243265-383786",
+      "phase": "full",
+      "at_utc": "2026-10-17T13:21:05.027588+00:00",
+      "prior_gpu_wall_sec": 671.3220219649374,
+      "selected_uuids": [
+        "GPU-27c3b5ab-b82d-579b-14da-ceece5dfaa16",
+        "GPU-64ba6275-3071-8d64-069d-3c23552c6764",
+        "GPU-7c841195-e5a5-796c-f50e-06b4028639ed",
+        "GPU-9bdf39c7-917e-ba7f-73e5-ee97a9e87083"
+      ]
+    },
+    {
+      "event": "end",
+      "window_id": "full-1792243265-383786",
+      "phase": "full",
+      "at_utc": "2026-10-17T13:35:36.182336+00:00",
+      "wall_sec": 871.1547459512949,
+      "status": "FAILED",
+      "cumulative_gpu_wall_sec": 1542.4767679162323
+    },
+    {
+      "event": "start",
+      "window_id": "full-1792244202-385109",
+      "phase": "full",
+      "at_utc": "2026-10-17T13:36:42.795865+00:00",
+      "prior_gpu_wall_sec": 1542.4767679162323,
+      "selected_uuids": [
+        "GPU-27c3b5ab-b82d-579b-14da-ceece5dfaa16",
+        "GPU-64ba6275-3071-8d64-069d-3c23552c6764",
+        "GPU-7c841195-e5a5-796c-f50e-06b4028639ed",
+        "GPU-9bdf39c7-917e-ba7f-73e5-ee97a9e87083"
+      ]
+    },
+    {
+      "event": "end",
+      "window_id": "full-1792244202-385109",
+      "phase": "full",
+      "at_utc": "2026-10-17T15:00:23.532728+00:00",
+      "wall_sec": 5020.736863492988,
+      "status": "PASS",
+      "cumulative_gpu_wall_sec": 6563.21363140922
+    }
+  ],
+  "operator_interruptions": [
+    {
+      "at_utc": "2026-10-17T13:36:11.339628+00:00",
+      "reason": "User requested detached server run instead of an agent-attached process",
+      "signal": "SIGINT",
+      "interrupted_pid": 383786,
+      "completed_reports_kept": 30,
+      "gpu_window_closed": true,
+      "resume_policy": "same frozen prompt hashes and 4-hour cumulative cap"
+    }
+  ],
+  "background_status": {
+    "status": "COMPLETE",
+    "started_utc": "2026-10-17T13:36:41Z",
+    "finished_utc": "2026-10-17T15:00:24Z",
+    "pid": 385106,
+    "exit_code": 0
+  },
+  "local_git_commit": "f6535c6d9d7eb23c2e9a2ac24f48771a1d276efc",
+  "images": 24,
+  "full_reports": 264,
+  "clinical_annotations": 0,
+  "scientific_hold": "HOLD_MORE_EVIDENCE",
+  "fusion_hold": "HOLD_COMPLEX_FUSION"
+}

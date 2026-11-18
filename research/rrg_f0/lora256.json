@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "classification": "technical preflight, not quality evaluation",
+  "contract": {
+    "arm": "lora256",
+    "code_sha256": {
+      "core.py": "7898115b92f3308f4fcb5d0b411e9c02487bb2ce240adce682abee89af6038c8",
+      "data.py": "9b69d033d1fd9cb9a03cae48f302f467e63e8b776d5b9030c3a439f8a4c79716",
+      "model.py": "7d4623856b72ad250d43aede238485b3944759f5ca000862c0c1a32e76b755f3",
+      "preflight.py": "13719405411521d5f0946163fc7bd6bb6a1b01aba974c173dc6573aa84d7885c"
+    },
+    "manifest_index_sha256": "74965a79b31394a65af10dcb7987db0881e5083a8bb0da888bccbe120bd03175",
+    "config_sha256": "e718fd80a7ab9616248c60ccb64dc04168db75cb691d27cac11d67bccc774c49",
+    "qwen_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "text_padding": 320,
+    "max_target_including_eos": 256,
+    "batch_size": 1,
+    "seed": 42,
+    "lr": 0.0001,
+    "grad_scaler_initial_scale": 128.0,
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "targets": "all-linear",
+      "dropout": 0.0
+    },
+    "auxiliary_labels": "synthetic all-zero 14 labels; F0 execution only",
+    "bce_weight": 0.1,
+    "sampling": "repeat same bounded training minibatch; omit missing Findings; no validation training"
+  },
+  "optimizer_steps": 3,
+  "seconds_per_step": 0.5667941514402628,
+  "seconds_per_sample": 0.5667941514402628,
+  "peak_allocated_mib": 4715.20166015625,
+  "peak_reserved_mib": 5078.0,
+  "first_loss": 4.752475738525391,
+  "last_loss": 4.118027210235596,
+  "loss_decreased": true,
+  "finite": true,
+  "probes": [
+    {
+      "phase": "with_adam_state",
+      "status": "PASS",
+      "batch": 1,
+      "seconds": 1.8173305531963706,
+      "loss": 4.752475738525391,
+      "lm_loss": 4.684014797210693,
+      "bce": 0.6846097111701965,
+      "grad_norm": null,
+      "peak_allocated_mib": 4706.94384765625,
+      "peak_reserved_mib": 5014.0
+    }
+  ],
+  "capacity_limit": "fixed 320 text positions + 14 finding tokens + patch tokens; search up to batch32; optimizer state included",
+  "missing_findings_skipped_in_bounded_sampler": 8,
+  "trainable_parameters": 27443726,
+  "generation_count": 0,
+  "seconds_per_report": null,
+  "generation_tokens": [],
+  "generation_max_new_tokens": 128,
+  "steps": [
+    {
+      "batch": 1,
+      "seconds": 0.80183722730726,
+      "loss": 4.752475738525391,
+      "lm_loss": 4.684014797210693,
+      "bce": 0.6846097111701965,
+      "grad_norm": 240.48109436035156,
+      "peak_allocated_mib": 4715.20166015625,
+      "peak_reserved_mib": 5078.0,
+      "step": 1
+    },
+    {
+      "batch": 1,
+      "seconds": 0.44989157002419233,
+      "loss": 4.802311897277832,
+      "lm_loss": 4.735556125640869,
+      "bce": 0.6675587296485901,
+      "grad_norm": 43.61177062988281,
+      "peak_allocated_mib": 4715.20166015625,
+      "peak_reserved_mib": 5078.0,
+      "step": 2
+    },
+    {
+      "batch": 1,
+      "seconds": 0.448653656989336,
+      "loss": 4.118027210235596,
+      "lm_loss": 4.052820205688477,
+      "bce": 0.6520712971687317,
+      "grad_norm": 18.625102996826172,
+      "peak_allocated_mib": 4715.20166015625,
+      "peak_reserved_mib": 5078.0,
+      "step": 3
+    }
+  ]
+}

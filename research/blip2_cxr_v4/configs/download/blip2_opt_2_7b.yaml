@@ -1,0 +1,7 @@
+{
+  "model_id": "Salesforce/blip2-opt-2.7b",
+  "revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+  "max_gib": 20,
+  "format": "safetensors",
+  "license": "mit"
+}

@@ -1,0 +1,8 @@
+{"authorized": true,
+ "approved_by": "project owner (P1 Execution Approval, section 6, 2026-10-22: one official checkpoint <=20 GiB under /storage); QA review: Claude coordinator",
+ "model_id": "Salesforce/blip2-opt-2.7b",
+ "revision": "59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+ "max_gib": 20,
+ "scope": "download only; no model loading, GPU inference or training",
+ "license_note": "model card MIT; OPT LM weights carry the non-commercial OPT research license; research use only",
+ "date": "2026-10-22"}

@@ -1,0 +1,8 @@
+{
+  "experiment_id": "X05",
+  "status": "BLOCKED",
+  "classification": "SKELETON_ONLY",
+  "reason": "META weights/root reuse license unverified",
+  "train_entrypoint": null,
+  "inference_entrypoint": null
+}

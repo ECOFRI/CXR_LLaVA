@@ -1,0 +1,11 @@
+# Proposed isolated legacy environment; NOT installed or solver-verified.
+name: legacy-r2llm-cu102
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - cudatoolkit=10.2
+  - pip

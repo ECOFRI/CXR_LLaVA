@@ -1,0 +1,15 @@
+arm,collapse_denominator,collapse_n,collapse_rate,criterion_1_collapse,criterion_2_mentions,criterion_3_oracle,criterion_4_sensitivity,exact_text_changed_eligible_images,extraction_failure_cells,format,mean_mention_findings,mention_cells,mention_denominator,oracle_O_matches,oracle_O_rate,oracle_S_matches,oracle_S_rate,oracle_advantage_points,oracle_eligible_cells,passes,reports,row_type,sensitivity_changed_images,sensitivity_eligible_images,sensitivity_rate
+C0,24,0,0.0,,,,,,0,C0,2.9583333333333335,71,24,,,,,,,,24,arm,,,
+N1,24,6,0.25,,,,,,0,N1,1.5833333333333333,38,24,,,,,,,,24,arm,,,
+F1-M,24,17,0.7083333333333334,,,,,,0,F1,0.5833333333333334,14,24,,,,,,,,24,arm,,,
+F1-S,24,16,0.6666666666666666,,,,,,0,F1,0.7916666666666666,19,24,,,,,,,,24,arm,,,
+F1-O,24,10,0.4166666666666667,,,,,,0,F1,1.5833333333333333,38,24,,,,,,,,24,arm,,,
+F2-M,24,0,0.0,,,,,,0,F2,2.4166666666666665,58,24,,,,,,,,24,arm,,,
+F2-S,24,0,0.0,,,,,,0,F2,2.375,57,24,,,,,,,,24,arm,,,
+F2-O,24,7,0.2916666666666667,,,,,,0,F2,1.2083333333333333,29,24,,,,,,,,24,arm,,,
+F3-M,24,0,0.0,,,,,,0,F3,2.6666666666666665,64,24,,,,,,,,24,arm,,,
+F3-S,24,0,0.0,,,,,,0,F3,3.0416666666666665,73,24,,,,,,,,24,arm,,,
+F3-O,24,0,0.0,,,,,,0,F3,2.875,69,24,,,,,,,,24,arm,,,
+,,,,False,False,False,False,4,,F1,,,,15,0.21739130434782608,8,0.11594202898550725,10.144927536231885,69,False,,format,3,19,0.15789473684210525
+,,,,False,False,False,True,17,,F2,,,,10,0.14492753623188406,31,0.4492753623188406,-30.434782608695656,69,False,,format,11,19,0.5789473684210527
+,,,,True,False,False,True,15,,F3,,,,33,0.4782608695652174,36,0.5217391304347826,-4.3478260869565215,69,False,,format,13,19,0.6842105263157895

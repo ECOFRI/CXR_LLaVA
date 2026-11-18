@@ -1,0 +1,38 @@
+{
+  "seed": 2026101701,
+  "cohort_size": 24,
+  "candidate_count_after_exclusion": 3647,
+  "excluded_E4_images": 20,
+  "support_selected": {
+    "Atelectasis": 4,
+    "Cardiomegaly": 5,
+    "Consolidation": 4,
+    "Edema": 4,
+    "Pleural Effusion": 6,
+    "Pneumothorax": 4
+  },
+  "available_positive": {
+    "Atelectasis": 220,
+    "Cardiomegaly": 562,
+    "Consolidation": 59,
+    "Edema": 48,
+    "Pleural Effusion": 134,
+    "Pneumothorax": 39
+  },
+  "shortfall": {
+    "Atelectasis": 0,
+    "Cardiomegaly": 0,
+    "Consolidation": 0,
+    "Edema": 0,
+    "Pleural Effusion": 0,
+    "Pneumothorax": 0
+  },
+  "neutral_selected": 13,
+  "cohort_sha256": "74f913413fbedca41c8c6592d79105946e2f72221d88be046fcfd9e5602fdce7",
+  "input_sha256": {
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_031940_1252388/inference/cohort.csv": "d4f5504b9141106066a24f10345f5bf580db915084d5809a336354f2989dcc89",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_inventory02/nlm_review_01/gt_labeling/raw_labels.csv": "e96c71d6d488c4329c968c0096723b16c8d2da49db28da26da07d64fbf485673",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_inventory02/nlm_review_01/gt_labeling/row_map.csv": "490776baccd612d33d6b059c422176bdd5e08fa23ec16b7bd949b92610608ae7",
+    "/storage/student4/hanhpm/CXR_LLaVA_Improvement/research/runs/20261017_E4_R4_controlled_resume_v1/cohort_ids.csv": "db96fa9326878ac31c322476fcb76fe5a3549b1231a8b9eebdf8605475cb51c0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-17T13:36:41.485200+00:00",
+  "selected_uuids": [
+    "GPU-27c3b5ab-b82d-579b-14da-ceece5dfaa16",
+    "GPU-64ba6275-3071-8d64-069d-3c23552c6764",
+    "GPU-7c841195-e5a5-796c-f50e-06b4028639ed",
+    "GPU-9bdf39c7-917e-ba7f-73e5-ee97a9e87083"
+  ],
+  "gpu_state": {
+    "GPU-27c3b5ab-b82d-579b-14da-ceece5dfaa16": {
+      "name": "Tesla K80",
+      "used_mib": 0.0,
+      "free_mib": 11441.0
+    },
+    "GPU-64ba6275-3071-8d64-069d-3c23552c6764": {
+      "name": "Tesla K80",
+      "used_mib": 0.0,
+      "free_mib": 11441.0
+    },
+    "GPU-7c841195-e5a5-796c-f50e-06b4028639ed": {
+      "name": "Tesla K80",
+      "used_mib": 0.0,
+      "free_mib": 11441.0
+    },
+    "GPU-9bdf39c7-917e-ba7f-73e5-ee97a9e87083": {
+      "name": "Tesla K80",
+      "used_mib": 0.0,
+      "free_mib": 11441.0
+    }
+  },
+  "selected_compute_processes": [],
+  "protocol_sha256": "a6eb9661672b65816630866ec2ad8a9676179562202c4e0b2966cebb0b599269",
+  "prompts_sha256": "86cf4d97482c2a63fe790c9ab24a6db2806b667de68e93973e2bbebdbaa115ae"
+}

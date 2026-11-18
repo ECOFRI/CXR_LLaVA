@@ -1,0 +1,29 @@
+{
+  "classification": "CPU verification of technical preflight artifacts; no quality evaluation",
+  "cpu_unit_tests": {
+    "passed": 5,
+    "total": 5
+  },
+  "project_catalog_tests": {
+    "passed": 2,
+    "total": 2
+  },
+  "relative_links_checked": 62,
+  "ast_syntax": "PASS",
+  "shell_syntax": "PASS",
+  "git_diff_check": "PASS",
+  "input_and_contract_hashes": "PASS",
+  "optimizer_steps": {
+    "lora64": 20,
+    "bridge64": 20,
+    "lora256": 3
+  },
+  "gpu_charged_seconds": 1191.386199044995,
+  "gpu_limit_seconds": 3600,
+  "features_audited": 2500,
+  "checkpoint_audit": "PASS; both primary optimizer counters exactly20",
+  "git_staged_changes": false,
+  "commit_or_push_performed": false,
+  "mimic_external_upload_performed": false,
+  "gpu_after_completion": "RTX4000: 1MiB, utilization0%"
+}

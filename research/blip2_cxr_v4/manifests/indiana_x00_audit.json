@@ -1,0 +1,46 @@
+{
+  "classification": "P1 Part A source audit",
+  "n": 3667,
+  "n_used": 3667,
+  "n_excluded": 0,
+  "status_counts": {
+    "success": 3667
+  },
+  "view_counts": {
+    "frontal_unspecified": 3667
+  },
+  "reference_section_policies": {
+    "findings+impression": 3193,
+    "impression_only": 468,
+    "findings_only": 6
+  },
+  "unique_report_keys": 3667,
+  "unique_image_keys": 3667,
+  "unique_generated_texts": 2002,
+  "unique_reference_texts": 2931,
+  "reference_matches_selection": 3667,
+  "patient_key": "NOT_FOUND",
+  "bootstrap_unit": "report/study",
+  "source_sha256": {
+    "predictions": {
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_031940_1252388/inference/predictions.csv",
+      "sha256": "b62a213f344fd1c07530a415d1f683a8804e0d6d62925dd0e64e4d560cb2a979"
+    },
+    "cohort": {
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_031940_1252388/inference/cohort.csv",
+      "sha256": "d4f5504b9141106066a24f10345f5bf580db915084d5809a336354f2989dcc89"
+    },
+    "selection": {
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_inventory02/nlm_review_01/selection/cohort.csv",
+      "sha256": "d4f5504b9141106066a24f10345f5bf580db915084d5809a336354f2989dcc89"
+    },
+    "gt_labels": {
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_inventory02/nlm_review_01/gt_labeling/raw_labels.csv",
+      "sha256": "e96c71d6d488c4329c968c0096723b16c8d2da49db28da26da07d64fbf485673"
+    },
+    "generated_labels": {
+      "path": "/storage/student4/hanhpm/CXR_LLaVA_Improvement/result/indiana_full_k80_20261004_031940_1252388/metrics/generated_raw_labels.csv",
+      "sha256": "148be9aa559627159246ace0b7b087f71b04f650e1a62deec63a879d1b4c2e33"
+    }
+  }
+}

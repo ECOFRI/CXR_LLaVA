@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-14T02:01:03.333164+07:00",
+  "probe_test_not_yet_unlocked": true,
+  "source_sha256": {
+    "research/e1_features.py": "2a1bed8b7bca43f545ff950a8c0d48d360773758c7df03d0d7623500269cbc38",
+    "research/e1_probe.py": "cdc6d9ede4027288805de51f3eab523d711b3186ff029c4ea5503a3f7eb9bfa3",
+    "research/e1_review.py": "112059d7cc6d5137a2b57af67519c66f365cebd25dbf0c2598f22e1dc9d8a09a",
+    "research/e1_job.py": "9ac7d3d7d2c186c7c4c047dccc71a0129c71f4847baef7947fa25fde80abff0f",
+    "research/e1_analysis_report.py": "0475baec3d21913c45c4b20359fd5f885b5dd8a88ced95a532df360941f6fa4c",
+    "research/protocols/E1_nih_exploratory_protocol.yaml": "0a188f033d6e31bb05617e5257695f7b0fc2a9b43ebf27b5d074af883a951450"
+  },
+  "changes_since_preparation": "Added cache/protocol/cohort integrity preflight and pretest hashes; enriched evidence links and report generator. Numerical extraction/probe selection rules unchanged."
+}

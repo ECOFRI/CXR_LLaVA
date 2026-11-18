@@ -1,0 +1,11 @@
+{
+  "python": "3.11.18",
+  "torch": "2.6.0+cu124",
+  "torch_cuda_build": "12.4",
+  "transformers": "4.51.3",
+  "peft": "0.15.2",
+  "accelerate": "1.6.0",
+  "torchvision": "0.21.0+cu124",
+  "cuda_initialized": false,
+  "env": "research/envs/rrg-qwen"
+}

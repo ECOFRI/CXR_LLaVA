@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "NIH": {
+    "root": "/storage/student4/hanhpm/datasets/CXR8",
+    "local_cohort_manifest": "research/inventory/e1_nih/cohort_full.csv",
+    "available_cohort_rows": 4999,
+    "split_counts": {
+      "train": 3783,
+      "val": 344,
+      "test": 872
+    },
+    "patients_per_split": {
+      "train": 1222,
+      "val": 57,
+      "test": 56
+    },
+    "sample_image_paths_exist": true,
+    "original_metadata_rows": 112120,
+    "PruneCXR_full_label_rows": {
+      "train": 78506,
+      "val": 12533,
+      "test": 21081
+    },
+    "test_policy": "exploratory locked test; patient-disjoint local split; pretraining exposure risk"
+  },
+  "CheXpert": {
+    "root": "/storage/student4/hanhpm/datasets/CheXpert_test_labels",
+    "test_labels": "CheXpert/test_labels.csv",
+    "test_label_rows": 668,
+    "view_counts": {
+      "frontal": 518,
+      "lateral": 150
+    },
+    "groundtruth_rows": 500,
+    "sample_image_paths_exist": true,
+    "train_val": "NOT_FOUND in targeted authorized roots",
+    "test_policy": "locked test; no threshold/prompt tuning"
+  },
+  "shared_candidates": {
+    "NIH": "/storage/shared/sontg/NIH-Chest-X-rays contains 12 tar archives; not counted as local extracted images",
+    "CheXpert": "/storage/shared/sontg/CheXpert contains pointer file only"
+  }
+}

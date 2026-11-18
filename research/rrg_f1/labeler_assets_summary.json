@@ -1,0 +1,14 @@
+{
+  "public_assets_sha256": {
+    "GENIA+PubMed_archive": "130d4475626a468b041530102bb7f5d41c3abe17f545d78add01a47344e9b77f",
+    "CoreNLP3.5.2": "308830c1c6af5d60584a8a549557d661e333dcb42360c86372fb6ee2566673da",
+    "punkt": "51c3078994aeaf650bfc8e028be4fb42b4a0d177d41c012b6a983979653660ec",
+    "universal_tagset": "d490e1ae8f5625dcdfdda04be15c22a2aade8c2561a36a61edcdf0c7d6aa8352",
+    "mkl-2019.1-144.tar.bz2": "18a91bcc7fe2643631496a1e15c4607b306b3bcf78fb072c76828e2c66373d92",
+    "intel-openmp-2019.1-144.tar.bz2": "00124325a24c56a2da36bd62e5e288ac9083cbcb00a16b2b65a0293f11f7c142",
+    "libffi-3.2.1-he1b5a44_1006.tar.bz2": "4ce6c76455e6dff73fc1d5c8f76d0f1a0aaa8add9f92d25f04709af601a6abf2",
+    "p4_wordnet": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59"
+  },
+  "runtime": "restored P4 Python3.6.7, NLTK3.3; no package upgrade",
+  "patient_data_downloaded_or_uploaded": false
+}

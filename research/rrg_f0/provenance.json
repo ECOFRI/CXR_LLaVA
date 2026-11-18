@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "research/rrg_f0/config.json": "e718fd80a7ab9616248c60ccb64dc04168db75cb691d27cac11d67bccc774c49",
+    "research/clear_encoder_harness.py": "f3cc197b42d14e7a8be95194676271075302b0288fe495e3e288830d02162f59",
+    "research/e2_direct.py": "84017e7406ee66fb7b7b79d2d866744534b4c4dc494917aed32b26e09ae52de0",
+    "research/blip2_cxr_v4/runs/P4_projection_pilot_20261023/manifest_index.approved.json": "74965a79b31394a65af10dcb7987db0881e5083a8bb0da888bccbe120bd03175"
+  },
+  "encoder_source_sha256": {
+    "../CLEAR/src/clear/hub.py": "dcf7972268a5f6794e2631c52e85931118a09f101796b0aa791017c168903a9c",
+    "../CLEAR/src/clear/model.py": "e71725f5690d9f0724d3dfc5dc80e7c10f9e39662ec06c8875de9f154b128c1f",
+    "research/upstream/dinov2/dinov2/layers/attention.py": "79c7be7a452b3aad96698ec38d5d5150b9f4d8ac084fa93324510dc9f624775d"
+  },
+  "git_branch": "research/e4-b1-evidence-format-gate",
+  "git_commit": "ecb7fddbe709dc60432baed8b0f24b15da93422d",
+  "worktree_initial": "Only user work order untracked; no pre-existing tracked modifications",
+  "classification": "technical preflight; not an accuracy or clinical experiment",
+  "f0_code_sha256": {
+    "model.py": "7d4623856b72ad250d43aede238485b3944759f5ca000862c0c1a32e76b755f3",
+    "download_models.py": "e4342fd03814f5d99766abbe7ed8721a90c748b28b64f80239b54b811b39c90f",
+    "preflight.py": "13719405411521d5f0946163fc7bd6bb6a1b01aba974c173dc6573aa84d7885c",
+    "extract.py": "aedb6850b0374eadbda2464453794d9c4762c752632a0ccc633a5a593696a9bf",
+    "core.py": "7898115b92f3308f4fcb5d0b411e9c02487bb2ce240adce682abee89af6038c8",
+    "audit_features.py": "6f4ad2b552134f0cc0716b829c36b49e9a8e70cfea16a7fb393b4b70a13d8100",
+    "gpu_guard.py": "6d9bab36c71b2ed95e75d0d5b0b4dc655c7701c9ad9325821eb8d5fc47577331",
+    "report.py": "60ac84abae4edce92d17513ec1ef6307a0f651ba30b868ebeec784815093cbed",
+    "data.py": "9b69d033d1fd9cb9a03cae48f302f467e63e8b776d5b9030c3a439f8a4c79716",
+    "test_qwen.py": "a79ceca27f992cec7bc38e1f35409e055dc19aca00ea5cd89049f604dfd04e6f",
+    "test_core.py": "8cdf45a9452f4b8d530c24ce72430e8062d262067f98f5ce299b8ee92bedce41"
+  }
+}

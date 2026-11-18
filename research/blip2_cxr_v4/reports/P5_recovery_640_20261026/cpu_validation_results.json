@@ -1,0 +1,103 @@
+{
+  "classification": "CPU-only diagnostic; no model inference or training",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "target_mask_and_eos",
+      "status": "PASS",
+      "details": {
+        "prompt_plus_bos_masked": 17,
+        "supervised_tokens": 9
+      }
+    },
+    {
+      "name": "causal_shift_ignore_index",
+      "status": "PASS",
+      "details": {
+        "ignored_positions_do_not_change_loss": true,
+        "supervised_target_position_changes_loss": true
+      }
+    },
+    {
+      "name": "checkpoint_identity_and_cursor",
+      "status": "PASS",
+      "details": {
+        "checkpoint_sha256": "d207ffb290040b25ed16fd440ccff413fc03334a38d8f0a9d033e03c7517809b",
+        "optimizer_updates": 2000
+      }
+    },
+    {
+      "name": "checkpoint_adapter_loader_interface",
+      "status": "PASS",
+      "details": {
+        "group_parameters": {
+          "qformer": 105137664,
+          "query_tokens": 24576,
+          "projection": 1968640
+        },
+        "adapter_tensors": 257
+      }
+    },
+    {
+      "name": "pinned_tokenizer_and_eos_override",
+      "status": "PASS",
+      "details": {
+        "checkpoint_generation_max_length": 20,
+        "checkpoint_generation_max_new_tokens": null,
+        "checkpoint_generation_eos": 50118,
+        "diagnostic_eos": 2,
+        "bos": 2,
+        "pad": 1
+      }
+    },
+    {
+      "name": "runtime_generation_kwargs_640",
+      "status": "PASS",
+      "details": {
+        "max_new_tokens_forwarded": 640,
+        "max_length_forwarded": false,
+        "eos_kwarg": null,
+        "custom_stopping_eos": 2,
+        "checkpoint_generation_eos_restored": 50118
+      }
+    },
+    {
+      "name": "custom_eos_stopping",
+      "status": "PASS",
+      "details": {
+        "stops_on_2": true,
+        "does_not_stop_on_other_token": true
+      }
+    },
+    {
+      "name": "continuation_length_excludes_synthetic_bos",
+      "status": "PASS",
+      "details": {
+        "eos_sample_new_tokens": 3,
+        "capped_sample_new_tokens": 640
+      }
+    },
+    {
+      "name": "fixed_smoke_selection",
+      "status": "PASS",
+      "details": {
+        "rule": "first 20 in each approved ordered cohort",
+        "mimic": 20,
+        "indiana": 20
+      }
+    }
+  ],
+  "protocol": {
+    "new_max_new_tokens": 640,
+    "only_generation_delta": "max_new_tokens: 128 -> 640",
+    "source_p4_config_sha256": "d010d2cf32cb6cc9b96b834e5eb0a5df1d8bd13985ec31cf5faa447260471eb9",
+    "source_p5_config_sha256": "841753a63743c62fe15be5cc2f9f2308a40d593668a891050da18f8e213475ce",
+    "manifest_index_sha256": "74965a79b31394a65af10dcb7987db0881e5083a8bb0da888bccbe120bd03175",
+    "selected_stable_keys_sha256": "b9b847d4dbba794c514fe545fcce202b59657720f3a5b5721e88696e721378e0"
+  },
+  "limits": [
+    "Mock generation verifies forwarded kwargs, not GPU runtime or output quality",
+    "No full BLIP-2 model loaded; adapter tensors and source shapes checked on CPU",
+    "No 640-token reports generated; historical 128-token outputs unchanged"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "GO_WITHIN_CAP",
+  "smoke_status": "PASS",
+  "smoke_reports": 26,
+  "smoke_mean_report_wall_sec": 24.776104524767455,
+  "smoke_gpu_wall_sec": 671.3220219649374,
+  "full_model_load_allowance_sec": 23.38047066051513,
+  "full_report_multiplier": 1.25,
+  "additional_safety_sec": 600,
+  "projected_cumulative_gpu_wall_sec": 9470.816985798712,
+  "cap_sec": 14400,
+  "method": "smoke wall + full model load + 264 times mean smoke report latency times 1.25 + 600 s safety"
+}

@@ -1,0 +1,18 @@
+{
+  "classification": "REIMPLEMENTED",
+  "checkpoint_dir": "research/blip2_cxr_v4/.cache/models/blip2-opt-2.7b_59a1ef6",
+  "mimic_config": "research/blip2_cxr_v4/configs/eval/mimic_p1.yaml",
+  "indiana_x00_csv": "result/indiana_full_k80_20261004_031940_1252388/inference/cohort.csv",
+  "encoder": "blip2",
+  "feature_dim": 1408,
+  "language_dim": 2560,
+  "n_query": 32,
+  "learning_rate": 0.0001,
+  "max_steps": 100,
+  "save_every": 50,
+  "dataset_design": "MIMIC official train frontal AP/PA with nonempty findings or impression; validation official validate; tests official test plus Indiana X00 external; study-level grouping and official patient split; MIMIC pretraining exposure risk",
+  "experiment_id": "X06_qformer",
+  "arm": "qformer_projection",
+  "synthetic_bridge": "query",
+  "required_free_gib": 11.5
+}

@@ -1,0 +1,331 @@
+comparison,format,image_id,finding,matched_direction,shuffled_direction,first_output_state,second_output_state,target_state_changed,exact_text_changed,category
+M_vs_S,F1,CXR1050_IM-0038-4004,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1050_IM-0038-4004,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1050_IM-0038-4004,Edema,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1226_IM-0150-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1226_IM-0150-1001,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1226_IM-0150-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1226_IM-0150-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1226_IM-0150-1001,Pleural Effusion,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1285_IM-0188-0001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1285_IM-0188-0001,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1445_IM-0287-4004,Atelectasis,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR1445_IM-0287-4004,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR1445_IM-0287-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR1445_IM-0287-4004,Edema,Positive,Negative,Not mentioned,Positive,1,1,other_target_state_change
+M_vs_S,F1,CXR1445_IM-0287-4004,Pleural Effusion,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR1669_IM-0441-1001,Cardiomegaly,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F1,CXR1669_IM-0441-1001,Edema,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F1,CXR1769_IM-0503-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1769_IM-0503-1001,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1769_IM-0503-1001,Consolidation,Positive,Negative,Uncertain,Uncertain,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1769_IM-0503-1001,Edema,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1769_IM-0503-1001,Pleural Effusion,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1874_IM-0565-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1874_IM-0565-1001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1892_IM-0580-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR1892_IM-0580-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR202_IM-0667-4004,Atelectasis,Positive,Negative,Uncertain,Positive,1,1,other_target_state_change
+M_vs_S,F1,CXR202_IM-0667-4004,Cardiomegaly,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR202_IM-0667-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR202_IM-0667-4004,Edema,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR202_IM-0667-4004,Pleural Effusion,Positive,Negative,Uncertain,Not mentioned,1,1,other_target_state_change
+M_vs_S,F1,CXR2245_IM-0842-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2245_IM-0842-1001,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2245_IM-0842-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2245_IM-0842-1001,Pleural Effusion,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2532_IM-1046-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2532_IM-1046-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2532_IM-1046-1001,Pleural Effusion,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2752_IM-1202-0001-0001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2752_IM-1202-0001-0001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2752_IM-1202-0001-0001,Edema,Positive,Negative,Positive,Positive,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Negative,Positive,Positive,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3104_IM-1455-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3104_IM-1455-1001,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3104_IM-1455-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3104_IM-1455-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3104_IM-1455-1001,Pleural Effusion,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3319_IM-1588-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3479_IM-1690-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR3479_IM-1690-1001,Cardiomegaly,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR3479_IM-1690-1001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR3479_IM-1690-1001,Edema,Positive,Negative,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR3479_IM-1690-1001,Pleural Effusion,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F1,CXR3694_IM-1845-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3694_IM-1845-1001,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3694_IM-1845-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3694_IM-1845-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3694_IM-1845-1001,Pleural Effusion,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR3945_IM-2014-1001,Pleural Effusion,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR521_IM-2132-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F1,CXR880_IM-2395-1001,Pleural Effusion,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F2,CXR1050_IM-0038-4004,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1050_IM-0038-4004,Cardiomegaly,Negative,Positive,Negative,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1050_IM-0038-4004,Edema,Negative,Positive,Not mentioned,Uncertain,1,1,other_target_state_change
+M_vs_S,F2,CXR1226_IM-0150-1001,Atelectasis,Negative,Positive,Uncertain,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1226_IM-0150-1001,Cardiomegaly,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR1226_IM-0150-1001,Consolidation,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR1226_IM-0150-1001,Edema,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR1226_IM-0150-1001,Pleural Effusion,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1285_IM-0188-0001,Atelectasis,Positive,Negative,Not mentioned,Positive,1,1,other_target_state_change
+M_vs_S,F2,CXR1285_IM-0188-0001,Cardiomegaly,Positive,Negative,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1445_IM-0287-4004,Atelectasis,Positive,Negative,Positive,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1445_IM-0287-4004,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1445_IM-0287-4004,Consolidation,Positive,Negative,Positive,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1445_IM-0287-4004,Edema,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1445_IM-0287-4004,Pleural Effusion,Positive,Negative,Positive,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1669_IM-0441-1001,Cardiomegaly,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1669_IM-0441-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1769_IM-0503-1001,Atelectasis,Positive,Negative,Positive,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1769_IM-0503-1001,Cardiomegaly,Positive,Negative,Positive,Negative,1,1,follows_evidence
+M_vs_S,F2,CXR1769_IM-0503-1001,Consolidation,Positive,Negative,Not mentioned,Positive,1,1,other_target_state_change
+M_vs_S,F2,CXR1769_IM-0503-1001,Edema,Positive,Negative,Uncertain,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR1769_IM-0503-1001,Pleural Effusion,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1874_IM-0565-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1874_IM-0565-1001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1892_IM-0580-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR1892_IM-0580-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR202_IM-0667-4004,Atelectasis,Positive,Negative,Uncertain,Not mentioned,1,1,other_target_state_change
+M_vs_S,F2,CXR202_IM-0667-4004,Cardiomegaly,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR202_IM-0667-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR202_IM-0667-4004,Edema,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR202_IM-0667-4004,Pleural Effusion,Positive,Negative,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2245_IM-0842-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2245_IM-0842-1001,Cardiomegaly,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2245_IM-0842-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2245_IM-0842-1001,Pleural Effusion,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2532_IM-1046-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2532_IM-1046-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2532_IM-1046-1001,Pleural Effusion,Negative,Positive,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2752_IM-1202-0001-0001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2752_IM-1202-0001-0001,Consolidation,Positive,Negative,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2752_IM-1202-0001-0001,Edema,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3104_IM-1455-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3104_IM-1455-1001,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3104_IM-1455-1001,Consolidation,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR3104_IM-1455-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3104_IM-1455-1001,Pleural Effusion,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR3319_IM-1588-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3479_IM-1690-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3479_IM-1690-1001,Cardiomegaly,Positive,Negative,Positive,Negative,1,1,follows_evidence
+M_vs_S,F2,CXR3479_IM-1690-1001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3479_IM-1690-1001,Edema,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3479_IM-1690-1001,Pleural Effusion,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3694_IM-1845-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3694_IM-1845-1001,Cardiomegaly,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3694_IM-1845-1001,Consolidation,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR3694_IM-1845-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F2,CXR3694_IM-1845-1001,Pleural Effusion,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F2,CXR3945_IM-2014-1001,Pleural Effusion,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F2,CXR521_IM-2132-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F2,CXR880_IM-2395-1001,Pleural Effusion,Negative,Positive,Negative,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR1050_IM-0038-4004,Atelectasis,Negative,Positive,Uncertain,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR1050_IM-0038-4004,Cardiomegaly,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR1050_IM-0038-4004,Edema,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1226_IM-0150-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1226_IM-0150-1001,Cardiomegaly,Negative,Positive,Positive,Negative,1,1,opposes_evidence
+M_vs_S,F3,CXR1226_IM-0150-1001,Consolidation,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1226_IM-0150-1001,Edema,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR1226_IM-0150-1001,Pleural Effusion,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1285_IM-0188-0001,Atelectasis,Positive,Negative,Positive,Positive,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR1285_IM-0188-0001,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR1445_IM-0287-4004,Atelectasis,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1445_IM-0287-4004,Cardiomegaly,Positive,Negative,Positive,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR1445_IM-0287-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1445_IM-0287-4004,Edema,Positive,Negative,Uncertain,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR1445_IM-0287-4004,Pleural Effusion,Positive,Negative,Positive,Uncertain,1,1,other_target_state_change
+M_vs_S,F3,CXR1669_IM-0441-1001,Cardiomegaly,Negative,Positive,Negative,Negative,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR1669_IM-0441-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR1769_IM-0503-1001,Atelectasis,Positive,Negative,Uncertain,Positive,1,1,other_target_state_change
+M_vs_S,F3,CXR1769_IM-0503-1001,Cardiomegaly,Positive,Negative,Negative,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR1769_IM-0503-1001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1769_IM-0503-1001,Edema,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1769_IM-0503-1001,Pleural Effusion,Positive,Negative,Not mentioned,Positive,1,1,other_target_state_change
+M_vs_S,F3,CXR1874_IM-0565-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR1874_IM-0565-1001,Consolidation,Positive,Negative,Negative,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR1892_IM-0580-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR1892_IM-0580-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR202_IM-0667-4004,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR202_IM-0667-4004,Cardiomegaly,Positive,Negative,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR202_IM-0667-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR202_IM-0667-4004,Edema,Positive,Negative,Uncertain,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR202_IM-0667-4004,Pleural Effusion,Positive,Negative,Not mentioned,Positive,1,1,other_target_state_change
+M_vs_S,F3,CXR2245_IM-0842-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2245_IM-0842-1001,Cardiomegaly,Negative,Positive,Negative,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR2245_IM-0842-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2245_IM-0842-1001,Pleural Effusion,Negative,Positive,Positive,Negative,1,1,opposes_evidence
+M_vs_S,F3,CXR2532_IM-1046-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2532_IM-1046-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2532_IM-1046-1001,Pleural Effusion,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2752_IM-1202-0001-0001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Negative,Not mentioned,Positive,1,1,other_target_state_change
+M_vs_S,F3,CXR2752_IM-1202-0001-0001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2752_IM-1202-0001-0001,Edema,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Negative,Positive,Positive,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3104_IM-1455-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3104_IM-1455-1001,Cardiomegaly,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3104_IM-1455-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3104_IM-1455-1001,Edema,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3104_IM-1455-1001,Pleural Effusion,Negative,Positive,Negative,Negative,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3319_IM-1588-1001,Consolidation,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3479_IM-1690-1001,Atelectasis,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR3479_IM-1690-1001,Cardiomegaly,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR3479_IM-1690-1001,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR3479_IM-1690-1001,Edema,Positive,Negative,Positive,Positive,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR3479_IM-1690-1001,Pleural Effusion,Positive,Negative,Not mentioned,Not mentioned,0,0,unchanged_text_and_target_state
+M_vs_S,F3,CXR3694_IM-1845-1001,Atelectasis,Negative,Positive,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR3694_IM-1845-1001,Cardiomegaly,Negative,Positive,Negative,Not mentioned,1,1,other_target_state_change
+M_vs_S,F3,CXR3694_IM-1845-1001,Consolidation,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR3694_IM-1845-1001,Edema,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR3694_IM-1845-1001,Pleural Effusion,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR3945_IM-2014-1001,Pleural Effusion,Positive,Negative,Not mentioned,Negative,1,1,other_target_state_change
+M_vs_S,F3,CXR521_IM-2132-4004,Consolidation,Positive,Negative,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+M_vs_S,F3,CXR880_IM-2395-1001,Pleural Effusion,Negative,Positive,Not mentioned,Negative,1,1,other_target_state_change
+N1_vs_C0,NEUTRAL,CXR1050_IM-0038-4004,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1050_IM-0038-4004,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1050_IM-0038-4004,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1050_IM-0038-4004,Edema,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1050_IM-0038-4004,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1050_IM-0038-4004,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1226_IM-0150-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1226_IM-0150-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1226_IM-0150-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1226_IM-0150-1001,Edema,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1226_IM-0150-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1226_IM-0150-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1285_IM-0188-0001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1285_IM-0188-0001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1285_IM-0188-0001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1285_IM-0188-0001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1285_IM-0188-0001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1285_IM-0188-0001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1445_IM-0287-4004,Atelectasis,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1445_IM-0287-4004,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1445_IM-0287-4004,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1445_IM-0287-4004,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1445_IM-0287-4004,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1445_IM-0287-4004,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1669_IM-0441-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1669_IM-0441-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1669_IM-0441-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1669_IM-0441-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1669_IM-0441-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1669_IM-0441-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1769_IM-0503-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1769_IM-0503-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1769_IM-0503-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1769_IM-0503-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1769_IM-0503-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1769_IM-0503-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1792_IM-0515-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1792_IM-0515-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1792_IM-0515-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1792_IM-0515-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Uncertain,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1792_IM-0515-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1792_IM-0515-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1874_IM-0565-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1874_IM-0565-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1874_IM-0565-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1874_IM-0565-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1874_IM-0565-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1874_IM-0565-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1892_IM-0580-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1892_IM-0580-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1892_IM-0580-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1892_IM-0580-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR1892_IM-0580-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR1892_IM-0580-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR202_IM-0667-4004,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Positive,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR202_IM-0667-4004,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR202_IM-0667-4004,Consolidation,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR202_IM-0667-4004,Edema,UNAVAILABLE,UNAVAILABLE,Uncertain,Uncertain,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR202_IM-0667-4004,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR202_IM-0667-4004,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2245_IM-0842-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2245_IM-0842-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2245_IM-0842-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR2245_IM-0842-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2245_IM-0842-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Positive,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR2245_IM-0842-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2532_IM-1046-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2532_IM-1046-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2532_IM-1046-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2532_IM-1046-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Positive,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR2532_IM-1046-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR2532_IM-1046-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR2752_IM-1202-0001-0001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2752_IM-1202-0001-0001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2752_IM-1202-0001-0001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2752_IM-1202-0001-0001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2752_IM-1202-0001-0001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR2752_IM-1202-0001-0001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3104_IM-1455-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3104_IM-1455-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3104_IM-1455-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3104_IM-1455-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3104_IM-1455-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3104_IM-1455-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3319_IM-1588-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3319_IM-1588-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3319_IM-1588-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3319_IM-1588-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3319_IM-1588-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3319_IM-1588-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3479_IM-1690-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Uncertain,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3479_IM-1690-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3479_IM-1690-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3479_IM-1690-1001,Edema,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3479_IM-1690-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Positive,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3479_IM-1690-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3636_IM-1803-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3636_IM-1803-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3636_IM-1803-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3636_IM-1803-1001,Edema,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3636_IM-1803-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3636_IM-1803-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3694_IM-1845-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3694_IM-1845-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3694_IM-1845-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3694_IM-1845-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3694_IM-1845-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3694_IM-1845-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3945_IM-2014-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3945_IM-2014-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3945_IM-2014-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR3945_IM-2014-1001,Edema,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3945_IM-2014-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR3945_IM-2014-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR492_IM-2112-2002,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR492_IM-2112-2002,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR492_IM-2112-2002,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR492_IM-2112-2002,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR492_IM-2112-2002,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Negative,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR492_IM-2112-2002,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR521_IM-2132-4004,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR521_IM-2132-4004,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Positive,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR521_IM-2132-4004,Consolidation,UNAVAILABLE,UNAVAILABLE,Positive,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR521_IM-2132-4004,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR521_IM-2132-4004,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Not mentioned,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR521_IM-2132-4004,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR570_IM-2170-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR570_IM-2170-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR570_IM-2170-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR570_IM-2170-1001,Edema,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR570_IM-2170-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR570_IM-2170-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR643_IM-2222-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Positive,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR643_IM-2222-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Positive,Negative,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR643_IM-2222-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR643_IM-2222-1001,Edema,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR643_IM-2222-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR643_IM-2222-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR880_IM-2395-1001,Atelectasis,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR880_IM-2395-1001,Cardiomegaly,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR880_IM-2395-1001,Consolidation,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same
+N1_vs_C0,NEUTRAL,CXR880_IM-2395-1001,Edema,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR880_IM-2395-1001,Pleural Effusion,UNAVAILABLE,UNAVAILABLE,Negative,Not mentioned,1,1,state_changed_no_evidence_direction
+N1_vs_C0,NEUTRAL,CXR880_IM-2395-1001,Pneumothorax,UNAVAILABLE,UNAVAILABLE,Not mentioned,Not mentioned,0,1,text_changed_target_state_same

@@ -1,0 +1,4346 @@
+{
+  "status": "PASS",
+  "classification": "metric-complete evaluation on fixed exposed dev cohorts; not test benchmark",
+  "bootstrap_reps": 1000,
+  "bootstrap_seed": 42,
+  "bootstrap": "paired patient clusters MIMIC; study clusters Indiana; unadjusted percentile95%",
+  "text_cohort": "all500 per dataset; empty generations get zero text scores and blank clinical labels; no favorable dropping",
+  "clinical_ontology": [
+    "Cardiomegaly",
+    "Consolidation",
+    "Edema",
+    "Lung Opacity",
+    "Pleural Effusion",
+    "Pneumonia",
+    "Pneumothorax"
+  ],
+  "clinical_policies": [
+    "historical",
+    "blank_as_negative"
+  ],
+  "datasets": {
+    "mimic": {
+      "models": {
+        "M0": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.08928615399768537,
+            "bleu2": 0.02023807611047649,
+            "bleu3": 0.0076324452840504315,
+            "bleu4": 0.0,
+            "rouge_l": 0.08990604628922863,
+            "meteor": 0.06875910628456229
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 2,
+                  "fp": 1,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 3,
+                  "precision": 0.6666666666666666,
+                  "recall": 1.0,
+                  "f1": 0.8,
+                  "support": 2,
+                  "coverage": 0.006,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 485,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 5
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Pleural Effusion": {
+                  "tp": 1,
+                  "fp": 2,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 3,
+                  "precision": 0.3333333333333333,
+                  "recall": 1.0,
+                  "f1": 0.5,
+                  "support": 1,
+                  "coverage": 0.006,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 497,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 4
+                },
+                "Pneumonia": {
+                  "tp": 1,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 1,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "f1": 1.0,
+                  "support": 1,
+                  "coverage": 0.002,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 491,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 2
+                },
+                "Pneumothorax": {
+                  "tp": 9,
+                  "fp": 91,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 100,
+                  "precision": 0.09,
+                  "recall": 1.0,
+                  "f1": 0.1651376146788991,
+                  "support": 9,
+                  "coverage": 0.2,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 240,
+                  "generated_uncertain": 63,
+                  "f1_denominator": 109
+                }
+              },
+              "macro_f1": 0.6162844036697247,
+              "micro_f1": 0.21666666666666667,
+              "defined_classes": 4,
+              "classes": 7,
+              "paired_label_count": 107,
+              "positive_support": 13,
+              "undefined_reason": null,
+              "micro_f1_denominator": 120,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 2,
+                  "fp": 13,
+                  "fn": 153,
+                  "tn": 312,
+                  "paired": 480,
+                  "precision": 0.13333333333333333,
+                  "recall": 0.012903225806451613,
+                  "f1": 0.023529411764705882,
+                  "support": 155,
+                  "coverage": 0.96,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 485,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 170
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 33,
+                  "tn": 447,
+                  "paired": 480,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 33,
+                  "coverage": 0.96,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 33
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 72,
+                  "tn": 404,
+                  "paired": 476,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 72,
+                  "coverage": 0.952,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 72
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 169,
+                  "tn": 322,
+                  "paired": 491,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 169,
+                  "coverage": 0.982,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 169
+                },
+                "Pleural Effusion": {
+                  "tp": 1,
+                  "fp": 2,
+                  "fn": 169,
+                  "tn": 316,
+                  "paired": 488,
+                  "precision": 0.3333333333333333,
+                  "recall": 0.0058823529411764705,
+                  "f1": 0.011560693641618497,
+                  "support": 170,
+                  "coverage": 0.976,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 497,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 173
+                },
+                "Pneumonia": {
+                  "tp": 1,
+                  "fp": 7,
+                  "fn": 39,
+                  "tn": 406,
+                  "paired": 453,
+                  "precision": 0.125,
+                  "recall": 0.025,
+                  "f1": 0.041666666666666664,
+                  "support": 40,
+                  "coverage": 0.906,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 491,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 48
+                },
+                "Pneumothorax": {
+                  "tp": 9,
+                  "fp": 187,
+                  "fn": 9,
+                  "tn": 230,
+                  "paired": 435,
+                  "precision": 0.04591836734693878,
+                  "recall": 0.5,
+                  "f1": 0.08411214953271028,
+                  "support": 18,
+                  "coverage": 0.87,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 240,
+                  "generated_uncertain": 63,
+                  "f1_denominator": 214
+                }
+              },
+              "macro_f1": 0.022981274515100188,
+              "micro_f1": 0.02957906712172924,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3303,
+              "positive_support": 657,
+              "undefined_reason": null,
+              "micro_f1_denominator": 879,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 500
+        },
+        "M1": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.17561209133125516,
+            "bleu2": 0.09345794659288603,
+            "bleu3": 0.0553718751343907,
+            "bleu4": 0.03463774817732544,
+            "rouge_l": 0.16633244540006695,
+            "meteor": 0.1398774073087037
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 31,
+                  "fp": 12,
+                  "fn": 22,
+                  "tn": 13,
+                  "paired": 78,
+                  "precision": 0.7209302325581395,
+                  "recall": 0.5849056603773585,
+                  "f1": 0.6458333333333334,
+                  "support": 53,
+                  "coverage": 0.156,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 323,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 96
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Edema": {
+                  "tp": 1,
+                  "fp": 0,
+                  "fn": 4,
+                  "tn": 8,
+                  "paired": 13,
+                  "precision": 1.0,
+                  "recall": 0.2,
+                  "f1": 0.3333333333333333,
+                  "support": 5,
+                  "coverage": 0.026,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 460,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 6
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Pleural Effusion": {
+                  "tp": 19,
+                  "fp": 34,
+                  "fn": 43,
+                  "tn": 67,
+                  "paired": 163,
+                  "precision": 0.3584905660377358,
+                  "recall": 0.3064516129032258,
+                  "f1": 0.33043478260869563,
+                  "support": 62,
+                  "coverage": 0.326,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 290,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 115
+                },
+                "Pneumonia": {
+                  "tp": 1,
+                  "fp": 1,
+                  "fn": 7,
+                  "tn": 6,
+                  "paired": 15,
+                  "precision": 0.5,
+                  "recall": 0.125,
+                  "f1": 0.2,
+                  "support": 8,
+                  "coverage": 0.03,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 442,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 10
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 11,
+                  "tn": 72,
+                  "paired": 84,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 11,
+                  "coverage": 0.168,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 367,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 12
+                }
+              },
+              "macro_f1": 0.30192028985507247,
+              "micro_f1": 0.4351464435146444,
+              "defined_classes": 5,
+              "classes": 7,
+              "paired_label_count": 353,
+              "positive_support": 139,
+              "undefined_reason": null,
+              "micro_f1_denominator": 239,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 31,
+                  "fp": 43,
+                  "fn": 123,
+                  "tn": 280,
+                  "paired": 477,
+                  "precision": 0.4189189189189189,
+                  "recall": 0.2012987012987013,
+                  "f1": 0.2719298245614035,
+                  "support": 154,
+                  "coverage": 0.954,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 323,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 228
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 33,
+                  "tn": 447,
+                  "paired": 480,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 33,
+                  "coverage": 0.96,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 33
+                },
+                "Edema": {
+                  "tp": 1,
+                  "fp": 2,
+                  "fn": 71,
+                  "tn": 401,
+                  "paired": 475,
+                  "precision": 0.3333333333333333,
+                  "recall": 0.013888888888888888,
+                  "f1": 0.02666666666666667,
+                  "support": 72,
+                  "coverage": 0.95,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 460,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 75
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 169,
+                  "tn": 322,
+                  "paired": 491,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 169,
+                  "coverage": 0.982,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 169
+                },
+                "Pleural Effusion": {
+                  "tp": 19,
+                  "fp": 48,
+                  "fn": 151,
+                  "tn": 270,
+                  "paired": 488,
+                  "precision": 0.2835820895522388,
+                  "recall": 0.11176470588235295,
+                  "f1": 0.16033755274261605,
+                  "support": 170,
+                  "coverage": 0.976,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 290,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 237
+                },
+                "Pneumonia": {
+                  "tp": 1,
+                  "fp": 6,
+                  "fn": 39,
+                  "tn": 407,
+                  "paired": 453,
+                  "precision": 0.14285714285714285,
+                  "recall": 0.025,
+                  "f1": 0.0425531914893617,
+                  "support": 40,
+                  "coverage": 0.906,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 442,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 47
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 2,
+                  "fn": 19,
+                  "tn": 476,
+                  "paired": 497,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 19,
+                  "coverage": 0.994,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 367,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 21
+                }
+              },
+              "macro_f1": 0.0716410336371497,
+              "micro_f1": 0.12839506172839507,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3361,
+              "positive_support": 657,
+              "undefined_reason": null,
+              "micro_f1_denominator": 810,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 113
+        },
+        "A2": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.22730373209471527,
+            "bleu2": 0.1293682150309611,
+            "bleu3": 0.08168331981730315,
+            "bleu4": 0.0558809956069584,
+            "rouge_l": 0.20469477803761799,
+            "meteor": 0.19415887112919586
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 80,
+                  "fp": 3,
+                  "fn": 7,
+                  "tn": 3,
+                  "paired": 93,
+                  "precision": 0.963855421686747,
+                  "recall": 0.9195402298850575,
+                  "f1": 0.9411764705882353,
+                  "support": 87,
+                  "coverage": 0.186,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 310,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 170
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 12,
+                  "tn": 80,
+                  "paired": 92,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 12,
+                  "coverage": 0.184,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 252,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 12
+                },
+                "Edema": {
+                  "tp": 19,
+                  "fp": 0,
+                  "fn": 1,
+                  "tn": 11,
+                  "paired": 31,
+                  "precision": 1.0,
+                  "recall": 0.95,
+                  "f1": 0.9743589743589743,
+                  "support": 20,
+                  "coverage": 0.062,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 388,
+                  "generated_uncertain": 44,
+                  "f1_denominator": 39
+                },
+                "Lung Opacity": {
+                  "tp": 16,
+                  "fp": 1,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 17,
+                  "precision": 0.9411764705882353,
+                  "recall": 1.0,
+                  "f1": 0.9696969696969697,
+                  "support": 16,
+                  "coverage": 0.034,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 471,
+                  "generated_uncertain": 2,
+                  "f1_denominator": 33
+                },
+                "Pleural Effusion": {
+                  "tp": 37,
+                  "fp": 1,
+                  "fn": 74,
+                  "tn": 173,
+                  "paired": 285,
+                  "precision": 0.9736842105263158,
+                  "recall": 0.3333333333333333,
+                  "f1": 0.4966442953020134,
+                  "support": 111,
+                  "coverage": 0.57,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 117,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 149
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 1,
+                  "tn": 0,
+                  "paired": 1,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 1,
+                  "coverage": 0.002,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 481,
+                  "generated_uncertain": 6,
+                  "f1_denominator": 1
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 15,
+                  "tn": 202,
+                  "paired": 218,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 15,
+                  "coverage": 0.436,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 127,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 16
+                }
+              },
+              "macro_f1": 0.4831252442780275,
+              "micro_f1": 0.7238095238095238,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 737,
+              "positive_support": 262,
+              "undefined_reason": null,
+              "micro_f1_denominator": 420,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 80,
+                  "fp": 67,
+                  "fn": 75,
+                  "tn": 255,
+                  "paired": 477,
+                  "precision": 0.54421768707483,
+                  "recall": 0.5161290322580645,
+                  "f1": 0.5298013245033113,
+                  "support": 155,
+                  "coverage": 0.954,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 310,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 302
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 33,
+                  "tn": 447,
+                  "paired": 480,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 33,
+                  "coverage": 0.96,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 252,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 33
+                },
+                "Edema": {
+                  "tp": 19,
+                  "fp": 12,
+                  "fn": 43,
+                  "tn": 363,
+                  "paired": 437,
+                  "precision": 0.6129032258064516,
+                  "recall": 0.3064516129032258,
+                  "f1": 0.40860215053763443,
+                  "support": 62,
+                  "coverage": 0.874,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 388,
+                  "generated_uncertain": 44,
+                  "f1_denominator": 93
+                },
+                "Lung Opacity": {
+                  "tp": 16,
+                  "fp": 10,
+                  "fn": 151,
+                  "tn": 312,
+                  "paired": 489,
+                  "precision": 0.6153846153846154,
+                  "recall": 0.09580838323353294,
+                  "f1": 0.16580310880829016,
+                  "support": 167,
+                  "coverage": 0.978,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 471,
+                  "generated_uncertain": 2,
+                  "f1_denominator": 193
+                },
+                "Pleural Effusion": {
+                  "tp": 37,
+                  "fp": 16,
+                  "fn": 133,
+                  "tn": 302,
+                  "paired": 488,
+                  "precision": 0.6981132075471698,
+                  "recall": 0.21764705882352942,
+                  "f1": 0.33183856502242154,
+                  "support": 170,
+                  "coverage": 0.976,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 117,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 223
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 40,
+                  "tn": 408,
+                  "paired": 448,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 40,
+                  "coverage": 0.896,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 481,
+                  "generated_uncertain": 6,
+                  "f1_denominator": 40
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 2,
+                  "fn": 19,
+                  "tn": 476,
+                  "paired": 497,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 19,
+                  "coverage": 0.994,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 127,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 21
+                }
+              },
+              "macro_f1": 0.20514930698166536,
+              "micro_f1": 0.33591160220994476,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3316,
+              "positive_support": 646,
+              "undefined_reason": null,
+              "micro_f1_denominator": 905,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 78
+        },
+        "A3": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.21234735413839892,
+            "bleu2": 0.1224359883978772,
+            "bleu3": 0.0777855157356037,
+            "bleu4": 0.05328492305824519,
+            "rouge_l": 0.20484809715562097,
+            "meteor": 0.19584822622272255
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 75,
+                  "fp": 2,
+                  "fn": 8,
+                  "tn": 6,
+                  "paired": 91,
+                  "precision": 0.974025974025974,
+                  "recall": 0.9036144578313253,
+                  "f1": 0.9375,
+                  "support": 83,
+                  "coverage": 0.182,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 332,
+                  "generated_uncertain": 5,
+                  "f1_denominator": 160
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 9,
+                  "tn": 71,
+                  "paired": 80,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 9,
+                  "coverage": 0.16,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 303,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 9
+                },
+                "Edema": {
+                  "tp": 10,
+                  "fp": 0,
+                  "fn": 3,
+                  "tn": 17,
+                  "paired": 30,
+                  "precision": 1.0,
+                  "recall": 0.7692307692307693,
+                  "f1": 0.8695652173913043,
+                  "support": 13,
+                  "coverage": 0.06,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 380,
+                  "generated_uncertain": 30,
+                  "f1_denominator": 23
+                },
+                "Lung Opacity": {
+                  "tp": 9,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 9,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "f1": 1.0,
+                  "support": 9,
+                  "coverage": 0.018,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 487,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 18
+                },
+                "Pleural Effusion": {
+                  "tp": 38,
+                  "fp": 3,
+                  "fn": 54,
+                  "tn": 158,
+                  "paired": 253,
+                  "precision": 0.926829268292683,
+                  "recall": 0.41304347826086957,
+                  "f1": 0.5714285714285714,
+                  "support": 92,
+                  "coverage": 0.506,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 151,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 133
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 2,
+                  "tn": 4,
+                  "paired": 6,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 2,
+                  "coverage": 0.012,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 474,
+                  "generated_uncertain": 9,
+                  "f1_denominator": 2
+                },
+                "Pneumothorax": {
+                  "tp": 8,
+                  "fp": 3,
+                  "fn": 7,
+                  "tn": 202,
+                  "paired": 220,
+                  "precision": 0.7272727272727273,
+                  "recall": 0.5333333333333333,
+                  "f1": 0.6153846153846154,
+                  "support": 15,
+                  "coverage": 0.44,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 139,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 26
+                }
+              },
+              "macro_f1": 0.5705540577434988,
+              "micro_f1": 0.7547169811320755,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 689,
+              "positive_support": 223,
+              "undefined_reason": null,
+              "micro_f1_denominator": 371,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 75,
+                  "fp": 42,
+                  "fn": 77,
+                  "tn": 281,
+                  "paired": 475,
+                  "precision": 0.6410256410256411,
+                  "recall": 0.4934210526315789,
+                  "f1": 0.5576208178438662,
+                  "support": 152,
+                  "coverage": 0.95,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 332,
+                  "generated_uncertain": 5,
+                  "f1_denominator": 269
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 33,
+                  "tn": 447,
+                  "paired": 480,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 33,
+                  "coverage": 0.96,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 303,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 33
+                },
+                "Edema": {
+                  "tp": 10,
+                  "fp": 9,
+                  "fn": 49,
+                  "tn": 383,
+                  "paired": 451,
+                  "precision": 0.5263157894736842,
+                  "recall": 0.1694915254237288,
+                  "f1": 0.2564102564102564,
+                  "support": 59,
+                  "coverage": 0.902,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 380,
+                  "generated_uncertain": 30,
+                  "f1_denominator": 78
+                },
+                "Lung Opacity": {
+                  "tp": 9,
+                  "fp": 4,
+                  "fn": 160,
+                  "tn": 318,
+                  "paired": 491,
+                  "precision": 0.6923076923076923,
+                  "recall": 0.05325443786982249,
+                  "f1": 0.0989010989010989,
+                  "support": 169,
+                  "coverage": 0.982,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 487,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 182
+                },
+                "Pleural Effusion": {
+                  "tp": 38,
+                  "fp": 20,
+                  "fn": 132,
+                  "tn": 298,
+                  "paired": 488,
+                  "precision": 0.6551724137931034,
+                  "recall": 0.2235294117647059,
+                  "f1": 0.3333333333333333,
+                  "support": 170,
+                  "coverage": 0.976,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 151,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 228
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 37,
+                  "tn": 407,
+                  "paired": 444,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 37,
+                  "coverage": 0.888,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 474,
+                  "generated_uncertain": 9,
+                  "f1_denominator": 37
+                },
+                "Pneumothorax": {
+                  "tp": 8,
+                  "fp": 11,
+                  "fn": 11,
+                  "tn": 467,
+                  "paired": 497,
+                  "precision": 0.42105263157894735,
+                  "recall": 0.42105263157894735,
+                  "f1": 0.42105263157894735,
+                  "support": 19,
+                  "coverage": 0.994,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 139,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 38
+                }
+              },
+              "macro_f1": 0.2381883054382146,
+              "micro_f1": 0.3236994219653179,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3326,
+              "positive_support": 639,
+              "undefined_reason": null,
+              "micro_f1_denominator": 865,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 100
+        },
+        "A4": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.24979123131521977,
+            "bleu2": 0.14380805723131942,
+            "bleu3": 0.09232005668631928,
+            "bleu4": 0.06364014280273192,
+            "rouge_l": 0.21155457416396914,
+            "meteor": 0.2042316962762243
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 77,
+                  "fp": 6,
+                  "fn": 11,
+                  "tn": 5,
+                  "paired": 99,
+                  "precision": 0.927710843373494,
+                  "recall": 0.875,
+                  "f1": 0.9005847953216374,
+                  "support": 88,
+                  "coverage": 0.198,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 311,
+                  "generated_uncertain": 4,
+                  "f1_denominator": 171
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 10,
+                  "tn": 90,
+                  "paired": 100,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 10,
+                  "coverage": 0.2,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 254,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 10
+                },
+                "Edema": {
+                  "tp": 12,
+                  "fp": 1,
+                  "fn": 14,
+                  "tn": 13,
+                  "paired": 40,
+                  "precision": 0.9230769230769231,
+                  "recall": 0.46153846153846156,
+                  "f1": 0.6153846153846154,
+                  "support": 26,
+                  "coverage": 0.08,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 374,
+                  "generated_uncertain": 36,
+                  "f1_denominator": 39
+                },
+                "Lung Opacity": {
+                  "tp": 13,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 13,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "f1": 1.0,
+                  "support": 13,
+                  "coverage": 0.026,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 474,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 26
+                },
+                "Pleural Effusion": {
+                  "tp": 65,
+                  "fp": 4,
+                  "fn": 47,
+                  "tn": 168,
+                  "paired": 284,
+                  "precision": 0.9420289855072463,
+                  "recall": 0.5803571428571429,
+                  "f1": 0.7182320441988951,
+                  "support": 112,
+                  "coverage": 0.568,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 106,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 181
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 3,
+                  "tn": 1,
+                  "paired": 4,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 3,
+                  "coverage": 0.008,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 482,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 3
+                },
+                "Pneumothorax": {
+                  "tp": 6,
+                  "fp": 15,
+                  "fn": 10,
+                  "tn": 198,
+                  "paired": 229,
+                  "precision": 0.2857142857142857,
+                  "recall": 0.375,
+                  "f1": 0.32432432432432434,
+                  "support": 16,
+                  "coverage": 0.458,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 112,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 37
+                }
+              },
+              "macro_f1": 0.5083608256042104,
+              "micro_f1": 0.7408993576017131,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 769,
+              "positive_support": 268,
+              "undefined_reason": null,
+              "micro_f1_denominator": 467,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 77,
+                  "fp": 58,
+                  "fn": 77,
+                  "tn": 264,
+                  "paired": 476,
+                  "precision": 0.5703703703703704,
+                  "recall": 0.5,
+                  "f1": 0.532871972318339,
+                  "support": 154,
+                  "coverage": 0.952,
+                  "reference_blank": 262,
+                  "reference_uncertain": 20,
+                  "generated_blank": 311,
+                  "generated_uncertain": 4,
+                  "f1_denominator": 289
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 33,
+                  "tn": 447,
+                  "paired": 480,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 33,
+                  "coverage": 0.96,
+                  "reference_blank": 344,
+                  "reference_uncertain": 20,
+                  "generated_blank": 254,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 33
+                },
+                "Edema": {
+                  "tp": 12,
+                  "fp": 11,
+                  "fn": 48,
+                  "tn": 372,
+                  "paired": 443,
+                  "precision": 0.5217391304347826,
+                  "recall": 0.2,
+                  "f1": 0.2891566265060241,
+                  "support": 60,
+                  "coverage": 0.886,
+                  "reference_blank": 293,
+                  "reference_uncertain": 24,
+                  "generated_blank": 374,
+                  "generated_uncertain": 36,
+                  "f1_denominator": 83
+                },
+                "Lung Opacity": {
+                  "tp": 13,
+                  "fp": 10,
+                  "fn": 156,
+                  "tn": 310,
+                  "paired": 489,
+                  "precision": 0.5652173913043478,
+                  "recall": 0.07692307692307693,
+                  "f1": 0.13541666666666666,
+                  "support": 169,
+                  "coverage": 0.978,
+                  "reference_blank": 312,
+                  "reference_uncertain": 9,
+                  "generated_blank": 474,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 192
+                },
+                "Pleural Effusion": {
+                  "tp": 65,
+                  "fp": 23,
+                  "fn": 105,
+                  "tn": 295,
+                  "paired": 488,
+                  "precision": 0.7386363636363636,
+                  "recall": 0.38235294117647056,
+                  "f1": 0.5038759689922481,
+                  "support": 170,
+                  "coverage": 0.976,
+                  "reference_blank": 134,
+                  "reference_uncertain": 12,
+                  "generated_blank": 106,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 258
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 40,
+                  "tn": 410,
+                  "paired": 450,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 40,
+                  "coverage": 0.9,
+                  "reference_blank": 367,
+                  "reference_uncertain": 47,
+                  "generated_blank": 482,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 40
+                },
+                "Pneumothorax": {
+                  "tp": 6,
+                  "fp": 31,
+                  "fn": 13,
+                  "tn": 447,
+                  "paired": 497,
+                  "precision": 0.16216216216216217,
+                  "recall": 0.3157894736842105,
+                  "f1": 0.21428571428571427,
+                  "support": 19,
+                  "coverage": 0.994,
+                  "reference_blank": 214,
+                  "reference_uncertain": 3,
+                  "generated_blank": 112,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 56
+                }
+              },
+              "macro_f1": 0.23937242125271316,
+              "micro_f1": 0.3638275499474238,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3323,
+              "positive_support": 645,
+              "undefined_reason": null,
+              "micro_f1_denominator": 951,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 52
+        }
+      },
+      "ci95": {
+        "M0": {
+          "bleu1": [
+            0.08332480601028484,
+            0.09606015697865346
+          ],
+          "bleu2": [
+            0.017681590581083453,
+            0.02339382331076983
+          ],
+          "bleu3": [
+            0.006361313895131388,
+            0.009400273277346416
+          ],
+          "bleu4": [
+            0.0,
+            0.0
+          ],
+          "rouge_l": [
+            0.08386043770042752,
+            0.09758826904546089
+          ],
+          "meteor": [
+            0.0617085240493472,
+            0.07730773264340456
+          ],
+          "historical_micro_f1": [
+            0.06,
+            0.4032461713913326
+          ],
+          "historical_macro_f1": [
+            0.21775156207050753,
+            0.76601471501786
+          ],
+          "blank_as_negative_micro_f1": [
+            0.007351599398883641,
+            0.06355047312164913
+          ],
+          "blank_as_negative_macro_f1": [
+            0.006143430179881872,
+            0.04441133441680765
+          ]
+        },
+        "M1": {
+          "bleu1": [
+            0.1586824766091247,
+            0.20207320905455786
+          ],
+          "bleu2": [
+            0.08167587839382044,
+            0.1118704314297088
+          ],
+          "bleu3": [
+            0.04624092469776422,
+            0.06977499794994362
+          ],
+          "bleu4": [
+            0.027475644798292884,
+            0.045859667848276886
+          ],
+          "rouge_l": [
+            0.15653334520134843,
+            0.1815495965947756
+          ],
+          "meteor": [
+            0.12410709356596925,
+            0.16303185321244487
+          ],
+          "historical_micro_f1": [
+            0.3614232439963937,
+            0.5114902090939263
+          ],
+          "historical_macro_f1": [
+            0.18527454954954956,
+            0.4036837192659227
+          ],
+          "blank_as_negative_micro_f1": [
+            0.091134326695146,
+            0.18027767875709236
+          ],
+          "blank_as_negative_macro_f1": [
+            0.05305980028466407,
+            0.09829927614819066
+          ]
+        },
+        "A2": {
+          "bleu1": [
+            0.18786092398966076,
+            0.24386020844894926
+          ],
+          "bleu2": [
+            0.10530600459584243,
+            0.14332622760599695
+          ],
+          "bleu3": [
+            0.0634304668688274,
+            0.09551859973446433
+          ],
+          "bleu4": [
+            0.04164022913140192,
+            0.06866890188588935
+          ],
+          "rouge_l": [
+            0.18879845554552532,
+            0.230246398262988
+          ],
+          "meteor": [
+            0.18246198295748098,
+            0.21151906058425546
+          ],
+          "historical_micro_f1": [
+            0.6439673325229476,
+            0.7919319473097757
+          ],
+          "historical_macro_f1": [
+            0.4601719677565542,
+            0.5796956547337805
+          ],
+          "blank_as_negative_micro_f1": [
+            0.26523173243931014,
+            0.4187422015486806
+          ],
+          "blank_as_negative_macro_f1": [
+            0.16080825146508088,
+            0.24564910284593797
+          ]
+        },
+        "A3": {
+          "bleu1": [
+            0.17676607366839434,
+            0.24656271781670358
+          ],
+          "bleu2": [
+            0.099377108514779,
+            0.1479341616181902
+          ],
+          "bleu3": [
+            0.060733525195850395,
+            0.09905540448096987
+          ],
+          "bleu4": [
+            0.039862371394524296,
+            0.07159942078605783
+          ],
+          "rouge_l": [
+            0.18794808734652613,
+            0.2293062643882694
+          ],
+          "meteor": [
+            0.18445044183478565,
+            0.21176757577768945
+          ],
+          "historical_micro_f1": [
+            0.690464723542657,
+            0.8186579925172605
+          ],
+          "historical_macro_f1": [
+            0.47025229770111254,
+            0.6985474028247575
+          ],
+          "blank_as_negative_micro_f1": [
+            0.2495258470903968,
+            0.419035123609297
+          ],
+          "blank_as_negative_macro_f1": [
+            0.16376021043683386,
+            0.30442871597885274
+          ]
+        },
+        "A4": {
+          "bleu1": [
+            0.21161561506753,
+            0.2564922540405249
+          ],
+          "bleu2": [
+            0.11789354267135897,
+            0.15212307588049012
+          ],
+          "bleu3": [
+            0.0723314045776999,
+            0.10201631572469981
+          ],
+          "bleu4": [
+            0.04733843228442589,
+            0.07341249830745616
+          ],
+          "rouge_l": [
+            0.1950114000056507,
+            0.2359514564538979
+          ],
+          "meteor": [
+            0.1915599430789735,
+            0.22160519958444566
+          ],
+          "historical_micro_f1": [
+            0.6858355040878963,
+            0.7976435717773714
+          ],
+          "historical_macro_f1": [
+            0.4363096319774762,
+            0.58292929122228
+          ],
+          "blank_as_negative_micro_f1": [
+            0.3017178315712304,
+            0.4489135741199761
+          ],
+          "blank_as_negative_macro_f1": [
+            0.1793056934337155,
+            0.2994021351304751
+          ]
+        }
+      },
+      "bootstrap_clusters": 121,
+      "paired_delta_ci95": {
+        "A4_minus_A2": {
+          "bleu1": [
+            0.001735095680948315,
+            0.03724499223788997
+          ],
+          "bleu2": [
+            0.0019486717515584133,
+            0.023687063628438462
+          ],
+          "bleu3": [
+            0.001958377573212727,
+            0.016978614869966432
+          ],
+          "bleu4": [
+            0.0014512405896333629,
+            0.01237582206313474
+          ],
+          "rouge_l": [
+            0.000222616261596076,
+            0.014910418342288123
+          ],
+          "meteor": [
+            0.0038032285112341363,
+            0.018667683667594262
+          ],
+          "historical_micro_f1": [
+            -0.031019039793158287,
+            0.07387704014830307
+          ],
+          "historical_macro_f1": [
+            -0.1084994537367518,
+            0.08199037759020408
+          ],
+          "blank_as_negative_micro_f1": [
+            -0.017727331179097607,
+            0.08953074416907661
+          ],
+          "blank_as_negative_macro_f1": [
+            -0.012830838159724935,
+            0.08815846597531138
+          ]
+        },
+        "A3_minus_A2": {
+          "bleu1": [
+            -0.03507127196486559,
+            0.021036159411146862
+          ],
+          "bleu2": [
+            -0.018752658783505988,
+            0.01617049904009667
+          ],
+          "bleu3": [
+            -0.012505958345572853,
+            0.0118543822687173
+          ],
+          "bleu4": [
+            -0.00909300213867485,
+            0.008769006751573319
+          ],
+          "rouge_l": [
+            -0.00665362128576277,
+            0.007838719268018855
+          ],
+          "meteor": [
+            -0.006585609214101877,
+            0.010303747832661622
+          ],
+          "historical_micro_f1": [
+            -0.023041353013845578,
+            0.1016214586608042
+          ],
+          "historical_macro_f1": [
+            -0.05486341713311699,
+            0.20376827037084624
+          ],
+          "blank_as_negative_micro_f1": [
+            -0.07213517983722761,
+            0.06308443934070593
+          ],
+          "blank_as_negative_macro_f1": [
+            -0.0296940628090047,
+            0.08799287089604763
+          ]
+        },
+        "A4_minus_A3": {
+          "bleu1": [
+            -0.010965768696558147,
+            0.04797551411626472
+          ],
+          "bleu2": [
+            -0.007107332746911109,
+            0.028354160530015528
+          ],
+          "bleu3": [
+            -0.004788763069213312,
+            0.019904723793958426
+          ],
+          "bleu4": [
+            -0.003411264520085246,
+            0.01454514225030925
+          ],
+          "rouge_l": [
+            0.0007585859867264351,
+            0.011837031256802655
+          ],
+          "meteor": [
+            0.001275384072351883,
+            0.016558737900195613
+          ],
+          "historical_micro_f1": [
+            -0.06367565561329028,
+            0.032897275252470486
+          ],
+          "historical_macro_f1": [
+            -0.1750590944542183,
+            0.015648543195473864
+          ],
+          "blank_as_negative_micro_f1": [
+            -0.012004546513395489,
+            0.08776374762859651
+          ],
+          "blank_as_negative_macro_f1": [
+            -0.05118293282481981,
+            0.05472437794806176
+          ]
+        },
+        "A2_minus_M0": {
+          "bleu1": [
+            0.10156402450327819,
+            0.15629793434745576
+          ],
+          "bleu2": [
+            0.08714894797044874,
+            0.12210103898874088
+          ],
+          "bleu3": [
+            0.05693076140550725,
+            0.08677394411197008
+          ],
+          "bleu4": [
+            0.04164022913140192,
+            0.06866890188588935
+          ],
+          "rouge_l": [
+            0.10187129594208785,
+            0.13492438247551458
+          ],
+          "meteor": [
+            0.11465657484462981,
+            0.13788895586553826
+          ],
+          "historical_micro_f1": [
+            0.29618793472068267,
+            0.6900694383045228
+          ],
+          "historical_macro_f1": [
+            -0.25580962238485655,
+            0.3011596800387477
+          ],
+          "blank_as_negative_micro_f1": [
+            0.23129067201145323,
+            0.3891892993363888
+          ],
+          "blank_as_negative_macro_f1": [
+            0.13971180282285858,
+            0.22187871020469843
+          ]
+        },
+        "A2_minus_M1": {
+          "bleu1": [
+            0.018658238015150427,
+            0.06825443087403335
+          ],
+          "bleu2": [
+            0.017038685380728877,
+            0.04669416561361628
+          ],
+          "bleu3": [
+            0.013361630302087795,
+            0.03517335453156594
+          ],
+          "bleu4": [
+            0.011302911916332934,
+            0.02983006430058417
+          ],
+          "rouge_l": [
+            0.02716777731653119,
+            0.054269358507575555
+          ],
+          "meteor": [
+            0.03789985406616874,
+            0.06723301347110601
+          ],
+          "historical_micro_f1": [
+            0.19841684553856917,
+            0.3862457928206073
+          ],
+          "historical_macro_f1": [
+            0.08670840620131874,
+            0.36115190698934446
+          ],
+          "blank_as_negative_micro_f1": [
+            0.13906535172437146,
+            0.27538504744592657
+          ],
+          "blank_as_negative_macro_f1": [
+            0.08896211954331196,
+            0.17154177440240903
+          ]
+        },
+        "A3_minus_M0": {
+          "bleu1": [
+            0.09047292575317581,
+            0.15763192659882075
+          ],
+          "bleu2": [
+            0.08119345503639469,
+            0.12671829762309714
+          ],
+          "bleu3": [
+            0.05390903338919111,
+            0.0903121626822588
+          ],
+          "bleu4": [
+            0.039862371394524296,
+            0.07159942078605783
+          ],
+          "rouge_l": [
+            0.10109563425348905,
+            0.134918729008071
+          ],
+          "meteor": [
+            0.1168837735996183,
+            0.13803150007522894
+          ],
+          "historical_micro_f1": [
+            0.3802184769805647,
+            0.6972430886813377
+          ],
+          "historical_macro_f1": [
+            -0.18240561542799683,
+            0.35422916592292253
+          ],
+          "blank_as_negative_micro_f1": [
+            0.23012209885718432,
+            0.3768454006039518
+          ],
+          "blank_as_negative_macro_f1": [
+            0.14791227766963097,
+            0.2773494877920093
+          ]
+        },
+        "A3_minus_M1": {
+          "bleu1": [
+            0.009509382896657112,
+            0.06405777630189499
+          ],
+          "bleu2": [
+            0.012828789427059123,
+            0.04628246147984637
+          ],
+          "bleu3": [
+            0.011730568886384928,
+            0.03544200389334724
+          ],
+          "bleu4": [
+            0.010444290334509651,
+            0.02986756498839681
+          ],
+          "rouge_l": [
+            0.027655572338425024,
+            0.053760557881083276
+          ],
+          "meteor": [
+            0.04148271914261161,
+            0.06701056643586217
+          ],
+          "historical_micro_f1": [
+            0.22780400306860543,
+            0.4266760085905338
+          ],
+          "historical_macro_f1": [
+            0.10811812032323867,
+            0.48161176941983036
+          ],
+          "blank_as_negative_micro_f1": [
+            0.1421432905835352,
+            0.26169608058202604
+          ],
+          "blank_as_negative_macro_f1": [
+            0.09812469962538295,
+            0.2293191334322957
+          ]
+        },
+        "A4_minus_M0": {
+          "bleu1": [
+            0.12341754830002567,
+            0.1703319303906453
+          ],
+          "bleu2": [
+            0.1005676842792472,
+            0.1313943980449864
+          ],
+          "bleu3": [
+            0.0656720780797413,
+            0.09370475187236454
+          ],
+          "bleu4": [
+            0.04733843228442589,
+            0.07341249830745616
+          ],
+          "rouge_l": [
+            0.10799327252241225,
+            0.1406025091886924
+          ],
+          "meteor": [
+            0.12540231415824138,
+            0.14760514263937863
+          ],
+          "historical_micro_f1": [
+            0.34158337792355,
+            0.6893169634457109
+          ],
+          "historical_macro_f1": [
+            -0.26250101572696993,
+            0.28033094208644865
+          ],
+          "blank_as_negative_micro_f1": [
+            0.2821940334988182,
+            0.40883387002026755
+          ],
+          "blank_as_negative_macro_f1": [
+            0.16863408730624987,
+            0.2676977684429493
+          ]
+        },
+        "A4_minus_M1": {
+          "bleu1": [
+            0.030970883495603868,
+            0.0805112469831294
+          ],
+          "bleu2": [
+            0.027851901317171485,
+            0.05524031916712652
+          ],
+          "bleu3": [
+            0.022149973322322464,
+            0.0418900205089213
+          ],
+          "bleu4": [
+            0.0175452778984576,
+            0.03441652753255085
+          ],
+          "rouge_l": [
+            0.033557550958411494,
+            0.06127654339492254
+          ],
+          "meteor": [
+            0.04981554665144811,
+            0.07558383593295277
+          ],
+          "historical_micro_f1": [
+            0.21848397320070614,
+            0.39488586847924667
+          ],
+          "historical_macro_f1": [
+            0.06770346818297776,
+            0.3763716383266072
+          ],
+          "blank_as_negative_micro_f1": [
+            0.1776723078987042,
+            0.3029169561185584
+          ],
+          "blank_as_negative_macro_f1": [
+            0.11027786419977582,
+            0.2275018497448134
+          ]
+        }
+      }
+    },
+    "indiana": {
+      "models": {
+        "M0": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.06433521697409104,
+            "bleu2": 0.022187224204401394,
+            "bleu3": 0.010132985814830731,
+            "bleu4": 0.0030943260160158337,
+            "rouge_l": 0.08523021600270002,
+            "meteor": 0.08853232164458884
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 5,
+                  "fp": 7,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 12,
+                  "precision": 0.4166666666666667,
+                  "recall": 1.0,
+                  "f1": 0.5882352941176471,
+                  "support": 5,
+                  "coverage": 0.024,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 478,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 17
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Pleural Effusion": {
+                  "tp": 0,
+                  "fp": 10,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 10,
+                  "precision": 0.0,
+                  "recall": null,
+                  "f1": 0.0,
+                  "support": 0,
+                  "coverage": 0.02,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 488,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 10
+                },
+                "Pneumonia": {
+                  "tp": 2,
+                  "fp": 1,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 3,
+                  "precision": 0.6666666666666666,
+                  "recall": 1.0,
+                  "f1": 0.8,
+                  "support": 2,
+                  "coverage": 0.006,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 485,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 5
+                },
+                "Pneumothorax": {
+                  "tp": 1,
+                  "fp": 53,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 54,
+                  "precision": 0.018518518518518517,
+                  "recall": 1.0,
+                  "f1": 0.03636363636363636,
+                  "support": 1,
+                  "coverage": 0.108,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 415,
+                  "generated_uncertain": 20,
+                  "f1_denominator": 55
+                }
+              },
+              "macro_f1": 0.35614973262032085,
+              "micro_f1": 0.1839080459770115,
+              "defined_classes": 4,
+              "classes": 7,
+              "paired_label_count": 79,
+              "positive_support": 8,
+              "undefined_reason": null,
+              "micro_f1_denominator": 87,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 5,
+                  "fp": 16,
+                  "fn": 71,
+                  "tn": 400,
+                  "paired": 492,
+                  "precision": 0.23809523809523808,
+                  "recall": 0.06578947368421052,
+                  "f1": 0.10309278350515463,
+                  "support": 76,
+                  "coverage": 0.984,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 478,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 97
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 13,
+                  "tn": 485,
+                  "paired": 498,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 13,
+                  "coverage": 0.996,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 13
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 3,
+                  "tn": 488,
+                  "paired": 491,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 3,
+                  "coverage": 0.982,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 3
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 83,
+                  "tn": 406,
+                  "paired": 489,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 83,
+                  "coverage": 0.978,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 83
+                },
+                "Pleural Effusion": {
+                  "tp": 0,
+                  "fp": 12,
+                  "fn": 17,
+                  "tn": 462,
+                  "paired": 491,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 17,
+                  "coverage": 0.982,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 488,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 29
+                },
+                "Pneumonia": {
+                  "tp": 2,
+                  "fp": 13,
+                  "fn": 9,
+                  "tn": 467,
+                  "paired": 491,
+                  "precision": 0.13333333333333333,
+                  "recall": 0.18181818181818182,
+                  "f1": 0.15384615384615385,
+                  "support": 11,
+                  "coverage": 0.982,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 485,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 26
+                },
+                "Pneumothorax": {
+                  "tp": 1,
+                  "fp": 63,
+                  "fn": 5,
+                  "tn": 406,
+                  "paired": 475,
+                  "precision": 0.015625,
+                  "recall": 0.16666666666666666,
+                  "f1": 0.02857142857142857,
+                  "support": 6,
+                  "coverage": 0.95,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 415,
+                  "generated_uncertain": 20,
+                  "f1_denominator": 70
+                }
+              },
+              "macro_f1": 0.040787195131819574,
+              "micro_f1": 0.04984423676012461,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3427,
+              "positive_support": 209,
+              "undefined_reason": null,
+              "micro_f1_denominator": 321,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 500
+        },
+        "M1": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.22880668970519216,
+            "bleu2": 0.12910270541040567,
+            "bleu3": 0.08202608817597339,
+            "bleu4": 0.05151685011825502,
+            "rouge_l": 0.20951749972565423,
+            "meteor": 0.2123526900186564
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 6,
+                  "fp": 9,
+                  "fn": 34,
+                  "tn": 107,
+                  "paired": 156,
+                  "precision": 0.4,
+                  "recall": 0.15,
+                  "f1": 0.21818181818181817,
+                  "support": 40,
+                  "coverage": 0.312,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 268,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 55
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 0,
+                  "tn": 2,
+                  "paired": 3,
+                  "precision": 0.0,
+                  "recall": null,
+                  "f1": 0.0,
+                  "support": 0,
+                  "coverage": 0.006,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 452,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 1
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Pleural Effusion": {
+                  "tp": 1,
+                  "fp": 60,
+                  "fn": 11,
+                  "tn": 127,
+                  "paired": 199,
+                  "precision": 0.01639344262295082,
+                  "recall": 0.08333333333333333,
+                  "f1": 0.0273972602739726,
+                  "support": 12,
+                  "coverage": 0.398,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 220,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 73
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 3,
+                  "tn": 3,
+                  "paired": 6,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 3,
+                  "coverage": 0.012,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 443,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 3
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 1,
+                  "tn": 97,
+                  "paired": 99,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 1,
+                  "coverage": 0.198,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 339,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 2
+                }
+              },
+              "macro_f1": 0.04911581569115815,
+              "micro_f1": 0.1044776119402985,
+              "defined_classes": 5,
+              "classes": 7,
+              "paired_label_count": 463,
+              "positive_support": 56,
+              "undefined_reason": null,
+              "micro_f1_denominator": 134,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 6,
+                  "fp": 20,
+                  "fn": 70,
+                  "tn": 395,
+                  "paired": 491,
+                  "precision": 0.23076923076923078,
+                  "recall": 0.07894736842105263,
+                  "f1": 0.11764705882352941,
+                  "support": 76,
+                  "coverage": 0.982,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 268,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 102
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 13,
+                  "tn": 485,
+                  "paired": 498,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 13,
+                  "coverage": 0.996,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 13
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 2,
+                  "fn": 3,
+                  "tn": 486,
+                  "paired": 491,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 3,
+                  "coverage": 0.982,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 452,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 5
+                },
+                "Lung Opacity": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 83,
+                  "tn": 406,
+                  "paired": 489,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 83,
+                  "coverage": 0.978,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 500,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 83
+                },
+                "Pleural Effusion": {
+                  "tp": 1,
+                  "fp": 85,
+                  "fn": 16,
+                  "tn": 389,
+                  "paired": 491,
+                  "precision": 0.011627906976744186,
+                  "recall": 0.058823529411764705,
+                  "f1": 0.019417475728155338,
+                  "support": 17,
+                  "coverage": 0.982,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 220,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 103
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 6,
+                  "fn": 11,
+                  "tn": 474,
+                  "paired": 491,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 11,
+                  "coverage": 0.982,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 443,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 17
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 6,
+                  "tn": 488,
+                  "paired": 495,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6,
+                  "coverage": 0.99,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 339,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 7
+                }
+              },
+              "macro_f1": 0.01958064779309782,
+              "micro_f1": 0.04242424242424243,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3446,
+              "positive_support": 209,
+              "undefined_reason": null,
+              "micro_f1_denominator": 330,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 94
+        },
+        "M2": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.29540510945097065,
+            "bleu2": 0.14881692478161362,
+            "bleu3": 0.08235462345220525,
+            "bleu4": 0.04478170439301859,
+            "rouge_l": 0.20844923370789362,
+            "meteor": 0.2365460101420239
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 38,
+                  "fp": 42,
+                  "fn": 18,
+                  "tn": 93,
+                  "paired": 191,
+                  "precision": 0.475,
+                  "recall": 0.6785714285714286,
+                  "f1": 0.5588235294117647,
+                  "support": 56,
+                  "coverage": 0.382,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 202,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 136
+                },
+                "Consolidation": {
+                  "tp": 1,
+                  "fp": 12,
+                  "fn": 1,
+                  "tn": 41,
+                  "paired": 55,
+                  "precision": 0.07692307692307693,
+                  "recall": 0.5,
+                  "f1": 0.13333333333333333,
+                  "support": 2,
+                  "coverage": 0.11,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 347,
+                  "generated_uncertain": 2,
+                  "f1_denominator": 15
+                },
+                "Edema": {
+                  "tp": 1,
+                  "fp": 1,
+                  "fn": 0,
+                  "tn": 8,
+                  "paired": 10,
+                  "precision": 0.5,
+                  "recall": 1.0,
+                  "f1": 0.6666666666666666,
+                  "support": 1,
+                  "coverage": 0.02,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 325,
+                  "generated_uncertain": 11,
+                  "f1_denominator": 3
+                },
+                "Lung Opacity": {
+                  "tp": 19,
+                  "fp": 6,
+                  "fn": 2,
+                  "tn": 6,
+                  "paired": 33,
+                  "precision": 0.76,
+                  "recall": 0.9047619047619048,
+                  "f1": 0.8260869565217391,
+                  "support": 21,
+                  "coverage": 0.066,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 429,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 46
+                },
+                "Pleural Effusion": {
+                  "tp": 11,
+                  "fp": 24,
+                  "fn": 3,
+                  "tn": 284,
+                  "paired": 322,
+                  "precision": 0.3142857142857143,
+                  "recall": 0.7857142857142857,
+                  "f1": 0.4489795918367347,
+                  "support": 14,
+                  "coverage": 0.644,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 63,
+                  "generated_uncertain": 5,
+                  "f1_denominator": 49
+                },
+                "Pneumonia": {
+                  "tp": 2,
+                  "fp": 1,
+                  "fn": 1,
+                  "tn": 6,
+                  "paired": 10,
+                  "precision": 0.6666666666666666,
+                  "recall": 0.6666666666666666,
+                  "f1": 0.6666666666666666,
+                  "support": 3,
+                  "coverage": 0.02,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 331,
+                  "generated_uncertain": 16,
+                  "f1_denominator": 6
+                },
+                "Pneumothorax": {
+                  "tp": 1,
+                  "fp": 8,
+                  "fn": 3,
+                  "tn": 234,
+                  "paired": 246,
+                  "precision": 0.1111111111111111,
+                  "recall": 0.25,
+                  "f1": 0.15384615384615385,
+                  "support": 4,
+                  "coverage": 0.492,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 153,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 13
+                }
+              },
+              "macro_f1": 0.4934861283261513,
+              "micro_f1": 0.5447761194029851,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 867,
+              "positive_support": 101,
+              "undefined_reason": null,
+              "micro_f1_denominator": 268,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 38,
+                  "fp": 68,
+                  "fn": 37,
+                  "tn": 347,
+                  "paired": 490,
+                  "precision": 0.3584905660377358,
+                  "recall": 0.5066666666666667,
+                  "f1": 0.4198895027624309,
+                  "support": 75,
+                  "coverage": 0.98,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 202,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 181
+                },
+                "Consolidation": {
+                  "tp": 1,
+                  "fp": 37,
+                  "fn": 11,
+                  "tn": 447,
+                  "paired": 496,
+                  "precision": 0.02631578947368421,
+                  "recall": 0.08333333333333333,
+                  "f1": 0.04,
+                  "support": 12,
+                  "coverage": 0.992,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 347,
+                  "generated_uncertain": 2,
+                  "f1_denominator": 50
+                },
+                "Edema": {
+                  "tp": 1,
+                  "fp": 16,
+                  "fn": 2,
+                  "tn": 463,
+                  "paired": 482,
+                  "precision": 0.058823529411764705,
+                  "recall": 0.3333333333333333,
+                  "f1": 0.1,
+                  "support": 3,
+                  "coverage": 0.964,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 325,
+                  "generated_uncertain": 11,
+                  "f1_denominator": 20
+                },
+                "Lung Opacity": {
+                  "tp": 19,
+                  "fp": 29,
+                  "fn": 64,
+                  "tn": 374,
+                  "paired": 486,
+                  "precision": 0.3958333333333333,
+                  "recall": 0.2289156626506024,
+                  "f1": 0.2900763358778626,
+                  "support": 83,
+                  "coverage": 0.972,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 429,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 131
+                },
+                "Pleural Effusion": {
+                  "tp": 11,
+                  "fp": 30,
+                  "fn": 6,
+                  "tn": 439,
+                  "paired": 486,
+                  "precision": 0.2682926829268293,
+                  "recall": 0.6470588235294118,
+                  "f1": 0.3793103448275862,
+                  "support": 17,
+                  "coverage": 0.972,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 63,
+                  "generated_uncertain": 5,
+                  "f1_denominator": 58
+                },
+                "Pneumonia": {
+                  "tp": 2,
+                  "fp": 26,
+                  "fn": 9,
+                  "tn": 438,
+                  "paired": 475,
+                  "precision": 0.07142857142857142,
+                  "recall": 0.18181818181818182,
+                  "f1": 0.10256410256410256,
+                  "support": 11,
+                  "coverage": 0.95,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 331,
+                  "generated_uncertain": 16,
+                  "f1_denominator": 39
+                },
+                "Pneumothorax": {
+                  "tp": 1,
+                  "fp": 11,
+                  "fn": 5,
+                  "tn": 477,
+                  "paired": 494,
+                  "precision": 0.08333333333333333,
+                  "recall": 0.16666666666666666,
+                  "f1": 0.1111111111111111,
+                  "support": 6,
+                  "coverage": 0.988,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 153,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 18
+                }
+              },
+              "macro_f1": 0.20613591387758476,
+              "micro_f1": 0.2937625754527163,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3409,
+              "positive_support": 207,
+              "undefined_reason": null,
+              "micro_f1_denominator": 497,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 0
+        },
+        "A2": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.2380136848560601,
+            "bleu2": 0.1378816640319051,
+            "bleu3": 0.09131096155122494,
+            "bleu4": 0.06151925255989306,
+            "rouge_l": 0.24459995775847498,
+            "meteor": 0.23685772468699248
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 23,
+                  "fp": 7,
+                  "fn": 1,
+                  "tn": 4,
+                  "paired": 35,
+                  "precision": 0.7666666666666667,
+                  "recall": 0.9583333333333334,
+                  "f1": 0.8518518518518519,
+                  "support": 24,
+                  "coverage": 0.07,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 449,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 54
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 9,
+                  "tn": 136,
+                  "paired": 145,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 9,
+                  "coverage": 0.29,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 38,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 9
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 2,
+                  "paired": 2,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.004,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 449,
+                  "generated_uncertain": 11,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Lung Opacity": {
+                  "tp": 1,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 1,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "f1": 1.0,
+                  "support": 1,
+                  "coverage": 0.002,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 498,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 2
+                },
+                "Pleural Effusion": {
+                  "tp": 2,
+                  "fp": 3,
+                  "fn": 13,
+                  "tn": 353,
+                  "paired": 371,
+                  "precision": 0.4,
+                  "recall": 0.13333333333333333,
+                  "f1": 0.2,
+                  "support": 15,
+                  "coverage": 0.742,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 5,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 20
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 0,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.0,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 497,
+                  "generated_uncertain": 2,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 6,
+                  "tn": 331,
+                  "paired": 337,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6,
+                  "coverage": 0.674,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 7,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 6
+                }
+              },
+              "macro_f1": 0.4103703703703704,
+              "micro_f1": 0.5714285714285714,
+              "defined_classes": 5,
+              "classes": 7,
+              "paired_label_count": 891,
+              "positive_support": 55,
+              "undefined_reason": null,
+              "micro_f1_denominator": 91,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 23,
+                  "fp": 13,
+                  "fn": 53,
+                  "tn": 403,
+                  "paired": 492,
+                  "precision": 0.6388888888888888,
+                  "recall": 0.3026315789473684,
+                  "f1": 0.4107142857142857,
+                  "support": 76,
+                  "coverage": 0.984,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 449,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 112
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 13,
+                  "tn": 485,
+                  "paired": 498,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 13,
+                  "coverage": 0.996,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 38,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 13
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 482,
+                  "paired": 482,
+                  "precision": null,
+                  "recall": null,
+                  "f1": null,
+                  "support": 0,
+                  "coverage": 0.964,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 449,
+                  "generated_uncertain": 11,
+                  "f1_reason": "no jointly definite TP/FP/FN denominator",
+                  "f1_denominator": 0
+                },
+                "Lung Opacity": {
+                  "tp": 1,
+                  "fp": 1,
+                  "fn": 82,
+                  "tn": 405,
+                  "paired": 489,
+                  "precision": 0.5,
+                  "recall": 0.012048192771084338,
+                  "f1": 0.023529411764705882,
+                  "support": 83,
+                  "coverage": 0.978,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 498,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 85
+                },
+                "Pleural Effusion": {
+                  "tp": 2,
+                  "fp": 6,
+                  "fn": 15,
+                  "tn": 468,
+                  "paired": 491,
+                  "precision": 0.25,
+                  "recall": 0.11764705882352941,
+                  "f1": 0.16,
+                  "support": 17,
+                  "coverage": 0.982,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 5,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 25
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 10,
+                  "tn": 479,
+                  "paired": 489,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 10,
+                  "coverage": 0.978,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 497,
+                  "generated_uncertain": 2,
+                  "f1_denominator": 10
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 6,
+                  "tn": 489,
+                  "paired": 495,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6,
+                  "coverage": 0.99,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 7,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 6
+                }
+              },
+              "macro_f1": 0.09904061624649861,
+              "micro_f1": 0.20717131474103587,
+              "defined_classes": 6,
+              "classes": 7,
+              "paired_label_count": 3436,
+              "positive_support": 205,
+              "undefined_reason": null,
+              "micro_f1_denominator": 251,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 2
+        },
+        "A3": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.22837819441197876,
+            "bleu2": 0.13573310120533305,
+            "bleu3": 0.09002877628141187,
+            "bleu4": 0.0601191284084922,
+            "rouge_l": 0.24392966481627293,
+            "meteor": 0.23238201182646123
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 20,
+                  "fp": 7,
+                  "fn": 4,
+                  "tn": 10,
+                  "paired": 41,
+                  "precision": 0.7407407407407407,
+                  "recall": 0.8333333333333334,
+                  "f1": 0.7843137254901961,
+                  "support": 24,
+                  "coverage": 0.082,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 439,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 51
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 7,
+                  "tn": 108,
+                  "paired": 115,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 7,
+                  "coverage": 0.23,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 135,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 7
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 2,
+                  "tn": 3,
+                  "paired": 5,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 2,
+                  "coverage": 0.01,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 448,
+                  "generated_uncertain": 8,
+                  "f1_denominator": 2
+                },
+                "Lung Opacity": {
+                  "tp": 2,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 2,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "f1": 1.0,
+                  "support": 2,
+                  "coverage": 0.004,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 498,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 4
+                },
+                "Pleural Effusion": {
+                  "tp": 4,
+                  "fp": 3,
+                  "fn": 11,
+                  "tn": 298,
+                  "paired": 316,
+                  "precision": 0.5714285714285714,
+                  "recall": 0.26666666666666666,
+                  "f1": 0.36363636363636365,
+                  "support": 15,
+                  "coverage": 0.632,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 70,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 22
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 1,
+                  "tn": 0,
+                  "paired": 1,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 1,
+                  "coverage": 0.002,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 495,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 1
+                },
+                "Pneumothorax": {
+                  "tp": 2,
+                  "fp": 2,
+                  "fn": 3,
+                  "tn": 280,
+                  "paired": 287,
+                  "precision": 0.5,
+                  "recall": 0.4,
+                  "f1": 0.4444444444444444,
+                  "support": 5,
+                  "coverage": 0.574,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 68,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 9
+                }
+              },
+              "macro_f1": 0.3703420762244291,
+              "micro_f1": 0.5833333333333334,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 767,
+              "positive_support": 56,
+              "undefined_reason": null,
+              "micro_f1_denominator": 96,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 20,
+                  "fp": 14,
+                  "fn": 56,
+                  "tn": 402,
+                  "paired": 492,
+                  "precision": 0.5882352941176471,
+                  "recall": 0.2631578947368421,
+                  "f1": 0.36363636363636365,
+                  "support": 76,
+                  "coverage": 0.984,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 439,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 110
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 13,
+                  "tn": 485,
+                  "paired": 498,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 13,
+                  "coverage": 0.996,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 135,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 13
+                },
+                "Edema": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 2,
+                  "tn": 482,
+                  "paired": 485,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 2,
+                  "coverage": 0.97,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 448,
+                  "generated_uncertain": 8,
+                  "f1_denominator": 3
+                },
+                "Lung Opacity": {
+                  "tp": 2,
+                  "fp": 0,
+                  "fn": 81,
+                  "tn": 406,
+                  "paired": 489,
+                  "precision": 1.0,
+                  "recall": 0.024096385542168676,
+                  "f1": 0.047058823529411764,
+                  "support": 83,
+                  "coverage": 0.978,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 498,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 85
+                },
+                "Pleural Effusion": {
+                  "tp": 4,
+                  "fp": 6,
+                  "fn": 13,
+                  "tn": 468,
+                  "paired": 491,
+                  "precision": 0.4,
+                  "recall": 0.23529411764705882,
+                  "f1": 0.2962962962962963,
+                  "support": 17,
+                  "coverage": 0.982,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 70,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 27
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 11,
+                  "tn": 477,
+                  "paired": 488,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 11,
+                  "coverage": 0.976,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 495,
+                  "generated_uncertain": 3,
+                  "f1_denominator": 11
+                },
+                "Pneumothorax": {
+                  "tp": 2,
+                  "fp": 2,
+                  "fn": 4,
+                  "tn": 487,
+                  "paired": 495,
+                  "precision": 0.5,
+                  "recall": 0.3333333333333333,
+                  "f1": 0.4,
+                  "support": 6,
+                  "coverage": 0.99,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 68,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 10
+                }
+              },
+              "macro_f1": 0.15814164049458165,
+              "micro_f1": 0.21621621621621623,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3438,
+              "positive_support": 208,
+              "undefined_reason": null,
+              "micro_f1_denominator": 259,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 0
+        },
+        "A4": {
+          "n": 500,
+          "text": {
+            "bleu1": 0.2525186309829757,
+            "bleu2": 0.1453575245185781,
+            "bleu3": 0.09586885013855366,
+            "bleu4": 0.06437851476199673,
+            "rouge_l": 0.2450743448058988,
+            "meteor": 0.24145636220317698
+          },
+          "clinical": {
+            "historical": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 19,
+                  "fp": 9,
+                  "fn": 3,
+                  "tn": 7,
+                  "paired": 38,
+                  "precision": 0.6785714285714286,
+                  "recall": 0.8636363636363636,
+                  "f1": 0.76,
+                  "support": 22,
+                  "coverage": 0.076,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 445,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 50
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 10,
+                  "tn": 137,
+                  "paired": 147,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 10,
+                  "coverage": 0.294,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 56,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 10
+                },
+                "Edema": {
+                  "tp": 1,
+                  "fp": 0,
+                  "fn": 1,
+                  "tn": 6,
+                  "paired": 8,
+                  "precision": 1.0,
+                  "recall": 0.5,
+                  "f1": 0.6666666666666666,
+                  "support": 2,
+                  "coverage": 0.016,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 421,
+                  "generated_uncertain": 7,
+                  "f1_denominator": 3
+                },
+                "Lung Opacity": {
+                  "tp": 1,
+                  "fp": 0,
+                  "fn": 0,
+                  "tn": 0,
+                  "paired": 1,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "f1": 1.0,
+                  "support": 1,
+                  "coverage": 0.002,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 499,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 2
+                },
+                "Pleural Effusion": {
+                  "tp": 6,
+                  "fp": 4,
+                  "fn": 9,
+                  "tn": 342,
+                  "paired": 361,
+                  "precision": 0.6,
+                  "recall": 0.4,
+                  "f1": 0.48,
+                  "support": 15,
+                  "coverage": 0.722,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 19,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 25
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 1,
+                  "tn": 0,
+                  "paired": 1,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 1,
+                  "coverage": 0.002,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 497,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 1
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 6,
+                  "tn": 319,
+                  "paired": 326,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6,
+                  "coverage": 0.652,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 19,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 7
+                }
+              },
+              "macro_f1": 0.41523809523809524,
+              "micro_f1": 0.5510204081632653,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 882,
+              "positive_support": 57,
+              "undefined_reason": null,
+              "micro_f1_denominator": 98,
+              "possible_class_cases": 3500
+            },
+            "blank_as_negative": {
+              "per_class": {
+                "Cardiomegaly": {
+                  "tp": 19,
+                  "fp": 15,
+                  "fn": 57,
+                  "tn": 401,
+                  "paired": 492,
+                  "precision": 0.5588235294117647,
+                  "recall": 0.25,
+                  "f1": 0.34545454545454546,
+                  "support": 76,
+                  "coverage": 0.984,
+                  "reference_blank": 166,
+                  "reference_uncertain": 8,
+                  "generated_blank": 445,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 110
+                },
+                "Consolidation": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 13,
+                  "tn": 485,
+                  "paired": 498,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 13,
+                  "coverage": 0.996,
+                  "reference_blank": 339,
+                  "reference_uncertain": 2,
+                  "generated_blank": 56,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 13
+                },
+                "Edema": {
+                  "tp": 1,
+                  "fp": 2,
+                  "fn": 1,
+                  "tn": 481,
+                  "paired": 485,
+                  "precision": 0.3333333333333333,
+                  "recall": 0.5,
+                  "f1": 0.4,
+                  "support": 2,
+                  "coverage": 0.97,
+                  "reference_blank": 447,
+                  "reference_uncertain": 9,
+                  "generated_blank": 421,
+                  "generated_uncertain": 7,
+                  "f1_denominator": 5
+                },
+                "Lung Opacity": {
+                  "tp": 1,
+                  "fp": 0,
+                  "fn": 82,
+                  "tn": 406,
+                  "paired": 489,
+                  "precision": 1.0,
+                  "recall": 0.012048192771084338,
+                  "f1": 0.023809523809523808,
+                  "support": 83,
+                  "coverage": 0.978,
+                  "reference_blank": 283,
+                  "reference_uncertain": 11,
+                  "generated_blank": 499,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 84
+                },
+                "Pleural Effusion": {
+                  "tp": 6,
+                  "fp": 7,
+                  "fn": 11,
+                  "tn": 467,
+                  "paired": 491,
+                  "precision": 0.46153846153846156,
+                  "recall": 0.35294117647058826,
+                  "f1": 0.4,
+                  "support": 17,
+                  "coverage": 0.982,
+                  "reference_blank": 117,
+                  "reference_uncertain": 9,
+                  "generated_blank": 19,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 30
+                },
+                "Pneumonia": {
+                  "tp": 0,
+                  "fp": 0,
+                  "fn": 11,
+                  "tn": 479,
+                  "paired": 490,
+                  "precision": null,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 11,
+                  "coverage": 0.98,
+                  "reference_blank": 459,
+                  "reference_uncertain": 9,
+                  "generated_blank": 497,
+                  "generated_uncertain": 1,
+                  "f1_denominator": 11
+                },
+                "Pneumothorax": {
+                  "tp": 0,
+                  "fp": 2,
+                  "fn": 6,
+                  "tn": 487,
+                  "paired": 495,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 6,
+                  "coverage": 0.99,
+                  "reference_blank": 154,
+                  "reference_uncertain": 5,
+                  "generated_blank": 19,
+                  "generated_uncertain": 0,
+                  "f1_denominator": 8
+                }
+              },
+              "macro_f1": 0.16703772418058133,
+              "micro_f1": 0.20689655172413793,
+              "defined_classes": 7,
+              "classes": 7,
+              "paired_label_count": 3440,
+              "positive_support": 208,
+              "undefined_reason": null,
+              "micro_f1_denominator": 261,
+              "possible_class_cases": 3500
+            }
+          },
+          "empty_count": 0,
+          "cap_count": 2
+        }
+      },
+      "ci95": {
+        "M0": {
+          "bleu1": [
+            0.06051300780543618,
+            0.06799623833688849
+          ],
+          "bleu2": [
+            0.020300985563116297,
+            0.02393733882356745
+          ],
+          "bleu3": [
+            0.0089777711784786,
+            0.011280039330980016
+          ],
+          "bleu4": [
+            0.0,
+            0.004030247526149527
+          ],
+          "rouge_l": [
+            0.0809589590770859,
+            0.08941796529386567
+          ],
+          "meteor": [
+            0.08413881865573887,
+            0.09267132935851863
+          ],
+          "historical_micro_f1": [
+            0.08330479452054794,
+            0.30002688172043007
+          ],
+          "historical_macro_f1": [
+            0.14022672064777328,
+            0.45820013661202186
+          ],
+          "blank_as_negative_micro_f1": [
+            0.020615038175996622,
+            0.0830860534124629
+          ],
+          "blank_as_negative_macro_f1": [
+            0.012374319229157939,
+            0.07327496032093178
+          ]
+        },
+        "M1": {
+          "bleu1": [
+            0.2155331033734153,
+            0.24239890685363652
+          ],
+          "bleu2": [
+            0.12067247945919181,
+            0.13822658713289607
+          ],
+          "bleu3": [
+            0.07538888014618234,
+            0.08933708081003587
+          ],
+          "bleu4": [
+            0.04620050574398296,
+            0.057407637246818605
+          ],
+          "rouge_l": [
+            0.20054208632145676,
+            0.21868532368856164
+          ],
+          "meteor": [
+            0.2023726215654942,
+            0.22241683135771673
+          ],
+          "historical_micro_f1": [
+            0.03894855144855145,
+            0.17451379023171507
+          ],
+          "historical_macro_f1": [
+            0.0210442645074224,
+            0.09996081977094634
+          ],
+          "blank_as_negative_micro_f1": [
+            0.017092803030303035,
+            0.07363099295614632
+          ],
+          "blank_as_negative_macro_f1": [
+            0.007790452790452791,
+            0.03266091051805336
+          ]
+        },
+        "M2": {
+          "bleu1": [
+            0.2832804192987548,
+            0.30741627238709
+          ],
+          "bleu2": [
+            0.14129130646377067,
+            0.15630455395722423
+          ],
+          "bleu3": [
+            0.07676837493209664,
+            0.08807281374798986
+          ],
+          "bleu4": [
+            0.04059195509713846,
+            0.048941143320536375
+          ],
+          "rouge_l": [
+            0.2017881627333588,
+            0.21560406032792123
+          ],
+          "meteor": [
+            0.22738467201182794,
+            0.24496681560028902
+          ],
+          "historical_micro_f1": [
+            0.46609573888775435,
+            0.6185739550532717
+          ],
+          "historical_macro_f1": [
+            0.29625286246310356,
+            0.6005228709651876
+          ],
+          "blank_as_negative_micro_f1": [
+            0.23944823118264852,
+            0.34972800117621117
+          ],
+          "blank_as_negative_macro_f1": [
+            0.1507455548199222,
+            0.25904457724130453
+          ]
+        },
+        "A2": {
+          "bleu1": [
+            0.22373167700893046,
+            0.25306329893448276
+          ],
+          "bleu2": [
+            0.12850895991173453,
+            0.14770710473809442
+          ],
+          "bleu3": [
+            0.08412099814027013,
+            0.09869398608099339
+          ],
+          "bleu4": [
+            0.05614251513468569,
+            0.06709906905147749
+          ],
+          "rouge_l": [
+            0.2366882563456196,
+            0.2519651068707293
+          ],
+          "meteor": [
+            0.22801227872712118,
+            0.24485867088919996
+          ],
+          "historical_micro_f1": [
+            0.42857142857142855,
+            0.6868844696969697
+          ],
+          "historical_macro_f1": [
+            0.20951298701298704,
+            0.456751106695369
+          ],
+          "blank_as_negative_micro_f1": [
+            0.13556473436832361,
+            0.27926804199397987
+          ],
+          "blank_as_negative_macro_f1": [
+            0.057686781609195395,
+            0.14053189733001184
+          ]
+        },
+        "A3": {
+          "bleu1": [
+            0.21501786962079789,
+            0.24206794841684132
+          ],
+          "bleu2": [
+            0.12670378478903643,
+            0.14491809111454684
+          ],
+          "bleu3": [
+            0.08339409505406425,
+            0.09692608453314834
+          ],
+          "bleu4": [
+            0.0548431304754843,
+            0.06563255771741486
+          ],
+          "rouge_l": [
+            0.23656137597179194,
+            0.25114183268130785
+          ],
+          "meteor": [
+            0.22411039469538815,
+            0.24033902812275196
+          ],
+          "historical_micro_f1": [
+            0.44155844155844154,
+            0.7027541827541827
+          ],
+          "historical_macro_f1": [
+            0.21452920436684936,
+            0.5318535414165666
+          ],
+          "blank_as_negative_micro_f1": [
+            0.14017061508367745,
+            0.28999530804489837
+          ],
+          "blank_as_negative_macro_f1": [
+            0.07016816108594469,
+            0.23272775729113276
+          ]
+        },
+        "A4": {
+          "bleu1": [
+            0.23791808195721276,
+            0.26625427106138727
+          ],
+          "bleu2": [
+            0.1362518112875459,
+            0.15409250510076553
+          ],
+          "bleu3": [
+            0.0886357900807671,
+            0.10271322284284157
+          ],
+          "bleu4": [
+            0.058753941334632166,
+            0.06979931686217897
+          ],
+          "rouge_l": [
+            0.23764826123784483,
+            0.2525615473894873
+          ],
+          "meteor": [
+            0.23257444063664742,
+            0.24943639563445905
+          ],
+          "historical_micro_f1": [
+            0.4249383802816901,
+            0.6729016894320633
+          ],
+          "historical_macro_f1": [
+            0.1856868131868132,
+            0.5494020842705053
+          ],
+          "blank_as_negative_micro_f1": [
+            0.1421234563224487,
+            0.2713348837209302
+          ],
+          "blank_as_negative_macro_f1": [
+            0.07427957654972102,
+            0.25191320636150777
+          ]
+        }
+      },
+      "bootstrap_clusters": 500,
+      "paired_delta_ci95": {
+        "A4_minus_A2": {
+          "bleu1": [
+            0.00823913600472213,
+            0.02048230261140816
+          ],
+          "bleu2": [
+            0.003749545543961788,
+            0.011106202358831465
+          ],
+          "bleu3": [
+            0.0018498026248661291,
+            0.0072081440442222896
+          ],
+          "bleu4": [
+            0.0008155671766293277,
+            0.005065040827173789
+          ],
+          "rouge_l": [
+            -0.002352060950298177,
+            0.003380065780003615
+          ],
+          "meteor": [
+            0.000894793478103246,
+            0.008083601927970108
+          ],
+          "historical_micro_f1": [
+            -0.13052545226890033,
+            0.09248938879456702
+          ],
+          "historical_macro_f1": [
+            -0.13277500426693972,
+            0.17942076698958193
+          ],
+          "blank_as_negative_micro_f1": [
+            -0.06647344028968741,
+            0.06232233899601875
+          ],
+          "blank_as_negative_macro_f1": [
+            -0.03144270453764017,
+            0.15777948076227344
+          ]
+        },
+        "A3_minus_A2": {
+          "bleu1": [
+            -0.01680479421998052,
+            -0.002897475429288216
+          ],
+          "bleu2": [
+            -0.006398757821937967,
+            0.0023046565597117075
+          ],
+          "bleu3": [
+            -0.004583617490656722,
+            0.002135823571664802
+          ],
+          "bleu4": [
+            -0.004283052959684901,
+            0.0015246157096651212
+          ],
+          "rouge_l": [
+            -0.004404554382449126,
+            0.003122008303542347
+          ],
+          "meteor": [
+            -0.009688374297990156,
+            0.0006468677187541754
+          ],
+          "historical_micro_f1": [
+            -0.09306927342922597,
+            0.11118447378951568
+          ],
+          "historical_macro_f1": [
+            -0.17100283094098886,
+            0.26080094214728355
+          ],
+          "blank_as_negative_micro_f1": [
+            -0.036573238826685256,
+            0.055006328648476745
+          ],
+          "blank_as_negative_macro_f1": [
+            -0.009486907968321029,
+            0.12675033051323706
+          ]
+        },
+        "A4_minus_A3": {
+          "bleu1": [
+            0.016864176994555048,
+            0.03174756026399724
+          ],
+          "bleu2": [
+            0.005087165169333597,
+            0.01426921440654488
+          ],
+          "bleu3": [
+            0.002399025492623303,
+            0.009338613688020678
+          ],
+          "bleu4": [
+            0.0013834868518087181,
+            0.007251996300978634
+          ],
+          "rouge_l": [
+            -0.0024450808692501685,
+            0.004834528735832402
+          ],
+          "meteor": [
+            0.004362043305283242,
+            0.013750159183701966
+          ],
+          "historical_micro_f1": [
+            -0.16282169298827298,
+            0.09872825024437924
+          ],
+          "historical_macro_f1": [
+            -0.2506955168227721,
+            0.2276464333468868
+          ],
+          "blank_as_negative_micro_f1": [
+            -0.07844418183582345,
+            0.06460732909764695
+          ],
+          "blank_as_negative_macro_f1": [
+            -0.11711846772424862,
+            0.12455232293170196
+          ]
+        },
+        "A2_minus_M0": {
+          "bleu1": [
+            0.15733290917230147,
+            0.19120667019056423
+          ],
+          "bleu2": [
+            0.10591136023995926,
+            0.12559119409733954
+          ],
+          "bleu3": [
+            0.07418820638164206,
+            0.08848939329490565
+          ],
+          "bleu4": [
+            0.0528188954722357,
+            0.064620003413164
+          ],
+          "rouge_l": [
+            0.1519521712671364,
+            0.16681712131641827
+          ],
+          "meteor": [
+            0.1397420302234597,
+            0.15663383085820962
+          ],
+          "historical_micro_f1": [
+            0.19262475074417168,
+            0.5601252985520226
+          ],
+          "historical_macro_f1": [
+            -0.19793435846560847,
+            0.2613293258899279
+          ],
+          "blank_as_negative_micro_f1": [
+            0.07689673210399428,
+            0.2340600633909182
+          ],
+          "blank_as_negative_macro_f1": [
+            0.0046077590004459535,
+            0.11114638868486397
+          ]
+        },
+        "A2_minus_M1": {
+          "bleu1": [
+            -0.010347298846051714,
+            0.029118509886552374
+          ],
+          "bleu2": [
+            -0.0030676150563673935,
+            0.02046951360111949
+          ],
+          "bleu3": [
+            0.0010971367579763862,
+            0.017766343599809192
+          ],
+          "bleu4": [
+            0.0037351483560509567,
+            0.016597355071311926
+          ],
+          "rouge_l": [
+            0.025483434954204087,
+            0.04425303362585794
+          ],
+          "meteor": [
+            0.01344032777898415,
+            0.035065680247119355
+          ],
+          "historical_micro_f1": [
+            0.3219002888264664,
+            0.5969830043799766
+          ],
+          "historical_macro_f1": [
+            0.14430302726655309,
+            0.41464073979760246
+          ],
+          "blank_as_negative_micro_f1": [
+            0.090920275005997,
+            0.23472177817711193
+          ],
+          "blank_as_negative_macro_f1": [
+            0.03835320454661145,
+            0.12317963369516953
+          ]
+        },
+        "A3_minus_M0": {
+          "bleu1": [
+            0.14868420605377586,
+            0.1797716608573347
+          ],
+          "bleu2": [
+            0.1042935346218183,
+            0.12348650424507784
+          ],
+          "bleu3": [
+            0.07299405143191247,
+            0.08690321711281267
+          ],
+          "bleu4": [
+            0.05189685306077749,
+            0.06287713441730887
+          ],
+          "rouge_l": [
+            0.15169320672045636,
+            0.16518958780360446
+          ],
+          "meteor": [
+            0.13573151975693737,
+            0.1522311797902598
+          ],
+          "historical_micro_f1": [
+            0.23109312276277844,
+            0.5534637756188235
+          ],
+          "historical_macro_f1": [
+            -0.13773177749360613,
+            0.2678549658690481
+          ],
+          "blank_as_negative_micro_f1": [
+            0.08673408212192908,
+            0.24349312366911274
+          ],
+          "blank_as_negative_macro_f1": [
+            0.030638847710801505,
+            0.19183034970335264
+          ]
+        },
+        "A3_minus_M1": {
+          "bleu1": [
+            -0.019849143754989175,
+            0.01974040967087155
+          ],
+          "bleu2": [
+            -0.005179832707290673,
+            0.018258163416880874
+          ],
+          "bleu3": [
+            -0.0006881750946933299,
+            0.016520229014813027
+          ],
+          "bleu4": [
+            0.001962184889375318,
+            0.015109400861962876
+          ],
+          "rouge_l": [
+            0.025144262284742407,
+            0.04325083171273333
+          ],
+          "meteor": [
+            0.009178854346787358,
+            0.030511925435893407
+          ],
+          "historical_micro_f1": [
+            0.3367222100194306,
+            0.6161470165911245
+          ],
+          "historical_macro_f1": [
+            0.15264236009114954,
+            0.48327114560434004
+          ],
+          "blank_as_negative_micro_f1": [
+            0.10126264497611137,
+            0.2542009000665722
+          ],
+          "blank_as_negative_macro_f1": [
+            0.05006443775347379,
+            0.21432462470309777
+          ]
+        },
+        "A4_minus_M0": {
+          "bleu1": [
+            0.17117628020407608,
+            0.20428714442369134
+          ],
+          "bleu2": [
+            0.11390348958833478,
+            0.13229236653940568
+          ],
+          "bleu3": [
+            0.07854605633996294,
+            0.09266230037550995
+          ],
+          "bleu4": [
+            0.055772417404088684,
+            0.06704126514796468
+          ],
+          "rouge_l": [
+            0.1528082056566777,
+            0.16718680453856763
+          ],
+          "meteor": [
+            0.14443928914451484,
+            0.16093967699818965
+          ],
+          "historical_micro_f1": [
+            0.1773879554024322,
+            0.5374074074074073
+          ],
+          "historical_macro_f1": [
+            -0.2057465049955487,
+            0.3144957929557638
+          ],
+          "blank_as_negative_micro_f1": [
+            0.08061028133085303,
+            0.2327128401245656
+          ],
+          "blank_as_negative_macro_f1": [
+            0.023444920562781506,
+            0.21990959744292832
+          ]
+        },
+        "A4_minus_M1": {
+          "bleu1": [
+            0.0040554619629518274,
+            0.044024924426180494
+          ],
+          "bleu2": [
+            0.005129150237409704,
+            0.02811893244183389
+          ],
+          "bleu3": [
+            0.005516932216095082,
+            0.02226012136668183
+          ],
+          "bleu4": [
+            0.0065469140171257306,
+            0.019310292893862213
+          ],
+          "rouge_l": [
+            0.02638627177577649,
+            0.04479862029543545
+          ],
+          "meteor": [
+            0.018754015364636063,
+            0.038839162373161026
+          ],
+          "historical_micro_f1": [
+            0.3075158900095047,
+            0.5778340263537632
+          ],
+          "historical_macro_f1": [
+            0.1222293932752611,
+            0.4939643443362728
+          ],
+          "blank_as_negative_micro_f1": [
+            0.09953985184447209,
+            0.2319920002094847
+          ],
+          "blank_as_negative_macro_f1": [
+            0.053696744644273105,
+            0.22973692799067266
+          ]
+        }
+      }
+    }
+  },
+  "wall_seconds": 586.843312786892,
+  "inputs_sha256": {
+    "p4_contract": "d010d2cf32cb6cc9b96b834e5eb0a5df1d8bd13985ec31cf5faa447260471eb9",
+    "f1_config": "90a1bf1c50ef07446952bb6bb227754fa7ca5884513e466ac30d9107721ed733"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "work_order": "plan/work_orders/WO_F1_2026-11-13.md",
+  "work_order_sha256": "4d8008a5c0699cbacf0ad3bd64e2dc40df7e0fe91c69a8895c208ff718185fad",
+  "seed": 42,
+  "train_studies": 30000,
+  "findings_only": true,
+  "view_positions": [
+    "AP",
+    "PA"
+  ],
+  "image_selection": "first locally available frontal image per study in official split-file order",
+  "p4_index": "research/blip2_cxr_v4/runs/P4_projection_pilot_20261023/manifest_index.approved.json",
+  "p4_index_sha256": "74965a79b31394a65af10dcb7987db0881e5083a8bb0da888bccbe120bd03175",
+  "gpu_seconds_total_limit": 50400,
+  "gpu_seconds_per_arm_limit": 14400,
+  "labeler_workers_max": 32,
+  "labeler_benchmark_reports": 200,
+  "labeler_estimate_seconds_limit": 28800,
+  "labeler_revision": "44ddeb363149aa657296237f18b5472a73c1756f",
+  "negbio_revision": "073199e2792824740e89844a59c13d3d40ce4d23",
+  "bce_policy": {
+    "positive": 1,
+    "negative": 0,
+    "blank": 0,
+    "uncertain": "masked"
+  },
+  "planned_arms": [
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "epoch_per_arm": 1,
+  "dev_report_cap": 256,
+  "privacy": "All clinical rows, paths, labels, features, predictions and checkpoints stay in private/ or existing ignored caches. No external upload."
+}

@@ -1,0 +1,103 @@
+format,image_id,finding,oracle_state,matched_direction,shuffled_direction,C0_state,S_state,O_state,C0_matches_oracle,S_matches_oracle,O_matches_oracle,S_follows_shuffled,O_S_state_unchanged,O_S_text_unchanged,O_not_mentioned,S_not_mentioned,both_not_mentioned,O_uncertain,S_uncertain,O_extraction_failure,S_extraction_failure
+F1,CXR1050_IM-0038-4004,Consolidation,Negative,Positive,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR1050_IM-0038-4004,Consolidation,Negative,Positive,Positive,Not mentioned,Negative,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1050_IM-0038-4004,Consolidation,Negative,Positive,Positive,Not mentioned,Not mentioned,Negative,0,0,1,0,0,0,0,1,0,0,0,0,0
+F1,CXR1226_IM-0150-1001,Cardiomegaly,Negative,Negative,Positive,Not mentioned,Not mentioned,Positive,0,0,0,0,0,0,0,1,0,0,0,0,0
+F2,CXR1226_IM-0150-1001,Cardiomegaly,Negative,Negative,Positive,Not mentioned,Negative,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1226_IM-0150-1001,Cardiomegaly,Negative,Negative,Positive,Not mentioned,Negative,Positive,0,1,0,0,0,0,0,0,0,0,0,0,0
+F1,CXR1226_IM-0150-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Not mentioned,Positive,1,0,0,0,0,0,0,1,0,0,0,0,0
+F2,CXR1226_IM-0150-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1226_IM-0150-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Negative,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR1285_IM-0188-0001,Consolidation,Negative,Positive,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR1285_IM-0188-0001,Consolidation,Negative,Positive,Positive,Not mentioned,Negative,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1285_IM-0188-0001,Consolidation,Negative,Positive,Positive,Not mentioned,Positive,Not mentioned,0,0,0,1,0,0,1,0,0,0,0,0,0
+F1,CXR1285_IM-0188-0001,Pleural Effusion,Negative,Positive,Positive,Negative,Not mentioned,Positive,1,0,0,0,0,0,0,1,0,0,0,0,0
+F2,CXR1285_IM-0188-0001,Pleural Effusion,Negative,Positive,Positive,Negative,Negative,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1285_IM-0188-0001,Pleural Effusion,Negative,Positive,Positive,Negative,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR1445_IM-0287-4004,Atelectasis,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F2,CXR1445_IM-0287-4004,Atelectasis,Positive,Positive,Negative,Positive,Not mentioned,Positive,1,0,1,0,0,0,0,1,0,0,0,0,0
+F3,CXR1445_IM-0287-4004,Atelectasis,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR1445_IM-0287-4004,Consolidation,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR1445_IM-0287-4004,Consolidation,Positive,Positive,Negative,Not mentioned,Not mentioned,Positive,0,0,1,0,0,0,0,1,0,0,0,0,0
+F3,CXR1445_IM-0287-4004,Consolidation,Positive,Positive,Negative,Not mentioned,Not mentioned,Positive,0,0,1,0,0,0,0,1,0,0,0,0,0
+F1,CXR1445_IM-0287-4004,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F2,CXR1445_IM-0287-4004,Pleural Effusion,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR1445_IM-0287-4004,Pleural Effusion,Positive,Positive,Negative,Positive,Uncertain,Not mentioned,1,0,0,0,0,0,1,0,0,0,1,0,0
+F1,CXR1769_IM-0503-1001,Atelectasis,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR1769_IM-0503-1001,Atelectasis,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR1769_IM-0503-1001,Atelectasis,Positive,Positive,Negative,Not mentioned,Positive,Positive,0,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR1769_IM-0503-1001,Consolidation,Positive,Positive,Negative,Positive,Uncertain,Not mentioned,1,0,0,0,0,0,1,0,0,0,1,0,0
+F2,CXR1769_IM-0503-1001,Consolidation,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F3,CXR1769_IM-0503-1001,Consolidation,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR1769_IM-0503-1001,Pleural Effusion,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR1769_IM-0503-1001,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1769_IM-0503-1001,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F1,CXR1792_IM-0515-1001,Atelectasis,Positive,Negative,Negative,Not mentioned,Not mentioned,Positive,0,0,1,0,0,0,0,1,0,0,0,0,0
+F2,CXR1792_IM-0515-1001,Atelectasis,Positive,Negative,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR1792_IM-0515-1001,Atelectasis,Positive,Negative,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR1792_IM-0515-1001,Cardiomegaly,Positive,Negative,Negative,Positive,Not mentioned,Positive,1,0,1,0,0,0,0,1,0,0,0,0,0
+F2,CXR1792_IM-0515-1001,Cardiomegaly,Positive,Negative,Negative,Positive,Positive,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR1792_IM-0515-1001,Cardiomegaly,Positive,Negative,Negative,Positive,Negative,Not mentioned,1,0,0,1,0,0,1,0,0,0,0,0,0
+F1,CXR1792_IM-0515-1001,Pleural Effusion,Positive,Negative,Negative,Negative,Negative,Not mentioned,0,0,0,1,0,0,1,0,0,0,0,0,0
+F2,CXR1792_IM-0515-1001,Pleural Effusion,Positive,Negative,Negative,Negative,Negative,Not mentioned,0,0,0,1,0,0,1,0,0,0,0,0,0
+F3,CXR1792_IM-0515-1001,Pleural Effusion,Positive,Negative,Negative,Negative,Negative,Negative,0,0,0,1,1,0,0,0,0,0,0,0,0
+F1,CXR1892_IM-0580-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR1892_IM-0580-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR1892_IM-0580-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR202_IM-0667-4004,Cardiomegaly,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F2,CXR202_IM-0667-4004,Cardiomegaly,Positive,Positive,Negative,Positive,Positive,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR202_IM-0667-4004,Cardiomegaly,Positive,Positive,Negative,Positive,Negative,Not mentioned,1,0,0,1,0,0,1,0,0,0,0,0,0
+F1,CXR202_IM-0667-4004,Edema,Positive,Positive,Negative,Uncertain,Not mentioned,Negative,0,0,0,0,0,0,0,1,0,0,0,0,0
+F2,CXR202_IM-0667-4004,Edema,Positive,Positive,Negative,Uncertain,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR202_IM-0667-4004,Edema,Positive,Positive,Negative,Uncertain,Negative,Uncertain,0,0,0,1,0,0,0,0,0,1,0,0,0
+F1,CXR202_IM-0667-4004,Pleural Effusion,Positive,Positive,Negative,Negative,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR202_IM-0667-4004,Pleural Effusion,Positive,Positive,Negative,Negative,Negative,Not mentioned,0,0,0,1,0,0,1,0,0,0,0,0,0
+F3,CXR202_IM-0667-4004,Pleural Effusion,Positive,Positive,Negative,Negative,Positive,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F1,CXR2245_IM-0842-1001,Consolidation,Negative,Negative,Positive,Positive,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR2245_IM-0842-1001,Consolidation,Negative,Negative,Positive,Positive,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR2245_IM-0842-1001,Consolidation,Negative,Negative,Positive,Positive,Not mentioned,Negative,0,0,1,0,0,0,0,1,0,0,0,0,0
+F1,CXR2245_IM-0842-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR2245_IM-0842-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR2245_IM-0842-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Negative,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR2752_IM-1202-0001-0001,Cardiomegaly,Positive,Positive,Negative,Not mentioned,Positive,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F1,CXR2752_IM-1202-0001-0001,Edema,Positive,Positive,Negative,Not mentioned,Positive,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F2,CXR2752_IM-1202-0001-0001,Edema,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR2752_IM-1202-0001-0001,Edema,Positive,Positive,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F2,CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F3,CXR2752_IM-1202-0001-0001,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR3104_IM-1455-1001,Cardiomegaly,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3104_IM-1455-1001,Cardiomegaly,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR3104_IM-1455-1001,Cardiomegaly,Negative,Negative,Positive,Not mentioned,Negative,Negative,0,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR3104_IM-1455-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3104_IM-1455-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Uncertain,1,1,0,0,0,0,0,0,0,1,0,0,0
+F3,CXR3104_IM-1455-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Negative,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR3319_IM-1588-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3319_IM-1588-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR3319_IM-1588-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR3479_IM-1690-1001,Cardiomegaly,Positive,Positive,Negative,Positive,Positive,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F2,CXR3479_IM-1690-1001,Cardiomegaly,Positive,Positive,Negative,Positive,Negative,Not mentioned,1,0,0,1,0,0,1,0,0,0,0,0,0
+F3,CXR3479_IM-1690-1001,Cardiomegaly,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR3479_IM-1690-1001,Consolidation,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3479_IM-1690-1001,Consolidation,Positive,Positive,Negative,Positive,Not mentioned,Positive,1,0,1,0,0,0,0,1,0,0,0,0,0
+F3,CXR3479_IM-1690-1001,Consolidation,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR3479_IM-1690-1001,Edema,Positive,Positive,Negative,Positive,Negative,Not mentioned,1,0,0,1,0,0,1,0,0,0,0,0,0
+F2,CXR3479_IM-1690-1001,Edema,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F3,CXR3479_IM-1690-1001,Edema,Positive,Positive,Negative,Positive,Positive,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F1,CXR3479_IM-1690-1001,Pleural Effusion,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3479_IM-1690-1001,Pleural Effusion,Positive,Positive,Negative,Positive,Positive,Positive,1,1,1,0,1,0,0,0,0,0,0,0,0
+F3,CXR3479_IM-1690-1001,Pleural Effusion,Positive,Positive,Negative,Positive,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F1,CXR3636_IM-1803-1001,Pleural Effusion,Negative,Positive,Positive,Negative,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3636_IM-1803-1001,Pleural Effusion,Negative,Positive,Positive,Negative,Negative,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR3636_IM-1803-1001,Pleural Effusion,Negative,Positive,Positive,Negative,Negative,Negative,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR3694_IM-1845-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3694_IM-1845-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Negative,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR3694_IM-1845-1001,Consolidation,Negative,Negative,Positive,Not mentioned,Negative,Not mentioned,0,1,0,0,0,0,1,0,0,0,0,0,0
+F1,CXR3694_IM-1845-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Not mentioned,Not mentioned,1,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3694_IM-1845-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Not mentioned,1,1,0,0,0,0,1,0,0,0,0,0,0
+F3,CXR3694_IM-1845-1001,Pleural Effusion,Negative,Negative,Positive,Negative,Negative,Negative,1,1,1,0,1,0,0,0,0,0,0,0,0
+F1,CXR3945_IM-2014-1001,Atelectasis,Positive,Negative,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F2,CXR3945_IM-2014-1001,Atelectasis,Positive,Negative,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0
+F3,CXR3945_IM-2014-1001,Atelectasis,Positive,Negative,Negative,Not mentioned,Not mentioned,Not mentioned,0,0,0,0,1,0,1,1,1,0,0,0,0

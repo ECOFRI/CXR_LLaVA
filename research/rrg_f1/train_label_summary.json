@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "rows": 30000,
+  "workers": 16,
+  "wall_seconds": 1440.5634012334049,
+  "labels": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "four_state_counts": {
+    "No Finding": {
+      "-2": 22897,
+      "-1": 0,
+      "0": 0,
+      "1": 7103
+    },
+    "Enlarged Cardiomediastinum": {
+      "-2": 11558,
+      "-1": 3738,
+      "0": 12224,
+      "1": 2480
+    },
+    "Cardiomegaly": {
+      "-2": 15328,
+      "-1": 692,
+      "0": 5839,
+      "1": 8141
+    },
+    "Lung Opacity": {
+      "-2": 19085,
+      "-1": 539,
+      "0": 869,
+      "1": 9507
+    },
+    "Lung Lesion": {
+      "-2": 28681,
+      "-1": 138,
+      "0": 165,
+      "1": 1016
+    },
+    "Edema": {
+      "-2": 20439,
+      "-1": 1721,
+      "0": 5247,
+      "1": 2593
+    },
+    "Consolidation": {
+      "-2": 18665,
+      "-1": 935,
+      "0": 9422,
+      "1": 978
+    },
+    "Pneumonia": {
+      "-2": 24741,
+      "-1": 2321,
+      "0": 1722,
+      "1": 1216
+    },
+    "Atelectasis": {
+      "-2": 21472,
+      "-1": 1535,
+      "0": 175,
+      "1": 6818
+    },
+    "Pneumothorax": {
+      "-2": 8722,
+      "-1": 333,
+      "0": 19844,
+      "1": 1101
+    },
+    "Pleural Effusion": {
+      "-2": 5559,
+      "-1": 1203,
+      "0": 17178,
+      "1": 6060
+    },
+    "Pleural Other": {
+      "-2": 29294,
+      "-1": 170,
+      "0": 17,
+      "1": 519
+    },
+    "Fracture": {
+      "-2": 27946,
+      "-1": 68,
+      "0": 815,
+      "1": 1171
+    },
+    "Support Devices": {
+      "-2": 19851,
+      "-1": 57,
+      "0": 519,
+      "1": 9573
+    }
+  },
+  "smoothed_positive_prior": [
+    0.23678421438570763,
+    0.09446390496497106,
+    0.27778915046059366,
+    0.32270983945966125,
+    0.03405437985534423,
+    0.09172235776669849,
+    0.0336808064127705,
+    0.043965174668545215,
+    0.23954052060280326,
+    0.03714314604469311,
+    0.21045869648251675,
+    0.01743094663448646,
+    0.03915280283289904,
+    0.319719485723827
+  ],
+  "bce_mapping": "positive1; negative/blank0; uncertain masked; name-aligned columns",
+  "official_full_report_audit": {
+    "studies": 1000,
+    "per_class_four_state_agreement": {
+      "No Finding": 0.767,
+      "Enlarged Cardiomediastinum": 0.411,
+      "Cardiomegaly": 0.659,
+      "Lung Opacity": 0.835,
+      "Lung Lesion": 0.981,
+      "Edema": 0.807,
+      "Consolidation": 0.669,
+      "Pneumonia": 0.82,
+      "Atelectasis": 0.856,
+      "Pneumothorax": 0.398,
+      "Pleural Effusion": 0.394,
+      "Pleural Other": 0.982,
+      "Fracture": 0.941,
+      "Support Devices": 0.838
+    },
+    "overall_four_state_agreement": 0.7398571428571429,
+    "interpretation": "Findings-only vs official full-report labels; audit only, not replacement"
+  },
+  "labeler_revision": "44ddeb363149aa657296237f18b5472a73c1756f",
+  "negbio_revision": "073199e2792824740e89844a59c13d3d40ce4d23",
+  "labels_sha256": "3273328f906aceaf9a31934c7739aee967e687ab72ff4bc62be053342f972878",
+  "gpu_seconds": 0
+}

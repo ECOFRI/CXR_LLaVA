@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "train_studies": 30000,
+  "unique_train_patients": 20331,
+  "official_train_matches": 30000,
+  "frontal_metadata_matches": 30000,
+  "p4_val_patient_overlap": 0,
+  "manifest_sha256": "caaa88985eb0b9e3f54190dc67c397440997570c231564edc7873da13dc99849"
+}

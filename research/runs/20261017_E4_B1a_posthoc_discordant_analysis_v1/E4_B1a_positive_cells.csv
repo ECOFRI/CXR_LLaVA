@@ -1,0 +1,298 @@
+image_id,finding,arm,oracle_state,output_state,output_positive
+CXR1226_IM-0150-1001,Consolidation,C0,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Consolidation,N1,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Consolidation,F1-M,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Consolidation,F1-S,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Consolidation,F1-O,Positive,Positive,1
+CXR1226_IM-0150-1001,Consolidation,F2-M,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Consolidation,F2-S,Positive,Negative,0
+CXR1226_IM-0150-1001,Consolidation,F2-O,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Consolidation,F3-M,Positive,Negative,0
+CXR1226_IM-0150-1001,Consolidation,F3-S,Positive,Negative,0
+CXR1226_IM-0150-1001,Consolidation,F3-O,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,C0,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,N1,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,F1-M,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,F1-S,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,F1-O,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,F2-M,Positive,Negative,0
+CXR1226_IM-0150-1001,Pneumothorax,F2-S,Positive,Negative,0
+CXR1226_IM-0150-1001,Pneumothorax,F2-O,Positive,Not mentioned,0
+CXR1226_IM-0150-1001,Pneumothorax,F3-M,Positive,Negative,0
+CXR1226_IM-0150-1001,Pneumothorax,F3-S,Positive,Negative,0
+CXR1226_IM-0150-1001,Pneumothorax,F3-O,Positive,Negative,0
+CXR1445_IM-0287-4004,Atelectasis,C0,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,N1,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F1-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F1-S,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F1-O,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F2-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F2-S,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Atelectasis,F2-O,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F3-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F3-S,Positive,Positive,1
+CXR1445_IM-0287-4004,Atelectasis,F3-O,Positive,Positive,1
+CXR1445_IM-0287-4004,Consolidation,C0,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,N1,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F1-M,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F1-S,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F1-O,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F2-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Consolidation,F2-S,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F2-O,Positive,Positive,1
+CXR1445_IM-0287-4004,Consolidation,F3-M,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F3-S,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Consolidation,F3-O,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,C0,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,N1,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,F1-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,F1-S,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,F1-O,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,F2-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,F2-S,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Pleural Effusion,F2-O,Positive,Not mentioned,0
+CXR1445_IM-0287-4004,Pleural Effusion,F3-M,Positive,Positive,1
+CXR1445_IM-0287-4004,Pleural Effusion,F3-S,Positive,Uncertain,0
+CXR1445_IM-0287-4004,Pleural Effusion,F3-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,C0,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,N1,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,F1-M,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,F1-S,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,F1-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,F2-M,Positive,Positive,1
+CXR1769_IM-0503-1001,Atelectasis,F2-S,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,F2-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Atelectasis,F3-M,Positive,Uncertain,0
+CXR1769_IM-0503-1001,Atelectasis,F3-S,Positive,Positive,1
+CXR1769_IM-0503-1001,Atelectasis,F3-O,Positive,Positive,1
+CXR1769_IM-0503-1001,Consolidation,C0,Positive,Positive,1
+CXR1769_IM-0503-1001,Consolidation,N1,Positive,Positive,1
+CXR1769_IM-0503-1001,Consolidation,F1-M,Positive,Uncertain,0
+CXR1769_IM-0503-1001,Consolidation,F1-S,Positive,Uncertain,0
+CXR1769_IM-0503-1001,Consolidation,F1-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Consolidation,F2-M,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Consolidation,F2-S,Positive,Positive,1
+CXR1769_IM-0503-1001,Consolidation,F2-O,Positive,Positive,1
+CXR1769_IM-0503-1001,Consolidation,F3-M,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Consolidation,F3-S,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Consolidation,F3-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Pleural Effusion,C0,Positive,Positive,1
+CXR1769_IM-0503-1001,Pleural Effusion,N1,Positive,Positive,1
+CXR1769_IM-0503-1001,Pleural Effusion,F1-M,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Pleural Effusion,F1-S,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Pleural Effusion,F1-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Pleural Effusion,F2-M,Positive,Positive,1
+CXR1769_IM-0503-1001,Pleural Effusion,F2-S,Positive,Positive,1
+CXR1769_IM-0503-1001,Pleural Effusion,F2-O,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Pleural Effusion,F3-M,Positive,Not mentioned,0
+CXR1769_IM-0503-1001,Pleural Effusion,F3-S,Positive,Positive,1
+CXR1769_IM-0503-1001,Pleural Effusion,F3-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,C0,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,N1,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F1-M,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F1-S,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F1-O,Positive,Positive,1
+CXR1792_IM-0515-1001,Atelectasis,F2-M,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F2-S,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F2-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F3-M,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F3-S,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Atelectasis,F3-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Cardiomegaly,C0,Positive,Positive,1
+CXR1792_IM-0515-1001,Cardiomegaly,N1,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Cardiomegaly,F1-M,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Cardiomegaly,F1-S,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Cardiomegaly,F1-O,Positive,Positive,1
+CXR1792_IM-0515-1001,Cardiomegaly,F2-M,Positive,Positive,1
+CXR1792_IM-0515-1001,Cardiomegaly,F2-S,Positive,Positive,1
+CXR1792_IM-0515-1001,Cardiomegaly,F2-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Cardiomegaly,F3-M,Positive,Negative,0
+CXR1792_IM-0515-1001,Cardiomegaly,F3-S,Positive,Negative,0
+CXR1792_IM-0515-1001,Cardiomegaly,F3-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Pleural Effusion,C0,Positive,Negative,0
+CXR1792_IM-0515-1001,Pleural Effusion,N1,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Pleural Effusion,F1-M,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Pleural Effusion,F1-S,Positive,Negative,0
+CXR1792_IM-0515-1001,Pleural Effusion,F1-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Pleural Effusion,F2-M,Positive,Negative,0
+CXR1792_IM-0515-1001,Pleural Effusion,F2-S,Positive,Negative,0
+CXR1792_IM-0515-1001,Pleural Effusion,F2-O,Positive,Not mentioned,0
+CXR1792_IM-0515-1001,Pleural Effusion,F3-M,Positive,Negative,0
+CXR1792_IM-0515-1001,Pleural Effusion,F3-S,Positive,Negative,0
+CXR1792_IM-0515-1001,Pleural Effusion,F3-O,Positive,Negative,0
+CXR1874_IM-0565-1001,Pneumothorax,C0,Positive,Positive,1
+CXR1874_IM-0565-1001,Pneumothorax,N1,Positive,Not mentioned,0
+CXR1874_IM-0565-1001,Pneumothorax,F1-M,Positive,Not mentioned,0
+CXR1874_IM-0565-1001,Pneumothorax,F1-S,Positive,Not mentioned,0
+CXR1874_IM-0565-1001,Pneumothorax,F1-O,Positive,Not mentioned,0
+CXR1874_IM-0565-1001,Pneumothorax,F2-M,Positive,Positive,1
+CXR1874_IM-0565-1001,Pneumothorax,F2-S,Positive,Positive,1
+CXR1874_IM-0565-1001,Pneumothorax,F2-O,Positive,Not mentioned,0
+CXR1874_IM-0565-1001,Pneumothorax,F3-M,Positive,Negative,0
+CXR1874_IM-0565-1001,Pneumothorax,F3-S,Positive,Negative,0
+CXR1874_IM-0565-1001,Pneumothorax,F3-O,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Cardiomegaly,C0,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,N1,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,F1-M,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,F1-S,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,F1-O,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,F2-M,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,F2-S,Positive,Positive,1
+CXR202_IM-0667-4004,Cardiomegaly,F2-O,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Cardiomegaly,F3-M,Positive,Negative,0
+CXR202_IM-0667-4004,Cardiomegaly,F3-S,Positive,Negative,0
+CXR202_IM-0667-4004,Cardiomegaly,F3-O,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Edema,C0,Positive,Uncertain,0
+CXR202_IM-0667-4004,Edema,N1,Positive,Uncertain,0
+CXR202_IM-0667-4004,Edema,F1-M,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Edema,F1-S,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Edema,F1-O,Positive,Negative,0
+CXR202_IM-0667-4004,Edema,F2-M,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Edema,F2-S,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Edema,F2-O,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Edema,F3-M,Positive,Uncertain,0
+CXR202_IM-0667-4004,Edema,F3-S,Positive,Negative,0
+CXR202_IM-0667-4004,Edema,F3-O,Positive,Uncertain,0
+CXR202_IM-0667-4004,Pleural Effusion,C0,Positive,Negative,0
+CXR202_IM-0667-4004,Pleural Effusion,N1,Positive,Negative,0
+CXR202_IM-0667-4004,Pleural Effusion,F1-M,Positive,Uncertain,0
+CXR202_IM-0667-4004,Pleural Effusion,F1-S,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Pleural Effusion,F1-O,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Pleural Effusion,F2-M,Positive,Negative,0
+CXR202_IM-0667-4004,Pleural Effusion,F2-S,Positive,Negative,0
+CXR202_IM-0667-4004,Pleural Effusion,F2-O,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Pleural Effusion,F3-M,Positive,Not mentioned,0
+CXR202_IM-0667-4004,Pleural Effusion,F3-S,Positive,Positive,1
+CXR202_IM-0667-4004,Pleural Effusion,F3-O,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Cardiomegaly,C0,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,N1,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,F1-M,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Cardiomegaly,F1-S,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Cardiomegaly,F1-O,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Cardiomegaly,F2-M,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,F2-S,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,F2-O,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,F3-M,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,F3-S,Positive,Positive,1
+CXR2532_IM-1046-1001,Cardiomegaly,F3-O,Positive,Positive,1
+CXR2532_IM-1046-1001,Edema,C0,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,N1,Positive,Positive,1
+CXR2532_IM-1046-1001,Edema,F1-M,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F1-S,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F1-O,Positive,Positive,1
+CXR2532_IM-1046-1001,Edema,F2-M,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F2-S,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F2-O,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F3-M,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F3-S,Positive,Not mentioned,0
+CXR2532_IM-1046-1001,Edema,F3-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,C0,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,N1,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F1-M,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F1-S,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F1-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F2-M,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F2-S,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F2-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F3-M,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F3-S,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Cardiomegaly,F3-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,C0,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,N1,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F1-M,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Edema,F1-S,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Edema,F1-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F2-M,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F2-S,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F2-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F3-M,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F3-S,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Edema,F3-O,Positive,Not mentioned,0
+CXR2752_IM-1202-0001-0001,Pleural Effusion,C0,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,N1,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F1-M,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F1-S,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F1-O,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F2-M,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F2-S,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F2-O,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F3-M,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F3-S,Positive,Positive,1
+CXR2752_IM-1202-0001-0001,Pleural Effusion,F3-O,Positive,Positive,1
+CXR3479_IM-1690-1001,Cardiomegaly,C0,Positive,Positive,1
+CXR3479_IM-1690-1001,Cardiomegaly,N1,Positive,Negative,0
+CXR3479_IM-1690-1001,Cardiomegaly,F1-M,Positive,Positive,1
+CXR3479_IM-1690-1001,Cardiomegaly,F1-S,Positive,Positive,1
+CXR3479_IM-1690-1001,Cardiomegaly,F1-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Cardiomegaly,F2-M,Positive,Positive,1
+CXR3479_IM-1690-1001,Cardiomegaly,F2-S,Positive,Negative,0
+CXR3479_IM-1690-1001,Cardiomegaly,F2-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Cardiomegaly,F3-M,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Cardiomegaly,F3-S,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Cardiomegaly,F3-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,C0,Positive,Positive,1
+CXR3479_IM-1690-1001,Consolidation,N1,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F1-M,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F1-S,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F1-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F2-M,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F2-S,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F2-O,Positive,Positive,1
+CXR3479_IM-1690-1001,Consolidation,F3-M,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F3-S,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Consolidation,F3-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Edema,C0,Positive,Positive,1
+CXR3479_IM-1690-1001,Edema,N1,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Edema,F1-M,Positive,Negative,0
+CXR3479_IM-1690-1001,Edema,F1-S,Positive,Negative,0
+CXR3479_IM-1690-1001,Edema,F1-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Edema,F2-M,Positive,Positive,1
+CXR3479_IM-1690-1001,Edema,F2-S,Positive,Positive,1
+CXR3479_IM-1690-1001,Edema,F2-O,Positive,Positive,1
+CXR3479_IM-1690-1001,Edema,F3-M,Positive,Positive,1
+CXR3479_IM-1690-1001,Edema,F3-S,Positive,Positive,1
+CXR3479_IM-1690-1001,Edema,F3-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Pleural Effusion,C0,Positive,Positive,1
+CXR3479_IM-1690-1001,Pleural Effusion,N1,Positive,Negative,0
+CXR3479_IM-1690-1001,Pleural Effusion,F1-M,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Pleural Effusion,F1-S,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Pleural Effusion,F1-O,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Pleural Effusion,F2-M,Positive,Positive,1
+CXR3479_IM-1690-1001,Pleural Effusion,F2-S,Positive,Positive,1
+CXR3479_IM-1690-1001,Pleural Effusion,F2-O,Positive,Positive,1
+CXR3479_IM-1690-1001,Pleural Effusion,F3-M,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Pleural Effusion,F3-S,Positive,Not mentioned,0
+CXR3479_IM-1690-1001,Pleural Effusion,F3-O,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,C0,Positive,Negative,0
+CXR3694_IM-1845-1001,Pneumothorax,N1,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,F1-M,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,F1-S,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,F1-O,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,F2-M,Positive,Negative,0
+CXR3694_IM-1845-1001,Pneumothorax,F2-S,Positive,Negative,0
+CXR3694_IM-1845-1001,Pneumothorax,F2-O,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,F3-M,Positive,Not mentioned,0
+CXR3694_IM-1845-1001,Pneumothorax,F3-S,Positive,Negative,0
+CXR3694_IM-1845-1001,Pneumothorax,F3-O,Positive,Negative,0
+CXR3945_IM-2014-1001,Atelectasis,C0,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,N1,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F1-M,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F1-S,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F1-O,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F2-M,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F2-S,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F2-O,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F3-M,Positive,Negative,0
+CXR3945_IM-2014-1001,Atelectasis,F3-S,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Atelectasis,F3-O,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,C0,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,N1,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F1-M,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F1-S,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F1-O,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F2-M,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F2-S,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F2-O,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F3-M,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F3-S,Positive,Not mentioned,0
+CXR3945_IM-2014-1001,Pneumothorax,F3-O,Positive,Not mentioned,0

@@ -1,0 +1,14 @@
+{
+  "experiment_id": "X02_smoke",
+  "checkpoint_dir": "research/blip2_cxr_v4/.cache/models/blip2-opt-2.7b_59a1ef6",
+  "cohort_csv": "result/indiana_full_k80_20261004_031940_1252388/inference/cohort.csv",
+  "cohort_source": "X00 Indiana, 3667 frontal_unspecified saved cohort rows",
+  "sample_seed": 42,
+  "sample_n": 10,
+  "prompt_version": "x02_blip2_qa_v2",
+  "prompt": "Question: What abnormalities are visible in this chest x-ray? Answer:",
+  "max_new_tokens": 128,
+  "batch_size": 1,
+  "dtype": "float16",
+  "local_files_only": true
+}

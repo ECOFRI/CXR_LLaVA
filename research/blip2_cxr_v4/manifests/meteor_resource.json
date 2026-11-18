@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "installed_nltk_env": "/home/student4/anaconda3/envs/chexpert-label/bin/python",
+  "installed_nltk_version": "3.3",
+  "scorer_source": "https://raw.githubusercontent.com/nltk/nltk/3.6.7/nltk/translate/meteor_score.py",
+  "scorer_local": "src/vlm_medical/eval/vendor/nltk367_meteor_score.py",
+  "wordnet_local": ".cache/nltk/corpora/wordnet.zip",
+  "wordnet_sha256": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59",
+  "omw_1_4_downloaded": false,
+  "tokenizer": "lowercase_ascii_alnum_regex_v1",
+  "model_loaded": false,
+  "gpu_used": false
+}

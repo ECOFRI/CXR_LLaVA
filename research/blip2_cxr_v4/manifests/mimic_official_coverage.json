@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "method": "official split; every validate/test image path and unique study report checked; both JPG roots",
+  "split_image_rows": {
+    "train": 368960,
+    "validate": 2991,
+    "test": 5159
+  },
+  "split_studies": {
+    "train": 222758,
+    "validate": 1808,
+    "test": 3269
+  },
+  "split_patients": {
+    "train": 64586,
+    "validate": 500,
+    "test": 293
+  },
+  "patient_overlap": {
+    "train_validate": 0,
+    "train_test": 0,
+    "validate_test": 0
+  },
+  "missing_metadata": {},
+  "view_position": {
+    "validate": {
+      "AP": 1212,
+      "LATERAL": 633,
+      "LL": 275,
+      "PA": 747,
+      "BLANK": 124
+    },
+    "test": {
+      "BLANK": 325,
+      "LATERAL": 903,
+      "AP": 2405,
+      "PA": 998,
+      "LL": 528
+    }
+  },
+  "coverage": {
+    "jpg_found": {
+      "test": 4904,
+      "validate": 2809
+    },
+    "jpg_primary": {
+      "test": 553,
+      "validate": 386
+    },
+    "jpg_alt": {
+      "test": 4904,
+      "validate": 2809
+    },
+    "report_found": {
+      "test": 3269,
+      "validate": 1808
+    },
+    "section_counts": {
+      "test_impression": 2189,
+      "test_findings": 2143,
+      "test_both": 1417,
+      "test_neither": 354,
+      "validate_impression": 1510,
+      "validate_findings": 1141,
+      "validate_both": 935,
+      "validate_neither": 92
+    },
+    "study_counts": {
+      "test": 3269,
+      "validate": 1808
+    }
+  },
+  "pretraining_contamination": "CXR-LLaVA trained on MIMIC; CLEAR exposure UNKNOWN; this audit is not an independent performance result"
+}

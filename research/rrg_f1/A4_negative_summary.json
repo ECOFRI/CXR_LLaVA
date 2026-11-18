@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "reports": 100,
+  "cap_count": 9,
+  "empty_count": 0,
+  "mean_tokens": 67.19,
+  "mode": "negative",
+  "wall_seconds_this_attempt": 114.67211864329875
+}

@@ -1,0 +1,70 @@
+{
+  "synthetic_only": true,
+  "image_count": 24,
+  "report_count": 264,
+  "oracle_eligible_cells": [
+    144,
+    144,
+    144
+  ],
+  "decision": "E4_B1_ORACLE_RESPONSIVE_CLEAR_NOT_USABLE",
+  "format_metrics": [
+    {
+      "row_type": "format",
+      "format": "F1",
+      "oracle_eligible_cells": 144,
+      "oracle_O_matches": 144,
+      "oracle_S_matches": 114,
+      "oracle_O_rate": 1.0,
+      "oracle_S_rate": 0.7916666666666666,
+      "oracle_advantage_points": 20.833333333333336,
+      "sensitivity_eligible_images": 24,
+      "sensitivity_changed_images": 0,
+      "exact_text_changed_eligible_images": 0,
+      "sensitivity_rate": 0.0,
+      "criterion_1_collapse": true,
+      "criterion_2_mentions": true,
+      "criterion_3_oracle": true,
+      "criterion_4_sensitivity": false,
+      "passes": false
+    },
+    {
+      "row_type": "format",
+      "format": "F2",
+      "oracle_eligible_cells": 144,
+      "oracle_O_matches": 144,
+      "oracle_S_matches": 114,
+      "oracle_O_rate": 1.0,
+      "oracle_S_rate": 0.7916666666666666,
+      "oracle_advantage_points": 20.833333333333336,
+      "sensitivity_eligible_images": 24,
+      "sensitivity_changed_images": 0,
+      "exact_text_changed_eligible_images": 0,
+      "sensitivity_rate": 0.0,
+      "criterion_1_collapse": true,
+      "criterion_2_mentions": true,
+      "criterion_3_oracle": true,
+      "criterion_4_sensitivity": false,
+      "passes": false
+    },
+    {
+      "row_type": "format",
+      "format": "F3",
+      "oracle_eligible_cells": 144,
+      "oracle_O_matches": 144,
+      "oracle_S_matches": 114,
+      "oracle_O_rate": 1.0,
+      "oracle_S_rate": 0.7916666666666666,
+      "oracle_advantage_points": 20.833333333333336,
+      "sensitivity_eligible_images": 24,
+      "sensitivity_changed_images": 0,
+      "exact_text_changed_eligible_images": 0,
+      "sensitivity_rate": 0.0,
+      "criterion_1_collapse": true,
+      "criterion_2_mentions": true,
+      "criterion_3_oracle": true,
+      "criterion_4_sensitivity": false,
+      "passes": false
+    }
+  ]
+}

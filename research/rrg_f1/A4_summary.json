@@ -1,0 +1,232 @@
+{
+  "status": "COMPLETE",
+  "arm": "A4",
+  "examples_seen": 29992,
+  "optimizer_updates": 959,
+  "checks": [
+    {
+      "position": 1000,
+      "unique_reports": 13,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.13753828408433671,
+      "bad": false
+    },
+    {
+      "position": 2000,
+      "unique_reports": 7,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0,
+      "bad": false
+    },
+    {
+      "position": 3000,
+      "unique_reports": 7,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0016447368421052613,
+      "bad": false
+    },
+    {
+      "position": 4000,
+      "unique_reports": 6,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0,
+      "bad": false
+    },
+    {
+      "position": 5000,
+      "unique_reports": 13,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.011445502053004854,
+      "bad": false
+    },
+    {
+      "position": 6000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.014530339162692106,
+      "bad": false
+    },
+    {
+      "position": 7000,
+      "unique_reports": 9,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.06552449939320389,
+      "bad": false
+    },
+    {
+      "position": 8000,
+      "unique_reports": 13,
+      "cap_count": 5,
+      "mean_repeated_4gram_fraction": 0.31088165725915184,
+      "bad": false
+    },
+    {
+      "position": 9000,
+      "unique_reports": 12,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0,
+      "bad": false
+    },
+    {
+      "position": 10000,
+      "unique_reports": 12,
+      "cap_count": 3,
+      "mean_repeated_4gram_fraction": 0.17113628691932004,
+      "bad": false
+    },
+    {
+      "position": 11000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.006525735294117645,
+      "bad": false
+    },
+    {
+      "position": 12000,
+      "unique_reports": 7,
+      "cap_count": 2,
+      "mean_repeated_4gram_fraction": 0.10416666666666667,
+      "bad": false
+    },
+    {
+      "position": 13000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0,
+      "bad": false
+    },
+    {
+      "position": 14000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0033783783783783786,
+      "bad": false
+    },
+    {
+      "position": 15000,
+      "unique_reports": 15,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.01992207558796344,
+      "bad": false
+    },
+    {
+      "position": 16000,
+      "unique_reports": 12,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0,
+      "bad": false
+    },
+    {
+      "position": 17000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0,
+      "bad": false
+    },
+    {
+      "position": 18000,
+      "unique_reports": 14,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0014534883720930258,
+      "bad": false
+    },
+    {
+      "position": 19000,
+      "unique_reports": 12,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.03591720779220779,
+      "bad": false
+    },
+    {
+      "position": 20000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.0049412393162393195,
+      "bad": false
+    },
+    {
+      "position": 21000,
+      "unique_reports": 8,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.06224665045229562,
+      "bad": false
+    },
+    {
+      "position": 22000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.05704378342245989,
+      "bad": false
+    },
+    {
+      "position": 23000,
+      "unique_reports": 11,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.00645424836601307,
+      "bad": false
+    },
+    {
+      "position": 24000,
+      "unique_reports": 14,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.05526647286821705,
+      "bad": false
+    },
+    {
+      "position": 25000,
+      "unique_reports": 11,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.09203756905135374,
+      "bad": false
+    },
+    {
+      "position": 26000,
+      "unique_reports": 13,
+      "cap_count": 0,
+      "mean_repeated_4gram_fraction": 0.075,
+      "bad": false
+    },
+    {
+      "position": 27000,
+      "unique_reports": 12,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.08682228915662651,
+      "bad": false
+    },
+    {
+      "position": 28000,
+      "unique_reports": 11,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.08682228915662651,
+      "bad": false
+    },
+    {
+      "position": 29000,
+      "unique_reports": 14,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.08682228915662651,
+      "bad": false
+    },
+    {
+      "position": 29992,
+      "unique_reports": 14,
+      "cap_count": 1,
+      "mean_repeated_4gram_fraction": 0.08682228915662651,
+      "bad": false
+    }
+  ],
+  "last_training_step": {
+    "position": 29992,
+    "update": 959,
+    "lm_loss": 1.3244683966040611,
+    "bce_loss": 0.2404922302812338,
+    "grad_norm": 1.5612070560455322,
+    "learning_rate": 0.0,
+    "samples": 32,
+    "seconds": 9.696532714180648
+  },
+  "peak_allocated_mib": 6682.52001953125,
+  "peak_reserved_mib": 7288.0,
+  "wall_seconds_this_attempt": 9850.472647171468,
+  "classification": "training execution; dev checks only"
+}

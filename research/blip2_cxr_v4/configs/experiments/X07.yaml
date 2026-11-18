@@ -1,0 +1,8 @@
+{
+  "experiment_id": "X07",
+  "status": "BLOCKED",
+  "classification": "SKELETON_ONLY",
+  "reason": "Swin-Qwen3 combined model code and weights unverified",
+  "train_entrypoint": null,
+  "inference_entrypoint": null
+}

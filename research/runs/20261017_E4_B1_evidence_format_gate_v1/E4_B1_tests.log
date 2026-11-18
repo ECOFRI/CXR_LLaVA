@@ -1,0 +1,11 @@
+test_cohort_enrichment_synthetic (tests.test_e4_b1.E4B1Tests) ... ok
+test_derangement (tests.test_e4_b1.E4B1Tests) ... ok
+test_label_states_and_denominator (tests.test_e4_b1.E4B1Tests) ... ok
+test_oracle_mapping (tests.test_e4_b1.E4B1Tests) ... ok
+test_stop_reason (tests.test_e4_b1.E4B1Tests) ... ok
+test_templates_keep_original_chat (tests.test_e4_b1.E4B1Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

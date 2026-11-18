@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "count": 2500,
+  "bytes": 987404000,
+  "manifest_index_sha256": "74965a79b31394a65af10dcb7987db0881e5083a8bb0da888bccbe120bd03175",
+  "clear_sha256": "da1617a7d47970667a7a158eabfa4c4f3798d5d03b7f98caec150d8ee6ab6a03",
+  "labels": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "disk_shape": [
+    256,
+    768
+  ],
+  "disk_dtype": "float16",
+  "loaded_shape_primary": [
+    64,
+    768
+  ],
+  "source_image_rehash": "first and last per split; all hashed at extraction"
+}

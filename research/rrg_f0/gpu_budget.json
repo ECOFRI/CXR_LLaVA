@@ -1,0 +1,41 @@
+{
+  "limit_seconds": 3600,
+  "attempts": [
+    {
+      "stage": "clear20",
+      "status": "PASS",
+      "charged_seconds": 51.97082338202745,
+      "allowance_seconds": 300,
+      "returncode": 0
+    },
+    {
+      "stage": "clear2500",
+      "status": "PASS",
+      "charged_seconds": 687.260267556645,
+      "allowance_seconds": 1200,
+      "returncode": 0
+    },
+    {
+      "stage": "lora64",
+      "status": "PASS",
+      "charged_seconds": 182.63220593426377,
+      "allowance_seconds": 900,
+      "returncode": 0
+    },
+    {
+      "stage": "bridge64",
+      "status": "PASS",
+      "charged_seconds": 165.0471417317167,
+      "allowance_seconds": 900,
+      "returncode": 0
+    },
+    {
+      "stage": "lora256",
+      "status": "PASS",
+      "charged_seconds": 104.47576044034213,
+      "allowance_seconds": 300,
+      "returncode": 0
+    }
+  ],
+  "charged_seconds_total": 1191.386199044995
+}

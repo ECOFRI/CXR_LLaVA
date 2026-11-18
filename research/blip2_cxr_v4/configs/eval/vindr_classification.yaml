@@ -1,0 +1,12 @@
+{
+  "dataset": "VinDr-CXR",
+  "version": "UNKNOWN",
+  "labels": "/storage/shared/VinDr-CXR/annotations/image_labels_test.csv",
+  "scores": "UNKNOWN",
+  "thresholds": "UNKNOWN",
+  "score_format": "long:image_id,finding,score",
+  "threshold_source_required": "validate",
+  "bootstrap_reps": 1000,
+  "seed": 42,
+  "ontology_aliases": {"Other diseases": "Other disease"}
+}

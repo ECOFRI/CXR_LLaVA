@@ -1,0 +1,23 @@
+{
+  "python_exists": true,
+  "parser_exists": true,
+  "modules": {
+    "bllipparser": true,
+    "nltk": true,
+    "bioc": true,
+    "pandas": true,
+    "StanfordDependencies": true,
+    "ply": true
+  },
+  "status": "IMPORT_AND_ASSET_GATE_PASS",
+  "revisions": {
+    "chexpert-labeler": "44ddeb363149aa657296237f18b5472a73c1756f",
+    "NegBio": "073199e2792824740e89844a59c13d3d40ce4d23"
+  },
+  "gpu_seconds": 0,
+  "wall_seconds": 0.40277216397225857,
+  "benchmark_reports_completed": 0,
+  "projected_labeler_seconds": null,
+  "compatibility_note": "P4 runtime was Python3.6/NLTK3.3; F0 rrg-qwen is Python3.11. Do not silently substitute labeler/runtime.",
+  "label_alignment_note": "Map label columns by name: F0 orders Lung Opacity before Lung Lesion; CheXpert labeler orders Lung Lesion before Lung Opacity."
+}

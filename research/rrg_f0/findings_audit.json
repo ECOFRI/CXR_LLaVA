@@ -1,0 +1,6 @@
+{
+  "first_train_rows_audited": 128,
+  "findings_missing": 31,
+  "quality_evaluation": false,
+  "auxiliary_label_status": "P4 labeler outputs cover validation/generation references, not 2000 training references; synthetic zeros permitted by F0 only"
+}
