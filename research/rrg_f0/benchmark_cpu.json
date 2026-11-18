@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "count": 20,
+  "seconds_per_image_compute_and_preprocess": 0.8356969777494669,
+  "wall_seconds_including_feature_writes": 16.714400451630354,
+  "disk_shape": [
+    256,
+    768
+  ],
+  "disk_dtype": "float16",
+  "input_size": 448,
+  "zero_shot": "lowercase label / no label, normalized paired cosine softmax; no logit scale",
+  "peak_allocated_mib": null,
+  "peak_reserved_mib": null
+}

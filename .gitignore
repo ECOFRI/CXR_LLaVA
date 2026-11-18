@@ -32,3 +32,10 @@ __pycache__/
 
 # Third-party upstream checkouts (nested git repos, checkpoints).
 /research/blip2_cxr_v4/third_party/
+
+# F0 private MIMIC feature, checkpoint, and generated-report artifacts.
+/research/rrg_f0/features/
+
+# F1 private clinical inputs, manifests, labels, outputs and runtime paths.
+/research/rrg_f1/private/
+/research/rrg_f1/paths.local.json

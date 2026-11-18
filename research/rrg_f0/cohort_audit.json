@@ -1,0 +1,44 @@
+{
+  "mimic_train": {
+    "sha256": "ec8bc5fd8eb23c98884671cf139e579bad06cd1b6ea66e316b6320d65f39d4e2",
+    "hash_matches": true,
+    "count": 2000,
+    "split_ok": true,
+    "columns": [
+      "dataset",
+      "image_id",
+      "image_path",
+      "reference_file_sha256",
+      "reference_path",
+      "reference_policy",
+      "split",
+      "study_id",
+      "subject_id",
+      "target_text_sha256",
+      "view"
+    ],
+    "images_exist": 2000,
+    "references_exist": 2000
+  },
+  "mimic_validate": {
+    "sha256": "b0d8f209ae6699bcde215d02652a2da29be59eb7f4936efa34d34ef81b6c21a3",
+    "hash_matches": true,
+    "count": 500,
+    "split_ok": true,
+    "columns": [
+      "dataset",
+      "image_id",
+      "image_path",
+      "reference_file_sha256",
+      "reference_path",
+      "reference_policy",
+      "split",
+      "study_id",
+      "subject_id",
+      "target_text_sha256",
+      "view"
+    ],
+    "images_exist": 500,
+    "references_exist": 500
+  }
+}

@@ -21,9 +21,22 @@ from vlm_medical.eval.text_metrics import case_statistics, corpus_scores
 
 
 
+# Optional local mirror of /storage inputs (GlusterFS hangs). Content is still verified by sha256 below.
+STORAGE_MIRROR = Path(os.environ.get('P4_STORAGE_MIRROR', str(ROOT.parent / 'storage_mirror')))
+
+
+def local(path):
+    path = Path(path)
+    if str(path).startswith('/storage/'):
+        mirrored = STORAGE_MIRROR / str(path).lstrip('/')
+        if mirrored.is_file():
+            return mirrored
+    return path
+
+
 def digest(path):
     h = hashlib.sha256()
-    with Path(path).open('rb') as stream:
+    with local(path).open('rb') as stream:
         for block in iter(lambda: stream.read(1024 * 1024), b''):
             h.update(block)
     return h.hexdigest()
@@ -59,7 +72,7 @@ def reference_for(row, x00_cohort):
         path = Path(row['reference_path'])
         if digest(path) != row['reference_file_sha256']:
             raise ValueError('MIMIC reference hash mismatch')
-        sections = report_sections(path.read_text(errors='replace'))
+        sections = report_sections(local(path).read_text(errors='replace'))
         text = '\n'.join(sections[k] for k in ('findings', 'impression') if k in sections)
         if hashlib.sha256(text.encode()).hexdigest() != row['target_text_sha256']:
             raise ValueError('MIMIC reference section linkage mismatch')
@@ -85,7 +98,7 @@ def atomic_json(path, value):
 
 
 def read_csv(path):
-    with Path(path).open(newline='', encoding='utf-8-sig') as stream:
+    with local(path).open(newline='', encoding='utf-8-sig') as stream:
         return list(csv.DictReader(stream))
 
 

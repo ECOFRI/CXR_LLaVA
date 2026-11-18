@@ -1,0 +1,9 @@
+{
+  "host": "ict11",
+  "python_system": "3.13.5",
+  "storage": "Filesystem              Size  Used Avail Use% Mounted on\n192.168.22.21:/storage  813T  812T  1.1T 100% /storage\n/dev/sda3               815G  460G  314G  60% /home\n",
+  "gpu": "name, driver_version, memory.total [MiB], memory.used [MiB]\nQuadro RTX 4000, 550.163.01, 8192 MiB, 1 MiB\n",
+  "quota": "quota command unavailable; per-user quota unknown",
+  "gpu_seconds": 0,
+  "classification": "technical preflight; no quality evaluation"
+}

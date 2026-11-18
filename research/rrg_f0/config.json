@@ -1,0 +1,41 @@
+{
+  "work_order": "plan/work_orders/WO_F0_2026-11-13.md",
+  "user_amendment": "448x448 preprocess; disk pooled 2x2 = 256 FP16 tokens; load pooled 2x2 = 64 tokens; optional 256-token timing/VRAM if budget remains",
+  "clear_input_size": 448,
+  "disk_patch_tokens": 256,
+  "primary_patch_tokens": 64,
+  "finding_labels": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "gpu_budget_seconds": 3600,
+  "optimizer_steps_per_primary_arm": 20,
+  "optional_256_tokens": "timing/VRAM only after primary arms and generation, budget permitting",
+  "data_policy": "local-only; no MIMIC data in external calls or terminal output",
+  "preflight_assumptions": {
+    "clear_precision": "FP32 frozen on both CPU/GPU; pooled storage FP16",
+    "llm_precision": "frozen FP16; bridge and LoRA trainables FP32",
+    "text_positions_padded": 320,
+    "target_max_tokens_including_eos": 256,
+    "generation_max_new_tokens": 128,
+    "generation": "greedy, thinking disabled, first 8 P4 official validation feature rows per primary arm; no reference used in prompt",
+    "optimizer": "AdamW lr=1e-4 eps=1e-6, gradient clip 1.0, CUDA GradScaler",
+    "minibatch": "repeat fixed timing minibatch from first original train rows with Findings; no new cohort",
+    "bce": "14 synthetic zero labels, weight 0.1; execution only; P4 labeler outputs do not cover 2000 training references",
+    "lora": "rank16 alpha32 all-linear dropout0",
+    "optional_256_arm": "LoRA rank16, batch1, 3 optimizer steps, no generation or quality assessment",
+    "grad_scaler_initial_scale": 128
+  }
+}

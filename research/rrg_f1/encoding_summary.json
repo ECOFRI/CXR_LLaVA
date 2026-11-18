@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "rows": 30000,
+  "truncated_targets": 34,
+  "target_max_including_eos": 256,
+  "text_padding": 320,
+  "prompt_tokens": 24
+}

@@ -1,0 +1,45 @@
+# Run catalog
+
+Raw recorded states; COMPLETE is not clinical/scientific PASS.
+Includes historical failed/blocked attempts; no inference or metric recalculation.
+
+| Run | Component | Status | Decision | Manifest | Error |
+|---|---|---|---|---|---|
+| 20261013T191910_E_AUDIT | . | COMPLETE |  | research/runs/20261013T191910_E_AUDIT/run_manifest.json |  |
+| 20261013T192139_E0A_CXR | . | COMPLETE |  | research/runs/20261013T192139_E0A_CXR/run_manifest.json |  |
+| 20261013T192422_E0A_CLEAR_PREFLIGHT | . | BLOCKED |  | research/runs/20261013T192422_E0A_CLEAR_PREFLIGHT/run_manifest.json |  |
+| 20261013T201154_E0A_CLEAR_CPU | . | COMPLETE |  | research/runs/20261013T201154_E0A_CLEAR_CPU/run_manifest.json |  |
+| 20261013T203617_E0A_CLEAR_CPU_10_50 | . | COMPLETE |  | research/runs/20261013T203617_E0A_CLEAR_CPU_10_50/run_manifest.json |  |
+| 20261013T214749_E2_direct_contrastive | . | FAILED |  | research/runs/20261013T214749_E2_direct_contrastive/run_manifest.json |  |
+| 20261013T214811_E2_direct_contrastive | . | COMPLETE |  | research/runs/20261013T214811_E2_direct_contrastive/run_manifest.json |  |
+| 20261013T220300_E1_CXR | . | COMPLETE |  | research/runs/20261013T220300_E1_CXR/run_manifest.json |  |
+| 20261014_E1_CLEAR_CPU | . | COMPLETE |  | research/runs/20261014_E1_CLEAR_CPU/run_manifest.json |  |
+| 20261014_E1_NIH_probes | . | COMPLETE |  | research/runs/20261014_E1_NIH_probes/run_manifest.json |  |
+| 20261015T002235_V3_E13_E5 | G0 | BLOCKED |  | research/runs/20261015T002235_V3_E13_E5/G0/run_manifest.json |  |
+| 20261015T005545_V3_E13_RESOURCE_REFINEMENT | . | COMPLETE_E13_AND_RESOURCE_PROFILE_ONLY |  | research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/bundle_manifest.json |  |
+| 20261015T005545_V3_E13_RESOURCE_REFINEMENT | E13 | COMPLETE |  | research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/E13/run_manifest.json |  |
+| 20261015T005545_V3_E13_RESOURCE_REFINEMENT | E13_PREFLIGHT | COMPLETE |  | research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/E13_PREFLIGHT/run_manifest.json |  |
+| 20261015T005545_V3_E13_RESOURCE_REFINEMENT | E5_PROFILE | COMPLETE |  | research/runs/20261015T005545_V3_E13_RESOURCE_REFINEMENT/E5_PROFILE/run_manifest.json |  |
+| 20261015T010818_V3_E5_BASELINE | . | COMPLETE_STOP_AFTER_E5 | HOLD_COMPLEX_FUSION | research/runs/20261015T010818_V3_E5_BASELINE/bundle_manifest.json |  |
+| 20261015T010818_V3_E5_BASELINE | E5 | COMPLETE | HOLD_COMPLEX_FUSION | research/runs/20261015T010818_V3_E5_BASELINE/E5/run_manifest.json |  |
+| 20261015T010818_V3_E5_BASELINE | PREFLIGHT | COMPLETE |  | research/runs/20261015T010818_V3_E5_BASELINE/PREFLIGHT/run_manifest.json |  |
+| 20261016_E4_D1_single_C1_diagnostic_v1 | . | PASS_E4_D1 |  | research/runs/20261016_E4_D1_single_C1_diagnostic_v1/E4_D1_run_manifest.json |  |
+| 20261016_E4_R1_memory_review_v1 | . | R1_REVIEW_COMPLETE | HOLD_E4_RESUME | research/runs/20261016_E4_R1_memory_review_v1/R1_run_manifest.json |  |
+| 20261016_E4_R2_guard_amendment_v1 | . | PASS_CONFIGURATION_ONLY |  | research/runs/20261016_E4_R2_guard_amendment_v1/E4_R2_manifest.json |  |
+| 20261016_E4_R3_controlled_resume_plan_v1 | . | UNSPECIFIED | GO_E4_RESUME_PROPOSAL | research/runs/20261016_E4_R3_controlled_resume_plan_v1/E4_R3_run_manifest.json |  |
+| 20261016_E4_output_ready_v1 | . | NO_RUN_MANIFEST |  |  |  |
+| 20261016_E4_technical_pilot_v1 | . | NO_RUN_MANIFEST |  |  |  |
+| 20261016_E4_technical_pilot_v2 | . | UNSPECIFIED | PARTIAL_E4 | research/runs/20261016_E4_technical_pilot_v2/E4_run_manifest.json |  |
+| 20261016_G1_E4_readiness_v1 | . | COMPLETE | HOLD_MORE_EVIDENCE | research/runs/20261016_G1_E4_readiness_v1/G1_run_manifest.json |  |
+| 20261016_G2A_Indiana_triage_v1 | . | COMPLETE |  | research/runs/20261016_G2A_Indiana_triage_v1/G2A_run_manifest.json |  |
+| 20261016_G2B1_CLEAR_preflight_v1 | . | COMPLETE | GO_G2B2_PROPOSAL | research/runs/20261016_G2B1_CLEAR_preflight_v1/G2B1_run_manifest.json |  |
+| 20261016_G2B2_CLEAR_20_CPU_v1 | . | PASS_G2B2 |  | research/runs/20261016_G2B2_CLEAR_20_CPU_v1/G2B2_run_manifest.json |  |
+| 20261016_G2C_compute_resolution_v1 | . | UNSPECIFIED | PASS_G2C_COMPUTE_READY | research/runs/20261016_G2C_compute_resolution_v1/G2C_run_manifest.json |  |
+| 20261016_G2C_evaluator_runtime_v1 | . | UNSPECIFIED | PASS_G2C_EVALUATOR_READY | research/runs/20261016_G2C_evaluator_runtime_v1/G2C_run_manifest.json |  |
+| 20261016_G2C_readiness_v1 | . | COMPLETE | HOLD_G2C_MORE_EVIDENCE | research/runs/20261016_G2C_readiness_v1/G2C_run_manifest.json |  |
+| 20261017_E4_A1_evidence_utilization_audit_v1 | . | DONE | E4_AUDIT_INCONCLUSIVE_EVALUATION | research/runs/20261017_E4_A1_evidence_utilization_audit_v1/E4_A1_run_manifest.json |  |
+| 20261017_E4_A2_blinded_paired_report_evaluation_v1 | . | E4_A2_PREPARED_AWAITING_BLINDED_ANNOTATION |  | research/runs/20261017_E4_A2_blinded_paired_report_evaluation_v1/E4_A2_run_manifest.json |  |
+| 20261017_E4_A3A_automated_proxy_eval_v1 | . | E4_A3A_INCONCLUSIVE_INSUFFICIENT_COVERAGE |  | research/runs/20261017_E4_A3A_automated_proxy_eval_v1/E4_A3A_run_manifest.json |  |
+| 20261017_E4_B1_evidence_format_gate_v1 | . | E4_B1_PROMPT_ROUTE_REJECTED |  | research/runs/20261017_E4_B1_evidence_format_gate_v1/E4_B1_run_manifest.json |  |
+| 20261017_E4_B1a_posthoc_discordant_analysis_v1 | . | COMPLETE_POST_HOC_SECONDARY_ANALYSIS |  | research/runs/20261017_E4_B1a_posthoc_discordant_analysis_v1/E4_B1a_run_manifest.json |  |
+| 20261017_E4_R4_controlled_resume_v1 | . | PASS_E4_TECHNICAL_PILOT |  | research/runs/20261017_E4_R4_controlled_resume_v1/E4_R4_run_manifest.json |  |

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "reports": 200,
+  "workers": 16,
+  "wall_seconds": 18.68974744528532,
+  "projected_30000_seconds": 2803.462116792798,
+  "projection": "conservative linear scaling of 200-report wall including concurrent parser startup",
+  "gpu_seconds": 0
+}

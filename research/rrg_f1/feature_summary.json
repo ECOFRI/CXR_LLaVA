@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "train": 29992,
+  "excluded_bad_images": 8,
+  "indiana": 500,
+  "mimic_reused_F0": 500,
+  "input": 448,
+  "disk_tokens": 256,
+  "load_tokens": 64,
+  "dtype": "float16",
+  "extraction_batch": 4,
+  "new_features_this_attempt": 26940,
+  "wall_seconds_this_attempt": 2373.9854992758483
+}

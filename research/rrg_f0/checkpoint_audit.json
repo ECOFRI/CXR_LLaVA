@@ -1,0 +1,19 @@
+{
+  "lora64": {
+    "checkpoint_step": 20,
+    "optimizer_state_count": 403,
+    "optimizer_step_min": 20,
+    "optimizer_step_max": 20,
+    "trainable_tensors": 403,
+    "contract_and_code_hashes": "PASS"
+  },
+  "bridge64": {
+    "checkpoint_step": 20,
+    "optimizer_state_count": 11,
+    "optimizer_step_min": 20,
+    "optimizer_step_max": 20,
+    "trainable_tensors": 11,
+    "contract_and_code_hashes": "PASS"
+  },
+  "cuda_initialized": false
+}

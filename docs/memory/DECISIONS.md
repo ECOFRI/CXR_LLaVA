@@ -1,6 +1,9 @@
 # Quyết định, sự thật và bẫy bền vững
 Mỗi mục 1–3 dòng, sửa mục hiện có khi bằng chứng đổi; ngày là mốc bằng chứng hoặc lần đối chiếu.
 
+- 2026-11-18 — Trên ict11, `/storage` (GlusterFS) bị treo khi đọc thư mục và trả ENOSPC dù `df` còn chỗ. Vì vậy run GPU dài chạy trên bản local `/home/student4/hanhpm/CXR_LLaVA_Improvement`. Input eval trên /storage được mirror sang `/home/student4/hanhpm/storage_mirror` (p4_evaluate vẫn kiểm sha256). Lần A3 crash do lỗi hạ tầng đã được hoàn 3.570s GPU theo yêu cầu user; giá trị gốc lưu trong ledger.
+
+- 2026-11-13 — F0 trên ict11 dùng RTX4000 8GiB/driver550/CUDA12.4, env mới `research/envs/rrg-qwen` torch2.6+cu124/Transformers4.51.3; không áp stack K80 lịch sử. CLEAR448→disk256 FP16→load64 theo user; [runtime](../../research/rrg_f0/runtime.json), [F0 report](../../research/rrg_f0/F0_preflight_report.md).
 - 2026-11-13 — Root server: `/storage/student4/hanhpm/CXR_LLaVA_Improvement`; cửa vào [AGENTS](../../AGENTS.md), chỉ mở sâu theo [MAP](../MAP.md). Không trộn dự án khác.
 - 2026-10-22 — `MIMIC_CXR_DATASET_TESTSET.csv` không phải official test: train/validate/test = 2.943/23/34 trên 3.000 dòng; không dùng làm locked test. [Audit JSON](../../research/blip2_cxr_v4/manifests/mimic_p1_summary.json).
 - 2026-11-13 — CXR K80: FP32, torch 1.12.1+cu102 / Transformers 4.36.2; CLEAR CPU env riêng torch 2.3.1+cpu. BLIP-2 frozen ViT/OPT FP16 + trainables FP32 theo từng contract, không ép dtype từ CXR. [E/G](../../reports/2026-10-17_E_G_execution_status_log.md), [P5 budget](../../research/blip2_cxr_v4/reports/P5_0_20261025/P5_resource_budget.md).

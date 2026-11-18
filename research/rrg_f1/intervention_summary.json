@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "cases": 100,
+  "selection": "first50 MIMIC + first50 Indiana P4 dev",
+  "modes": {
+    "negative": {
+      "changed_reports": 53,
+      "per_class": {
+        "No Finding": {
+          "paired_definite": 69,
+          "baseline_positive": 69,
+          "control_positive": 69,
+          "positive_count_delta": 0
+        },
+        "Enlarged Cardiomediastinum": {
+          "paired_definite": 69,
+          "baseline_positive": 3,
+          "control_positive": 3,
+          "positive_count_delta": 0
+        },
+        "Cardiomegaly": {
+          "paired_definite": 22,
+          "baseline_positive": 22,
+          "control_positive": 19,
+          "positive_count_delta": -3
+        },
+        "Lung Opacity": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Lung Lesion": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Edema": {
+          "paired_definite": 6,
+          "baseline_positive": 1,
+          "control_positive": 1,
+          "positive_count_delta": 0
+        },
+        "Consolidation": {
+          "paired_definite": 61,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Pneumonia": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Atelectasis": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Pneumothorax": {
+          "paired_definite": 85,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Pleural Effusion": {
+          "paired_definite": 84,
+          "baseline_positive": 6,
+          "control_positive": 0,
+          "positive_count_delta": -6
+        },
+        "Pleural Other": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Fracture": {
+          "paired_definite": 9,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Support Devices": {
+          "paired_definite": 15,
+          "baseline_positive": 15,
+          "control_positive": 15,
+          "positive_count_delta": 0
+        }
+      },
+      "paired_definite_class_cases": 420,
+      "direction_concordant": 11,
+      "direction_opposite": 2,
+      "neutral": 407,
+      "direction_concordance_among_label_changes": 0.8461538461538461
+    },
+    "shuffled": {
+      "changed_reports": 10,
+      "per_class": {
+        "No Finding": {
+          "paired_definite": 70,
+          "baseline_positive": 70,
+          "control_positive": 70,
+          "positive_count_delta": 0
+        },
+        "Enlarged Cardiomediastinum": {
+          "paired_definite": 70,
+          "baseline_positive": 2,
+          "control_positive": 3,
+          "positive_count_delta": 1
+        },
+        "Cardiomegaly": {
+          "paired_definite": 27,
+          "baseline_positive": 25,
+          "control_positive": 25,
+          "positive_count_delta": 0
+        },
+        "Lung Opacity": {
+          "paired_definite": 2,
+          "baseline_positive": 2,
+          "control_positive": 2,
+          "positive_count_delta": 0
+        },
+        "Lung Lesion": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Edema": {
+          "paired_definite": 18,
+          "baseline_positive": 3,
+          "control_positive": 4,
+          "positive_count_delta": 1
+        },
+        "Consolidation": {
+          "paired_definite": 65,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Pneumonia": {
+          "paired_definite": 1,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Atelectasis": {
+          "paired_definite": 1,
+          "baseline_positive": 1,
+          "control_positive": 1,
+          "positive_count_delta": 0
+        },
+        "Pneumothorax": {
+          "paired_definite": 87,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Pleural Effusion": {
+          "paired_definite": 88,
+          "baseline_positive": 7,
+          "control_positive": 7,
+          "positive_count_delta": 0
+        },
+        "Pleural Other": {
+          "paired_definite": 0,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Fracture": {
+          "paired_definite": 14,
+          "baseline_positive": 0,
+          "control_positive": 0,
+          "positive_count_delta": 0
+        },
+        "Support Devices": {
+          "paired_definite": 21,
+          "baseline_positive": 21,
+          "control_positive": 21,
+          "positive_count_delta": 0
+        }
+      },
+      "paired_definite_class_cases": 464,
+      "direction_concordant": 0,
+      "direction_opposite": 2,
+      "neutral": 462,
+      "direction_concordance_among_label_changes": 0.0
+    }
+  },
+  "interpretation": "exploratory behavior control on exposed dev; proxies only, not clinical correctness"
+}

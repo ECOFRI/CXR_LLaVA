@@ -1,0 +1,148 @@
+{
+  "status": "COMPLETE",
+  "reason": "STOP_STAGE_A3",
+  "stages": [
+    {
+      "stage": "labeler_readiness",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.14188003540039
+    },
+    {
+      "stage": "target_cache",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.097236394882202
+    },
+    {
+      "stage": "train_labels",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 1444.6116881370544
+    },
+    {
+      "stage": "encodings",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 50.246177196502686
+    },
+    {
+      "stage": "features",
+      "status": "STOP",
+      "returncode": 1,
+      "wall_seconds": 391.87115955352783
+    },
+    {
+      "stage": "labeler_readiness",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.12219524383545
+    },
+    {
+      "stage": "target_cache",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.149471998214722
+    },
+    {
+      "stage": "features",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 2394.602726459503
+    },
+    {
+      "stage": "A2",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 9348.80265879631
+    },
+    {
+      "stage": "A3",
+      "status": "RUNNING"
+    },
+    {
+      "stage": "labeler_readiness",
+      "status": "STOP",
+      "returncode": 124,
+      "wall_seconds": 255.08277368545532
+    },
+    {
+      "stage": "labeler_readiness",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.003214359283447
+    },
+    {
+      "stage": "target_cache",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.00380802154541
+    },
+    {
+      "stage": "A3",
+      "status": "STOP",
+      "returncode": 1,
+      "wall_seconds": 10.003791332244873
+    },
+    {
+      "stage": "labeler_readiness",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.002254724502563
+    },
+    {
+      "stage": "target_cache",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 10.003645896911621
+    },
+    {
+      "stage": "A3",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 9151.536995649338
+    },
+    {
+      "stage": "A4",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 9871.777357816696
+    },
+    {
+      "stage": "eval_A2",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 1220.2041931152344
+    },
+    {
+      "stage": "eval_A3",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 1670.2806236743927
+    },
+    {
+      "stage": "eval_A4",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 1370.2327921390533
+    },
+    {
+      "stage": "interventions",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 260.0467252731323
+    },
+    {
+      "stage": "metrics",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 590.0887196063995
+    },
+    {
+      "stage": "intervention_analysis",
+      "status": "PASS",
+      "returncode": 0,
+      "wall_seconds": 30.0065016746521
+    }
+  ]
+}
